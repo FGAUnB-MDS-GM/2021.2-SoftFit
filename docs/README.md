@@ -1,3 +1,4 @@
+<!-- Mudar imagens -->
 <div align="center">
    <img alt="size-badge" src="https://img.shields.io/github/repo-size/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
    <img alt="languages-badge" src="https://img.shields.io/github/languages/count/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
@@ -6,7 +7,7 @@
 </div>
 
 <div align="center">
-   <h1> 2021-1-FAMil </h1>
+   <h1> 2021.2 SoftFit </h1>
 </div>
 
 <p align="center">
@@ -17,19 +18,15 @@
 
 ## 📄 Sobre o projeto
 
-> O FAMil tem como principal intuito auxiliar no processo de avaliação hospitalar do PASAM - Programa de Acreditação da Saúde Assistencial Militar. O projeto consiste em uma página web que proporciona uma avaliação mais dinâmica e padronizada acerca do processo avaliativo, bem como a apresentação dos resultados por meio de relatórios gerados pelos avaliadores credenciados da OMS (Organização Militar da Saúde).
+> O SoftFit tem como principal objetivo proporcionar uma experiência digital intuitiva e consolidada para os alunos, professores e administrador da academia.
 
 <br/>
 
-## 📦 Releases
-  Release 1 - 14 de setembro
-  - [Metodologias/Produtividade](https://youtu.be/l0WToWh4Jr8)
+## 📦 Entregas
+  Unidade 1 - 03 de Fevereiro de 2022
+  - [Slides Apresentação](/_media/slides-SoftFit.pdf)
   - [Projeto e Produto](https://youtu.be/UhlYSezmaUU)
-  
-  Release 2 - 28 de outubro
-  - [Apresentação e Demonstração do Funcionamento](https://youtu.be/IJ-G1vu_kbM)
-  - [Visão da Disciplina e do Projeto](https://youtu.be/Dgtwoyon82o)
-
+<!--
 ## ⚙️ Tecnologias utilizadas
 
 As tecnologias foram determinadas de acordo com a necessidade das atividades a serem desenvolvidas.
@@ -54,9 +51,9 @@ As tecnologias foram determinadas de acordo com a necessidade das atividades a s
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
-
+-->
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-
+<!--
 - Você instalou a versão mais recente de `<Python / v3.8>`, `<Node/ v14 lts>` e `<Mongodb Community / v5.0+>`
 
 <br/>
@@ -93,7 +90,7 @@ python ./manage.py runserver
 <br/>
 
 ## 🤝 Colaboradores
-
+-->
 <!--
 Arquiteto: rosa #FF00FF
 PO: azul #
@@ -101,7 +98,7 @@ SM: marrom #
 Devops: verde-escuro #
 Desenvolvedor: amarelo #
 -->
-
+<!--
 <table>
   <tr>
       <th>Arquitetos</th>
@@ -275,3 +272,4 @@ Desenvolvedor: amarelo #
 ## 📜 Documentação
 
 > A documentação pode ser encontrada em [Nossa Página](https://fga-eps-mds.github.io/2021-1-hospitalar) ou no [Repositório](https://github.com/fga-eps-mds/2021-1-hospitalar/tree/main/docs)
+-->
