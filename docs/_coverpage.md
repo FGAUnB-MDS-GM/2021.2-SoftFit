@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-# SoftFit <small>0.1</small>
+# SoftFit
 
 [Acesse nosso Repositório!](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/)
 
