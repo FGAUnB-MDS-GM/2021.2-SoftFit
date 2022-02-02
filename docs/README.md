@@ -24,8 +24,8 @@
 
 ## 📦 Entregas
   Unidade 1 - 03 de Fevereiro de 2022
-  - [Slides Visão do Produto e Projeto](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/blob/main/docs/_media/slides-SoftFit.pdf)
-  - [Projeto e Produto](https://youtu.be/UhlYSezmaUU)
+  - [Vídeo - Apresentação: Visão do Produto e Projeto]()
+  - [Documento - Visão do Produto e Projeto](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/blob/main/docs/_media/doc-SoftFit.pdf)
 <!--
 ## ⚙️ Tecnologias utilizadas
 
