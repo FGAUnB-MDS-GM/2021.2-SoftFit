@@ -24,7 +24,7 @@
 
 ## 📦 Entregas
   Unidade 1 - 03 de Fevereiro de 2022
-  - [Slides Apresentação](/_media/slides-SoftFit.pdf)
+  - [Slides Apresentação](docs/_media/slides-SoftFit.pdf)
   - [Projeto e Produto](https://youtu.be/UhlYSezmaUU)
 <!--
 ## ⚙️ Tecnologias utilizadas
