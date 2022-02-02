@@ -1,4 +1,4 @@
-- [Sobre](/README)
+- [Sobre](/README) <!--
 - Projeto
 
   - [TAP](/produto/tap/tap)
@@ -30,3 +30,4 @@
 
   - [Politicas do Repositório](politicas/policies)
   - [Sugestão de Fluxo de Trabalho](politicas/workflow)
+-->

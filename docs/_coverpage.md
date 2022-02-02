@@ -1,9 +1,8 @@
-<!-- _coverpage.md -->
+<!-- _coverpage.md /Mudar cor e foto de fundo-->
 
-# FAMil <small>0.1</small>
+# SoftFit <small>0.1</small>
 
-[Repositório GitHub](https://github.com/fga-eps-mds/2021-1-hospitalar/)
-<small>Contribua!!</small>
+[Acesse nosso Repositório!](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/)
 
 <!-- background image -->
 
