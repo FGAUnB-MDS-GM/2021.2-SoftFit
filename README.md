@@ -20,6 +20,8 @@
 
 > O SoftFit tem como principal objetivo proporcionar uma experiência digital intuitiva e consolidada para os alunos, professores e administrador da academia.
 
+> [Nossa GitPage](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/) 
+
 <br/>
 <!--
 ## ⚙️ Tecnologias utilizadas
