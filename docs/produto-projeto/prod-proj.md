@@ -91,6 +91,6 @@ A unidade 1 trouxe diversas lições e aprendizagens no que convém ao começo d
 
 ## 4. Referências Bibliográficas
 
-* Sommerville, Ian Engenharia de software/ Ian Sommerville; tradução Luiz Cláudio Queiroz; revisão técnica Fábio Levy Siqueira. -- 10. ed. -- São Paulo: Pearson Education do Brasil, 2018. Título original: Software engineering ISBN 978-65-5011-048-2 1. Engenharia de software I. Siqueira. 
+* Sommerville, Ian Engenharia de software/ Ian Sommerville; tradução Luiz Cláudio Queiroz; revisão técnica Fábio Levy Siqueira. -- 10. ed. -- São Paulo: Pearson Education do Brasil, 2018. Título original: Software engineering ISBN 978-65-5011-048-2 1. Engenharia de software I. Siqueira.
 
-<a data-permalink-href="/FGAUnB-MDS-GM/2021.2-SoftFit/raw/eba5247bab667c8d9794eea223b7d7c9ac600703/docs/_media/doc-SoftFit.pdf" href="/FGAUnB-MDS-GM/2021.2-SoftFit/raw/main/docs/_media/doc-SoftFit.pdf" id="raw-url" data-view-component="true" class="js-permalink-replaceable-link btn-sm btn BtnGroup-item">  Download </a>
+## [Acesse o arquivo em PDF pelo nosso repositório](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/blob/main/docs/_media/doc-SoftFit.pdf)
