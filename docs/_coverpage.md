@@ -1,4 +1,4 @@
-<!-- _coverpage.md /Mudar cor e foto de fundo-->
+<!-- _coverpage.md -->
 
 # SoftFit <small>0.1</small>
 
@@ -10,4 +10,4 @@
 
 <!-- background color -->
 
-![color](#ADE498)
+![color](#0072ff)
