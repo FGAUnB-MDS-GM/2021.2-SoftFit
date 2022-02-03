@@ -22,6 +22,11 @@
 
 > [Nossa GitPage](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/) 
 
+## 📦 Entregas
+  Unidade 1 - 03 de Fevereiro de 2022
+  - [Vídeo - Apresentação: Visão do Produto e Projeto](https://youtu.be/eJHCK_V6InQ)
+  - [Visão do Produto e Projeto](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/produto-projeto/prod-proj)
+
 <br/>
 <!--
 ## ⚙️ Tecnologias utilizadas
