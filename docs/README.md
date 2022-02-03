@@ -1,11 +1,11 @@
-<!-- Mudar imagens -->
+<!-- Mudar imagens 
 <div align="center">
    <img alt="size-badge" src="https://img.shields.io/github/repo-size/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
    <img alt="languages-badge" src="https://img.shields.io/github/languages/count/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
    <img alt="issues-badge" src="https://img.shields.io/github/issues/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
    <img alt="pr-badge" src="https://img.shields.io/github/issues-pr/fga-eps-mds/2021-1-hospitalar?style=for-the-badge"/>
 </div>
-
+-->
 <div align="center">
    <h1> 2021.2 SoftFit </h1>
 </div>
@@ -24,7 +24,7 @@
 
 ## 📦 Entregas
   Unidade 1 - 03 de Fevereiro de 2022
-  - [Vídeo - Apresentação: Visão do Produto e Projeto]()
+  - [Vídeo - Apresentação: Visão do Produto e Projeto](https://youtu.be/eJHCK_V6InQ)
   - [Visão do Produto e Projeto](produto-projeto/prod-proj.md)
 <!--
 ## ⚙️ Tecnologias utilizadas
