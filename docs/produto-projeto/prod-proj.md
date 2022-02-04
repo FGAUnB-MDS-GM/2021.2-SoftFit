@@ -6,7 +6,7 @@
 
 |                                | 	                                                                                     |
 | :----------------------------: | :------------------------------------------------------------------------------------ |
-| O problema                     |  **É a falta de uma solução digital e consolidada para o gerenciamento das questões humanas da academia** <span style="color:red">(*peço que a equipe reveja esse problema. Não me parece que a falta de uma solução digital seja o problema. Isso faz parte da solução. Por favor, vejam o vídeo da atividade síncrona, pois eu fala, exatamente disso com outra equipe*)</span>. A partir disso, foi identificada a oportunidade de desenvolvimento de um software para o nicho de academias.                                                                                                               |
+| O problema                     |  <span style="color:red">É a falta de uma solução digital e consolidada para o gerenciamento das questões humanas da academia</span> <span style="color:red">(*peço que a equipe reveja esse problema. Não me parece que a falta de uma solução digital seja o problema. Isso faz parte da solução. Por favor, vejam o vídeo da atividade síncrona, pois eu fala, exatamente disso com outra equipe*)</span>. A partir disso, foi identificada a oportunidade de desenvolvimento de um software para o nicho de academias.                                                                                                               |
 | Afeta                          |  O administrador, os alunos e os profissionais (professores/Personal Trainers).       |
 | Cujo Impacto é                 |  Para o administrador: a falta de concentração dos dados financeiros e de controle de frequência de seus alunos matriculados em uma única plataforma; a dificuldade de comunicação imediata e automática de avisos para com os alunos. Para os alunos: terem suas avaliações e treinos registrados em fichas físicas, que podem ser facilmente perdidas ou danificadas; a necessidade de se dirigir a uma unidade física da academia para resolver problemas financeiros ou solucionar dúvidas ou consultas simples. Para os profissionais: não possuírem sua rotina e ferramentas de gerenciamento e auxílio de alunos em um único lugar.                                                                     |
 | Uma solução de sucesso seria   |  Um software em que os alunos pudessem administrar seus treinos e avaliações, resolver questões que envolvam seu estado financeiro e entrar em contato com a academia. Para o administrador, uma solução de sucesso seria aquela em que os principais dados dos alunos e professores estiverem concentrados e que o possibilitaria com poucos cliques enviar avisos para os alunos por e-mail. Já para os professores, ter sua rotina em uma única tela juntamente com a possibilidade de auxiliar os alunos de forma on-line.                                                               |
@@ -24,7 +24,7 @@ Nosso Produto  | Possui as seguintes funções: * Para o administrador, há a di
 
 ### 1.3 Objetivos do Produto
 
-O principal objetivo do produto é proporcionar uma experiência digital intuitiva e consolidada para os alunos, professores e administrador da academia. 
+O principal objetivo do produto é proporcionar uma <span style="color:red">experiência digital intuitiva e consolidada para os alunos</span> <span style="color:red">(*pessoal esse objetivo está muito genérico e cheio de adjetivos. Sejam específicos. Qual o objetivo? Se necessário, pensem em objetivo geral e objetivos específicos. Lembrem, eles devem ser verificáveis*)</span>, professores e administrador da academia. 
 
 ## 2. Abordagem de Desenvolvimento de Software 
 
@@ -40,7 +40,7 @@ Para o estabelecimento da metodologia de desenvolvimento de software, algumas qu
 
 * Questões Humanas:
 	* **Qual é o nível de competência dos projetistas e programadores do time de desenvolvimento?** A princípio, todos que compõem o time possuem um nível de competência igualmente básico-intermediário. 
-	* **Como está organizado o time de desenvolvimento?** Não há uma divisão concreta além de Product Owner e desenvolvedores.
+	* **Como está organizado o time de desenvolvimento?** <span style="color:red">Não há uma divisão concreta</span> <span style="color:red">(*sim. há uma organização 'convreta'. Existe o Time e o PO. Quais as responsabilidades do Time?*)</span> além de Product Owner e desenvolvedores.
 	* **Quais são as tecnologias disponíveis para apoiar o desenvolvimento do sistema?** Trello, Discord, Microsoft Teams e GitHub.  
 
 * Questões Organizacionais: 
