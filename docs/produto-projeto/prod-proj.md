@@ -44,7 +44,7 @@ Para o estabelecimento da metodologia de desenvolvimento de software, algumas qu
 	* **Quais são as tecnologias disponíveis para apoiar o desenvolvimento do sistema?** Trello, Discord, Microsoft Teams e GitHub.  
 
 * Questões Organizacionais: 
-	* **É importante ter uma especificação e um projeto (design) bem detalhados antes de passar para a implementação - talvez por motivos contratuais?** De certa forma, não é necessário uma detalhação de especificações e design, apesar de haver um prévio conhecimento do que será construído e algumas funções do projeto.
+	* **É importante ter uma especificação e um projeto (design) bem detalhados antes de passar para a implementação - talvez por motivos contratuais?** <span style="color:red">De certa forma, não é necessário uma detalhação de especificações e design, apesar de haver um prévio conhecimento do que será construído e algumas funções do projeto.</span> <span style="color:red">(*isso quer dizer, exatamente, o quê?*)</span>
 	* **É realista uma estratégia de entrega incremental, na qual o software é entregue aos clientes ou outros stakeholders e um rápido feedback é obtido?** Considerando que teremos um Product Owner, isto é, alguém que trabalharia analisando as entregas do grupo e ver se está de acordo com o pensado, é sim realista. 
 	* **Os representantes do cliente estarão disponíveis e dispostos a participar do time de desenvolvimento?** Basicamente, a equipe terá um “representante de cliente”, então sim. 
 	* **Existem questões culturais que possam afetar o desenvolvimento do sistema?** Não. 
