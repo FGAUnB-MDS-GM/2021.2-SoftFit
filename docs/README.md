@@ -26,6 +26,17 @@
   Unidade 1 - 03 de Fevereiro de 2022
   - [Vídeo - Apresentação: Visão do Produto e Projeto](https://youtu.be/eJHCK_V6InQ)
   - [Visão do Produto e Projeto](produto-projeto/prod-proj.md)
+
+## 👨‍💻 Equipe
+
+| Nome | Matrícula |
+| :--: | :-------: |
+| Arthur Heleno do Couto Silva | 180116746 |
+| Felipe Alef Pereira Rodrigues | 190042532 |
+| Luan Vasco Cavalcante | 190111836 |
+| Marcos Well Neres Silva Pereira | 202045849 |
+| Victor Hugo Oliveira Leão | 200028367 |
+
 <!--
 ## ⚙️ Tecnologias utilizadas
 

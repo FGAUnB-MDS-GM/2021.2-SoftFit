@@ -16,6 +16,16 @@
 
 <br/>
 
+## 👨‍💻 Equipe
+
+| Nome | Matrícula |
+| :--: | :-------: |
+| Arthur Heleno do Couto Silva | 180116746 |
+| Felipe Alef Pereira Rodrigues | 190042532 |
+| Luan Vasco Cavalcante | 190111836 |
+| Marcos Well Neres Silva Pereira | 202045849 |
+| Victor Hugo Oliveira Leão | 200028367 |
+
 ## 📄 Sobre o projeto
 
 > O SoftFit tem como principal objetivo proporcionar uma experiência digital intuitiva e consolidada para os alunos, professores e administrador da academia.
