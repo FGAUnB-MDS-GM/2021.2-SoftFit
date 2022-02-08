@@ -5,6 +5,7 @@
 | Data       | Versão | Descrição | Autor |
 | :---       | :----: | :-------- | :---: |
 | 31/01/2022 | 1.0    |  Primeira versão do documento. Em que todos os quadros, tanto de problema, quanto de produto foram preenchidos. A metodologia escolhida e suas justificativas também são adicionadas pela primeira vez no documento. As lições aprendidas da Unidade 1 são descritas nessa versão do documento. | Victor Hugo Oliveira Leão; Felipe Alef Pereira Rodrigues |
+| 08/02/2022 | 1.1 | Correção de ajustes apontados pelo professor nos quesitos: O problema; Objetivos do Produto; Como está organizado o time de desenvolvimento?; É importante ter uma especificação e um projeto (design) bem detalhados antes de passar para a implementação - talvez por motivos contratuais? | Victor Hugo Oliveira Leão; Felipe Alef Pereira Rodrigues |
 
 ## 1. Visão Geral do Produto
 
@@ -12,7 +13,7 @@
 
 |                                | 	                                                                                     |
 | :----------------------------: | :------------------------------------------------------------------------------------ |
-| O problema                     |  <span style="color:red">É a falta de uma solução digital e consolidada para o gerenciamento das questões humanas da academia</span> <span style="color:red">(*peço que a equipe reveja esse problema. Não me parece que a falta de uma solução digital seja o problema. Isso faz parte da solução. Por favor, vejam o vídeo da atividade síncrona, pois eu fala, exatamente disso com outra equipe*)</span>. A partir disso, foi identificada a oportunidade de desenvolvimento de um software para o nicho de academias.                                                                                                               |
+| O problema                     |  É a falta de organização no gerenciamento das questões humanas no que convém a academias.        |
 | Afeta                          |  O administrador, os alunos e os profissionais (professores/Personal Trainers).       |
 | Cujo Impacto é                 |  Para o administrador: a falta de concentração dos dados financeiros e de controle de frequência de seus alunos matriculados em uma única plataforma; a dificuldade de comunicação imediata e automática de avisos para com os alunos. Para os alunos: terem suas avaliações e treinos registrados em fichas físicas, que podem ser facilmente perdidas ou danificadas; a necessidade de se dirigir a uma unidade física da academia para resolver problemas financeiros ou solucionar dúvidas ou consultas simples. Para os profissionais: não possuírem sua rotina e ferramentas de gerenciamento e auxílio de alunos em um único lugar.                                                                     |
 | Uma solução de sucesso seria   |  Um software em que os alunos pudessem administrar seus treinos e avaliações, resolver questões que envolvam seu estado financeiro e entrar em contato com a academia. Para o administrador, uma solução de sucesso seria aquela em que os principais dados dos alunos e professores estiverem concentrados e que o possibilitaria com poucos cliques enviar avisos para os alunos por e-mail. Já para os professores, ter sua rotina em uma única tela juntamente com a possibilidade de auxiliar os alunos de forma on-line.                                                               |
@@ -46,11 +47,11 @@ Para o estabelecimento da metodologia de desenvolvimento de software, algumas qu
 
 * Questões Humanas:
 	* **Qual é o nível de competência dos projetistas e programadores do time de desenvolvimento?** A princípio, todos que compõem o time possuem um nível de competência igualmente básico-intermediário. 
-	* **Como está organizado o time de desenvolvimento?** <span style="color:red">Não há uma divisão concreta</span> <span style="color:red">(*sim. há uma organização 'convreta'. Existe o Time e o PO. Quais as responsabilidades do Time?*)</span> além de Product Owner e desenvolvedores.
+	* **Como está organizado o time de desenvolvimento?** O time de desenvolvimento está organizado entre Product Owner (PO), que será responsável por fazer a ponte entre o time de desenvolvimento e o produto desejado e definido pelo escopo, e desenvolvedores, aqueles que construirão de fato o software a partir do que é conversado e determinado com o PO.
 	* **Quais são as tecnologias disponíveis para apoiar o desenvolvimento do sistema?** Trello, Discord, Microsoft Teams e GitHub.  
 
 * Questões Organizacionais: 
-	* **É importante ter uma especificação e um projeto (design) bem detalhados antes de passar para a implementação - talvez por motivos contratuais?** <span style="color:red">De certa forma, não é necessário uma detalhação de especificações e design, apesar de haver um prévio conhecimento do que será construído e algumas funções do projeto.</span> <span style="color:red">(*isso quer dizer, exatamente, o quê?*)</span>
+	* **É importante ter uma especificação e um projeto (design) bem detalhados antes de passar para a implementação - talvez por motivos contratuais?** Apesar do escopo do produto definido inicialmente, a equipe, durante o desenvolvimento do sistema, vai trabalhar de forma direta e muito conectada com os requisitos, havendo a possibilidade de mudanças e alterações no meio da implementação. Dessa forma, não será necessário ter previamente uma especificação e um projeto (design) bem detalhados.
 	* **É realista uma estratégia de entrega incremental, na qual o software é entregue aos clientes ou outros stakeholders e um rápido feedback é obtido?** Considerando que teremos um Product Owner, isto é, alguém que trabalharia analisando as entregas do grupo e ver se está de acordo com o pensado, é sim realista. 
 	* **Os representantes do cliente estarão disponíveis e dispostos a participar do time de desenvolvimento?** Basicamente, a equipe terá um “representante de cliente”, então sim. 
 	* **Existem questões culturais que possam afetar o desenvolvimento do sistema?** Não. 
