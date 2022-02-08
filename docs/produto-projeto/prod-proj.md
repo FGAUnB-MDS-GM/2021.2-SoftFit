@@ -93,6 +93,4 @@ A unidade 1 trouxe diversas lições e aprendizagens no que convém ao começo d
 
 * Sommerville, Ian Engenharia de software/ Ian Sommerville; tradução Luiz Cláudio Queiroz; revisão técnica Fábio Levy Siqueira. -- 10. ed. -- São Paulo: Pearson Education do Brasil, 2018. Título original: Software engineering ISBN 978-65-5011-048-2 1. Engenharia de software I. Siqueira.
 
-## [Acesse o arquivo em PDF pelo nosso repositório](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/blob/main/docs/_media/doc-SoftFit.pdf)
-
 ## [Vídeo Apresentação](https://www.youtube.com/watch?v=eJHCK_V6InQ&feature=youtu.be)
