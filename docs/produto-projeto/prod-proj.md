@@ -1,5 +1,11 @@
 # Visão do Produto e Projeto
 
+## Histórico de Revisão
+
+| Data       | Versão | Descrição | Autor |
+| :---       | :----: | :-------- | :---: |
+| 31/01/2022 | 1.0    |  Primeira versão do documento. Em que todos os quadros, tanto de problema, quanto de produto foram preenchidos. A metodologia escolhida e suas justificativas também são adicionadas pela primeira vez no documento. As lições aprendidas da Unidade 1 são descritas nessa versão do documento. | Victor Hugo Oliveira Leão; Felipe Alef Pereira Rodrigues |
+
 ## 1. Visão Geral do Produto
 
 ### 1.1 Declaração do Problema
