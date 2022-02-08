@@ -27,6 +27,8 @@
   - [Vídeo - Apresentação: Visão do Produto e Projeto](https://youtu.be/eJHCK_V6InQ)
   - [Visão do Produto e Projeto](produto-projeto/prod-proj.md)
 
+<br/>
+
 ## 👨‍💻 Equipe
 
 | Nome | Matrícula |
