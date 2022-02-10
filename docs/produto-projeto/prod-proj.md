@@ -26,12 +26,22 @@
 | Que          | Buscam uma solução em que possam realizar o gerenciamento de questões humanas e entregarem uma experiência digital aos alunos e professores 																						   |
 | O SoftFit    | É uma aplicação Web responsiva																			   |
 | Que          | Entrega soluções digitais para as 3 partes: administrador, aluno e professor.                                                                                                                 |
-| Ao contrário | Das academias tradicionais em que: * Os dados, treinos e avaliações do aluno são disponíveis de forma física; * Os alunos precisam se locomover até uma unidade física para solucionar problemas financeiros e tirarem dúvidas; * Os professores só conseguem criar e administrar treinos se estiverem com os alunos ao seu lado; * Os administradores não tem os principais dados dos alunos concentrados e com a disponibilidade de entrarem em contato de forma imediata e automática acerca de avisos importantes; |
-Nosso Produto  | Possui as seguintes funções: * Para o administrador, há a disposição dos dados, tanto pessoais e financeiros, quanto de frequência de seus alunos matriculados. Além disso, o administrador também consegue enviar avisos importantes e entrar em contato por e-mail com os frequentadores da academia; * Para os alunos, haverá seus treinos e avalições (medidas) em uma única página (com a possibilidade de vídeos demonstrativos), também é possível entrar em contato com a academia por e-mail e chats para poderem tirar suas dúvidas e controlarem seu estado financeiro; * Para os professores terão sua rotina disposta e ferramentas de criação e auxílio de treinos a partir dos dados dos alunos. |
+| Ao contrário | Das academias tradicionais em que: Os dados, treinos e avaliações do aluno são disponíveis de forma física; Os alunos precisam se locomover até uma unidade física para solucionar problemas financeiros e tirarem dúvidas; Os professores só conseguem criar e administrar treinos se estiverem com os alunos ao seu lado; Os administradores não tem os principais dados dos alunos concentrados e com a disponibilidade de entrarem em contato de forma imediata e automática acerca de avisos importantes; |
+Nosso Produto  | Possui as seguintes funções: Para o **administrador**, há a disposição dos dados, tanto pessoais e financeiros, quanto de frequência de seus alunos matriculados. Além disso, o administrador também consegue enviar avisos importantes e entrar em contato por e-mail com os frequentadores da academia; Para os **alunos**, haverá seus treinos e avalições (medidas) em uma única página (com a possibilidade de vídeos demonstrativos), também é possível entrar em contato com a academia por e-mail e chats para poderem tirar suas dúvidas e controlarem seu estado financeiro; Para os **professores** terão sua rotina disposta e ferramentas de criação e auxílio de treinos a partir dos dados dos alunos. |
 
 ### 1.3 Objetivos do Produto
 
-O principal objetivo do produto é proporcionar uma <span style="color:red">experiência digital intuitiva e consolidada para os alunos</span> <span style="color:red">(*pessoal esse objetivo está muito genérico e cheio de adjetivos. Sejam específicos. Qual o objetivo? Se necessário, pensem em objetivo geral e objetivos específicos. Lembrem, eles devem ser verificáveis*)</span>, professores e administrador da academia. 
+Os objetivos do produto são os seguintes:
+* Entregar para os **alunos** da academia: 
+	* Seus treinos e medidas/avaliações em uma única plataforma;
+	* Uma área em que eles possam ver e controlar seu estado financeiro;
+	* A possibilidade de entrar em contato com a academia de forma digital (por e-mail ou chatbots).
+* Entregar para os **professores** da academia:
+	* Uma tela em que suas rotinas estão cadastradas;
+	* Uma plataforma em que se é possível montar os treinos dos alunos de forma totalmente digital.
+* Entregar para o **administrador** da academia:
+	* Um sistema em que os principais dados dos alunos, juntamente com o controle de frequência de cada um deles, estão concentrados.
+	* Uma aplicação que envia mensagens por e-mail para os alunos de forma automática e personalizada.
 
 ## 2. Abordagem de Desenvolvimento de Software 
 
