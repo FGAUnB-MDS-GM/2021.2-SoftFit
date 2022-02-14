@@ -73,7 +73,17 @@ Os objetivos do produto são os seguintes:
 
 #### 1.4.2 Requisitos Não-Funcionais
 
-* Forneça uma lista de requisitos NÃO-FUNCIONAIS pensando em todo o produto, ou seja, tudo o que se imagina que o produto deve possuir.
+* **Requisitos do Produto:**
+	* O sistema SoftFit deverá ter alta disponibilidade, ficando disponível pelo menos 98% do tempo.
+* **Requisitos Organizacionais:**
+	* Apenas professores poderão fazer alterações nas fichas de treino dos alunos.
+	* Os professores e usuários devem ser identificados por um ID (número de 4 dígitos).  
+	* O sistema deve ser desenvolvido na linguagem Python com o framework Django.
+	* O sistema deve ser uma aplicação web responsiva.
+	* O versionamento do sistema deve ser feito pelo GitHub.
+	* Todas as documentações do sistema devem estar disponíveis na GitPages do repositório.
+* **Requisitos Externos:**
+	* O sistema deve seguir a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – “LGPD”).
 
 ### 1.5 Minímo Produto Viável (MVP)
 
