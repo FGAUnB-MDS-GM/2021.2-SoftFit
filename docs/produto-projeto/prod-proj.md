@@ -112,16 +112,27 @@ Dessa forma, apesar dos horários rígidos que os integrantes do grupo, como alu
 ### 3.1 Organização do Projeto
 (Apresentada a divisão de atribuições e responsabilidades entre os membros do projeto, sem qualquer relação de hierarquia ou grau de importância. Todos os integrantes são igualmente importantes e responsáveis pelo sucesso do projeto)
 
-| Papel | Atribuições | Responsável | Participantes |
-| :---: | :---------- | :---------: | :-----------: |
-| Desenvolvedor | Codificar o produto, codificar testes unitários, realizar refatoração  | Maria | José, João, Laura, Sandra  |
-
 ### 3.2 Planejamento das Fases e/ou Iterações do Projeto
 (Registrar o projeto, as fases de seu ciclo de vida e suas iterações, especificando suas datas de início e de fim, bem como os produtos a serem gerados)
 
-| Sprint | Produto (Entrega) | Data Início | Data Fim |
-| :----: | :---------------- | :---------: | :------: |
-|    1   | Definição do Produto  | 18/01/22  | 03/02/22 |
+### 3.3 Matriz de Comunicação
+(Esta seção descreve a estratégia de comunicação adotada para monitoramento do progresso do projeto. Identificar a periodicidade de reuniões e o envio dos relatórios exigidos pelo processo e opcionalmente outros relatórios exigidos pelo cliente)
+
+### 3.4 Gerenciamento de Riscos
+(Para o Gerenciamento de Riscos devem ser realizadas tarefas, como:   
+
+Identificar todos os riscos possíveis e detectáveis em cada fase do projeto;  
+
+Executar as ações para mitigar os riscos que tenham um alto grau de exposição ao risco caso este ocorra na Lista de Riscos do Projeto; 
+
+Fazer uma revisão da lista dos riscos periodicamente, com o propósito de averiguar uma possível incidência de um risco e ver se há outros riscos ainda não relatados; 
+
+Em caso de confirmação de um risco previsto, agir no sentido de contingenciá-lo conforme programado; 
+
+Registrar os riscos no Painel de Controle do Projeto e no Plano do Projeto (Riscos iniciais);)
+
+### 3.5 Critérios de Replanejamento
+(Descrever os critérios de replanejamento que serão utilizados, caso seja necessário realizá-lo no projeto)
 
 ## 4. Lições Aprendidas
 
