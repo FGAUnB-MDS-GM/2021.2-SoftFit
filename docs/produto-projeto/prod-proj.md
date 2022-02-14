@@ -43,6 +43,20 @@ Os objetivos do produto são os seguintes:
 	* Um sistema em que os principais dados dos alunos, juntamente com o controle de frequência de cada um deles, estão concentrados.
 	* Uma aplicação que envia mensagens por e-mail para os alunos de forma automática e personalizada.
 
+### 1.4 Escopo do Produto
+
+#### 1.4.1 Requisitos Funcionais
+
+* Forneça uma lista de requisitos FUNCIONAIS pensando em todo o produto, ou seja, tudo o que se imagina que o produto deve possuir.
+
+#### 1.4.2 Requisitos Não-Funcionais
+
+* Forneça uma lista de requisitos NÃO-FUNCIONAIS pensando em todo o produto, ou seja, tudo o que se imagina que o produto deve possuir.
+
+### 1.5 Minímo Produto Viável (MVP)
+
+Forneça uma lista de requisitos (funcionais e não-funcionais) mínimos (derivadas do escopo geral do produto) que o produto deve possuir para que possa ser lançado
+
 ## 2. Abordagem de Desenvolvimento de Software 
 
 ### 2.1 Metodologia
@@ -93,21 +107,35 @@ Dessa forma, apesar dos horários rígidos que os integrantes do grupo, como alu
 | Realizar Refatoração  |  Melhorar a qualidade do código    |                Equipe de Desenvolvimento                 | Extração de método, extração de classe, renomeação de método, classe ou variável, extração de interface  | GitHub |
 | Entregar produto final  |  Entregar o software em funcionamento para o cliente final    |                Product Owner e Equipe de Desenvolvimento                  | Hospedagem do produto final na Internet  | GitPages |
 
-## 3. Lições Aprendidas
+## 3. Visão Geral do Projeto
 
-### 3.1 Unidade 1
+### 3.1 Organização do Projeto
+(Apresentada a divisão de atribuições e responsabilidades entre os membros do projeto, sem qualquer relação de hierarquia ou grau de importância. Todos os integrantes são igualmente importantes e responsáveis pelo sucesso do projeto)
+
+| Papel | Atribuições | Responsável | Participantes |
+| :---: | :---------- | :---------: | :-----------: |
+| Desenvolvedor | Codificar o produto, codificar testes unitários, realizar refatoração  | Maria | José, João, Laura, Sandra  |
+
+### 3.2 Planejamento das Fases e/ou Iterações do Projeto
+(Registrar o projeto, as fases de seu ciclo de vida e suas iterações, especificando suas datas de início e de fim, bem como os produtos a serem gerados)
+
+| Sprint | Produto (Entrega) | Data Início | Data Fim |
+| :----: | :---------------- | :---------: | :------: |
+|    1   | Definição do Produto  | 18/01/22  | 03/02/22 |
+
+## 4. Lições Aprendidas
+
+### 4.1 Unidade 1
 
 A unidade 1 trouxe diversas lições e aprendizagens no que convém ao começo de um projeto e conceitos iniciais de Engenharia de Software. Entretanto, podemos destacar dois pontos que tiveram maior impacto no grupo como um todo:
 1. Primeiramente, a lição referente à escolha da metodologia de desenvolvimento de software. As questões levantadas por Sommerville ajudaram de forma substancial na determinação da abordagem ágil para a realização do projeto, uma vez que a equipe, a priori, não sabia como justificar de forma correta a escolha de uma abordagem e não de outra. 
 1. O esclarecimento do que é o Product Owner, quais são suas funções e características também teve grande impacto no grupo, uma vez que pudemos escolher um integrante para trabalhar na função de P.O., o que acreditamos que será de grande ajuda durante todo o projeto. 
 
-### 3.2 Unidade 2
-### 3.3 Unidade 3
-### 3.4 Unidade 4
-### 3.5 Unidade 5
+### 4.2 Unidade 2
+### 4.3 Unidade 3
+### 4.4 Unidade 4
+### 4.5 Unidade 5
 
-## 4. Referências Bibliográficas
+## 5. Referências Bibliográficas
 
 * Sommerville, Ian Engenharia de software/ Ian Sommerville; tradução Luiz Cláudio Queiroz; revisão técnica Fábio Levy Siqueira. -- 10. ed. -- São Paulo: Pearson Education do Brasil, 2018. Título original: Software engineering ISBN 978-65-5011-048-2 1. Engenharia de software I. Siqueira.
-
-## [Vídeo Apresentação](https://www.youtube.com/watch?v=eJHCK_V6InQ&feature=youtu.be)
