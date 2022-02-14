@@ -6,6 +6,7 @@
 | :---       | :----: | :-------- | :---: |
 | 31/01/2022 | 1.0    |  Primeira versão do documento. Em que todos os quadros, tanto de problema, quanto de produto foram preenchidos. A metodologia escolhida e suas justificativas também são adicionadas pela primeira vez no documento. As lições aprendidas da Unidade 1 são descritas nessa versão do documento. | Victor Hugo Oliveira Leão; Felipe Alef Pereira Rodrigues |
 | 08/02/2022 | 1.1 | Correção de ajustes apontados pelo professor nos quesitos: O problema; Objetivos do Produto; Como está organizado o time de desenvolvimento?; É importante ter uma especificação e um projeto (design) bem detalhados antes de passar para a implementação - talvez por motivos contratuais? | Victor Hugo Oliveira Leão; Felipe Alef Pereira Rodrigues |
+| 14/02/2022 | 2.0 | Adição de novos tópicos (Escopo do Produto e Visão Geral do Projeto), para as entregas da Unidade 2 em diante. Primeira versão dos requisitos funcionais e não-funcionais. | Victor Hugo Oliveira Leão; Marcos Well Neres Silva Pereira |
 
 ## 1. Visão Geral do Produto
 
@@ -87,7 +88,7 @@ Os objetivos do produto são os seguintes:
 
 ### 1.5 Minímo Produto Viável (MVP)
 
-Forneça uma lista de requisitos (funcionais e não-funcionais) mínimos (derivadas do escopo geral do produto) que o produto deve possuir para que possa ser lançado
+Forneça uma lista de requisitos (funcionais e não-funcionais) mínimos (derivadas do escopo geral do produto) que o produto deve possuir para que possa ser lançado.
 
 ## 2. Abordagem de Desenvolvimento de Software 
 
