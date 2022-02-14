@@ -47,7 +47,29 @@ Os objetivos do produto são os seguintes:
 
 #### 1.4.1 Requisitos Funcionais
 
-* Forneça uma lista de requisitos FUNCIONAIS pensando em todo o produto, ou seja, tudo o que se imagina que o produto deve possuir.
+| Versão | Requisito | Prioridade |
+| :----: | :-------: | :--------: |
+|   1.0  | O **aluno** deve ser capaz de consultar todas as fichas de treino atribuídas a ele. | Alta |
+|   1.0  | O **aluno** deve poder informar e alterar seus objetivos na academia. | Alta |
+|   1.0  | O **aluno** deve ser capaz de mandar uma mensagem para a academia pelo sistema (que será encaminhada por e-mail para o administrador). | Média |
+|   1.0  | O sistema deve disponibilizar para cada **aluno** o resultado de suas avaliações físicas. | Média |
+|   1.0  | O **aluno** deve ser capaz de filtrar suas avaliações físicas por período. | Baixa |
+|   1.0  | O sistema deve disponibilizar para cada **aluno** seu estado financeiro. | Alta |
+|   1.0  | O sistema deve disponibilizar para cada **aluno** suas frequências na academia (dias em que ele foi na academia e dias que não). | Alta |
+|   1.0  | O **aluno** deve ser capaz de filtrar suas frequências por mês. | Baixa |
+|   1.0  | O sistema deve disponibilizar para o **administrador** a situação financeira de cada aluno. | Alta |
+|   1.0  | O **administrador** deve ser capaz de filtrar os alunos por situação financeira (em dia ou inadimplente). | Média |
+|   1.0  | O sistema deve disponibilizar para o **administrador** o controle de frequência de cada aluno. | Alta |
+|   1.0  | O **administrador** deve ser capaz de buscar os alunos por nome. | Média |
+|   1.0  | O **administrador** deve poder enviar e-mails personalizados (por nome do aluno) para cada aluno acerca de sua situação financeira ou frequência. | Alta |
+|   1.0  | O sistema deve disponibilizar para o **administrador** cada professor e os alunos atrelados a ele(a). | Média |
+|   1.0  | O **administrador** deve ser capaz de filtrar os professores por nome. | Baixa |
+|   1.0  | O sistema deve disponibilizar para os **professores** os dados de avaliações físicas e objetivos de cada aluno. | Alta |
+|   1.0  | O sistema deve disponibilizar para os **professores** a possibilidade de montar treinos personalizados para cada aluno. | Alta |
+|   1.0  | O **professor** deve ser capaz de buscar os alunos por nome. | Média |
+|   1.0  | O **professor** deve ser capaz de filtrar os alunos por objetivos na academia. | Baixa |
+|   1.0  | O sistema deve disponibilizar para cada **professor** sua rotina. | Alta |
+|   1.0  | O sistema deve disponibilizar para cada **professor** os alunos atrelados a ele(a). | Média |
 
 #### 1.4.2 Requisitos Não-Funcionais
 
