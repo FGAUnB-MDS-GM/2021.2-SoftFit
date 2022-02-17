@@ -25,7 +25,10 @@
 ## 📦 Entregas
   Unidade 1 - 03 de Fevereiro de 2022
   - [Vídeo - Apresentação: Visão do Produto e Projeto](https://youtu.be/eJHCK_V6InQ)
-  - [Visão do Produto e Projeto](produto-projeto/prod-proj.md)
+  - [Visão do Produto e Projeto](produto-projeto/unidade1.md)
+
+  Unidade 2 - 17 de Fevereiro de 2022
+  - [Visão do Produto e Projeto Ampliada](produto-projeto/prod-proj.md)
 
 <br/>
 
