@@ -52,39 +52,41 @@ Os objetivos do produto são os seguintes:
 | :----: | :-------: | :--------: |
 |   1.0  | O **aluno** deve ser capaz de consultar todas as fichas de treino atribuídas a ele. | Alta |
 |   1.0  | O **aluno** deve poder informar e alterar seus objetivos na academia. | Alta |
-|   1.0  | O **aluno** deve ser capaz de mandar uma mensagem para a academia pelo sistema (que será encaminhada por e-mail para o administrador). | Média |
-|   1.0  | O sistema deve disponibilizar para cada **aluno** o resultado de suas avaliações físicas. | Média |
+|   1.0  | O **aluno** deve ser capaz de mandar uma mensagem para a academia pelo sistema. | Média |
+|   1.0  | O **aluno** deve ser capaz de visualizar o resultado de suas avaliações físicas. | Média |
 |   1.0  | O **aluno** deve ser capaz de filtrar suas avaliações físicas por período. | Baixa |
-|   1.0  | O sistema deve disponibilizar para cada **aluno** seu estado financeiro. | Alta |
-|   1.0  | O sistema deve disponibilizar para cada **aluno** suas frequências na academia (dias em que ele foi na academia e dias que não). | Alta |
+|   1.0  | O **aluno** deve ser capaz de consultar seu estado financeiro. | Alta |
+|   1.0  | O **aluno** deve poder visualizar suas frequências na academia (dias em que ele foi na academia e dias que não). | Baixa |
 |   1.0  | O **aluno** deve ser capaz de filtrar suas frequências por mês. | Baixa |
-|   1.0  | O sistema deve disponibilizar para o **administrador** a situação financeira de cada aluno. | Alta |
+|   1.0  | O **administrador** deve ser capaz de realizar o cadastro de um novo aluno. | Alta |
+|   1.0  | O **administrador** deve ser capaz de realizar o cadastro de um novo professor. | Alta |
+|   1.0  | O **administrador** deve poder visualizar a situação financeira de cada aluno. | Alta |
 |   1.0  | O **administrador** deve ser capaz de filtrar os alunos por situação financeira (em dia ou inadimplente). | Média |
-|   1.0  | O sistema deve disponibilizar para o **administrador** o controle de frequência de cada aluno. | Alta |
+|   1.0  | O **administrador** deve poder consultar o controle de frequência de cada aluno. | Alta |
 |   1.0  | O **administrador** deve ser capaz de buscar os alunos por nome. | Média |
 |   1.0  | O **administrador** deve poder enviar e-mails personalizados (por nome do aluno) para cada aluno acerca de sua situação financeira ou frequência. | Alta |
-|   1.0  | O sistema deve disponibilizar para o **administrador** cada professor e os alunos atrelados a ele(a). | Média |
+|   1.0  | O **administrador** deve ser capaz de visualizar cada professor e os alunos atrelados a ele. | Média |
 |   1.0  | O **administrador** deve ser capaz de filtrar os professores por nome. | Baixa |
-|   1.0  | O sistema deve disponibilizar para os **professores** os dados de avaliações físicas e objetivos de cada aluno. | Alta |
-|   1.0  | O sistema deve disponibilizar para os **professores** a possibilidade de montar treinos personalizados para cada aluno. | Alta |
-|   1.0  | O **professor** deve ser capaz de buscar os alunos por nome. | Média |
-|   1.0  | O **professor** deve ser capaz de filtrar os alunos por objetivos na academia. | Baixa |
-|   1.0  | O sistema deve disponibilizar para cada **professor** sua rotina. | Alta |
-|   1.0  | O sistema deve disponibilizar para cada **professor** os alunos atrelados a ele(a). | Média |
+|   1.0  | Os **professores** devem ser capazes de visualizar as avaliações físicas e os objetivos de cada aluno. | Alta |
+|   1.0  | Os **professores** devem poder montar os treinos personalizados para cada aluno. | Alta |
+|   1.0  | Os **professores** devem ser capazes de buscar os alunos por nome. | Média |
+|   1.0  | Os **professores** devem ser capazes de filtrar os alunos por objetivos na academia. | Baixa |
+|   1.0  | Os **professores** devem poder visualizar sua rotina. | Alta |
+|   1.0  | Os **professores** devem ser capazes de visualizar os alunos atrelados a eles. | Média |
+
+**Legenda**:
+* Prioridade Alta: São os requisitos necessários para que os objetivos do produto sejam cumpridos.
+* Prioridade Média: São os requisitos que complementam os requisitos de prioridade alta, mas não são essenciais para o funcionamento do sistema.
+* Prioridade Baixa: São os requisitos que facilitam e incrementam o uso do sistema, mas que sem eles, o produto funciona e entrega o necessário.
 
 #### 1.4.2 Requisitos Não-Funcionais
 
-* **Requisitos do Produto:**
-	* O sistema SoftFit deverá ter alta disponibilidade, ficando disponível pelo menos 98% do tempo.
-* **Requisitos Organizacionais:**
-	* Apenas professores poderão fazer alterações nas fichas de treino dos alunos.
-	* Os professores e usuários devem ser identificados por um ID (número de 4 dígitos).  
-	* O sistema deve ser desenvolvido na linguagem Python com o framework Django.
-	* O sistema deve ser uma aplicação web responsiva.
-	* O versionamento do sistema deve ser feito pelo GitHub.
-	* Todas as documentações do sistema devem estar disponíveis na GitPages do repositório.
-* **Requisitos Externos:**
-	* O sistema deve seguir a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – “LGPD”).
+1. O sistema SoftFit deverá estar disponível durante os horários de funcionamento da academia.
+1. O sistema deve ser desenvolvido na linguagem Python com o framework Django.
+1. O sistema deve ser uma aplicação web responsiva.
+1. O versionamento do sistema deve ser feito pelo GitHub.
+1. Todas as documentações do sistema devem estar disponíveis na GitPages do repositório.
+1. Caso o produto tenha andamento após o fim da disciplina, o sistema deve seguir a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – “LGPD”).
 
 ### 1.5 Minímo Produto Viável (MVP)
 
