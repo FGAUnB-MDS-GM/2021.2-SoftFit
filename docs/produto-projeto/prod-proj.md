@@ -129,9 +129,10 @@ Dessa forma, apesar dos horários rígidos que os integrantes do grupo, como alu
 
 |    Atividade         | Objetivo  |  Papel  |       Método        | Ferramenta |
 | :------------------- | :-------: | :-----: | :----------------:  | :--------: |
-| Criar quadro Kanban  |  Organizar o quadro que a equipe utilizará para se orientar durante o desenvolvimento    |       Product Owner e Equipe de Desenvolvimento        |     Requisitos – Em desenvolvimento - Entregue       | Trello |
-| Estabelecer o prazo de entregas  |  Organizar os requisitos a serem entregues em relação ao tempo    |             Product Owner e Equipe de Desenvolvimento              |      Analisar datas da disciplina com os requisitos definidos      | Trello |
-| Estabelecer escopo do produto  |  Definir as características que devem estar presentes no produto de software    |               Product Owner e Equipe de Desenvolvimento                 | EAP – Estrutura Analítica de Projeto  | Trello |
+| Criar quadro Kanban  |  Organizar o quadro que a equipe utilizará para se orientar durante o desenvolvimento    |       Product Owner e Equipe de Desenvolvimento        |     Requisitos – Em desenvolvimento - Entregue       | ZenHub |
+| Criar Canvas MVP  |  Definir o Minímo Produto Viável e criar seu quadro Canvas  | Product Owner e Equipe de Desenvolvimento | Canvas MVP | Miro |
+| Estabelecer o prazo de entregas  |  Organizar os requisitos a serem entregues em relação ao tempo    |             Product Owner e Equipe de Desenvolvimento              |      Analisar datas da disciplina com os requisitos definidos      | ZenHub |
+| Estabelecer escopo do produto  |  Definir as características que devem estar presentes no produto de software    |               Product Owner e Equipe de Desenvolvimento                 | SAFe  | SAFe |
 | Estudar tecnologias  |  Adquirir o conhecimento necessário para o desenvolvimento do sistema   |                      Equipe de Desenvolvimento                        |      Individual (Cada integrante seguirá o método de estudo que achar mais eficiente)      | Materiais Digitais |
 | Definir design das interfaces  |  Criar um modelo das interfaces que serão desenvolvidas    |       Product Owner e Equipe de Desenvolvimento         |     Pesquisa de mercado e Boas práticas de UI e UX.       | Canva |
 | Codificação das Interfaces (Front-End)  | Desenvolver as telas que os usuários do sistema terão acesso   | Equipe de Desenvolvimento | Seguir o design das interfaces feito previamente  | HTML5/CSS3 |

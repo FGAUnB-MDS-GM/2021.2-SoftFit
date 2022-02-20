@@ -4,6 +4,7 @@
 
   - [Visão do Produto e Projeto - Unidade 1](produto-projeto/unidade1.md)
   - [Visão do Produto e Projeto - Unidade 2](produto-projeto/prod-proj.md)
+  - [Backlog do Produto](requisitos-safe/safe.md)
 <!--
 - Projeto
 
