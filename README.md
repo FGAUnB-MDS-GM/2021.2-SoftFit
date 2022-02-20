@@ -39,6 +39,7 @@
 
   Unidade 2 - 17 de Fevereiro de 2022
   - [Visão do Produto e Projeto Ampliada](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/produto-projeto/prod-proj)
+  - [Product Backlog](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/requisitos-safe/safe.md)
 
 <br/>
 <!--

@@ -29,6 +29,7 @@
 
   Unidade 2 - 17 de Fevereiro de 2022
   - [Visão do Produto e Projeto Ampliada](produto-projeto/prod-proj.md)
+  - [Product Backlog](requisitos-safe/safe.md)
 
 <br/>
 
