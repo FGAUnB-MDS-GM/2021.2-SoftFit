@@ -162,20 +162,20 @@ Dessa forma, apesar dos horários rígidos que os integrantes do grupo, como alu
 
 | Sprint | Produto (Entrega) | Data Início | Data Fim |
 | :----: | :---------------- | :---------: | :------: |
-| Sprint 1 | Desenvolvimento do primeiro documento de Visão do Produto e Projeto e Definição das tecnologias que serão usadas | 24/01/2022 | 03/02/2022 |
-| Sprint 2 | Desenvolvimento do Product Backlog, sprints, segunda versão do documento de Visão do Produto e Projeto, MVP e Kanban do projeto | 03/02/2022 | 24/02/2022 |
-| Sprint 3 | Estudo das tecnologias, prototipação de interfaces, criação de modelo de classes de produtos e de arquitetura | 01/03/2022 | 17/03/2022 |
-| Sprint 4 | Codificação das Interfaces (Front-End) e dos requisitos funcionais: RF2, RF4, RF6, RF9, RF10, RF11, RF13, RF15, RF18, RF19, RF23 (MVP) | 17/03/2022 | 07/04/2022 |
-| Sprint 5 | Codificação dos requisitos funcionais restantes e transformação do produto em responsivo | 07/04/2022 | 12/04/2022 |
-| Sprint 6 | Realização de testes e resoluções para a entrega final do produto | 12/04/2022 | 25/04/2022 |   
+| Sprint 1 | Desenvolvimento do primeiro documento de Visão do Produto e Projeto e Definição das tecnologias que serão usadas. | 24/01/2022 | 03/02/2022 |
+| Sprint 2 | Desenvolvimento do Product Backlog, sprints, segunda versão do documento de Visão do Produto e Projeto, MVP e Kanban do projeto. | 03/02/2022 | 24/02/2022 |
+| Sprint 3 | Estudo das tecnologias, prototipação de interfaces, criação de modelo de classes de produtos e de arquitetura. | 01/03/2022 | 17/03/2022 |
+| Sprint 4 | Codificação das Interfaces (Front-End) e dos requisitos funcionais: RF2, RF4, RF6, RF9, RF10, RF11, RF13, RF15, RF18, RF19, RF23 (MVP). | 17/03/2022 | 07/04/2022 |
+| Sprint 5 | Codificação dos requisitos funcionais restantes e transformação do produto em responsivo. | 07/04/2022 | 12/04/2022 |
+| Sprint 6 | Realização de testes e resoluções para a entrega final do produto. | 12/04/2022 | 25/04/2022 |   
 
 
 ### 3.3 Matriz de Comunicação
 
 | Descrição | Área/Envolvidos | Periodicidade | Produtos Gerados |
 | :-------- | :-------------: | :-----------: | :--------------- |
-| Acompanhamento das atividades que estão em desenvolvimento, das que ainda estão pendentes e revisar as feitas desde a última reunião. Esse acompanhamento será feito, principalmente, levando em conta o quadro Kanban da equipe. | Equipe do Projeto | Semanal | Ata de Reunião </br > Relatório de situação da sprint e do projeto. | 
-| Comunicar situação do projeto </br > Feedback do encaminhamento do projeto | Equipe do projeto e Professor | Semanal | Ata de Reunião </br > Relatório de situação do projeto | 
+| Acompanhamento das atividades que estão em desenvolvimento, das que ainda estão pendentes e revisar as feitas desde a última reunião. Esse acompanhamento será feito, principalmente, levando em conta o quadro Kanban da equipe. | Equipe do Projeto | Semanal | Ata de Reunião e </br > Relatório de situação da sprint e do projeto. | 
+| Comunicar situação do projeto e </br > Feedback do encaminhamento do projeto. | Equipe do projeto e Professor | Semanal | Ata de Reunião e </br > Relatório de situação do projeto | 
 
 ### 3.4 Gerenciamento de Riscos
 
