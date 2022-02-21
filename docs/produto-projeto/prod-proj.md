@@ -76,7 +76,7 @@ Os objetivos do produto são os seguintes:
 | RF24 |   1.0  | Os **professores** devem ser capazes de visualizar os alunos atrelados a eles. | Média |
 | RF25 |   1.0  | O **aluno** deve ser capaz de realizar login com seus dados cadastrais preenchidos pelo administrador. | Alta |
 | RF26 |   1.0  | O **professor** deve ser capaz de realizar login com seus dados cadastrais preenchidos pelo administrador. | Alta |
-| RF26 |   1.0  | O **administrador** deve ser capaz de realizar login com seus dados cadastrais. | Alta |
+| RF27 |   1.0  | O **administrador** deve ser capaz de realizar login com seus dados cadastrais. | Alta |
 
 **Legenda**:
 * Prioridade Alta: São os requisitos necessários para que os objetivos do produto sejam cumpridos.
