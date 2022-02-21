@@ -96,7 +96,7 @@ Todos os requisitos não-funcionais possuem alta prioridade, isto é, são neces
 
 ### 1.5 Minímo Produto Viável (MVP)
 
-Forneça uma lista de requisitos (funcionais e não-funcionais) mínimos (derivadas do escopo geral do produto) que o produto deve possuir para que possa ser lançado.
+[Canvas MVP - Miro](https://miro.com/welcomeonboard/OXRBZWE5c0xDejc2aTNTZUxLWDc0eTZKV1JiZGMwbnhNUmZQRGpMZDhXYWc0M25Rb1hjNFE5WnpVUGVCdVYybnwzNDU4NzY0NTE5MzE5NDM5NjY1?invite_link_id=981072418865)
 
 ## 2. Abordagem de Desenvolvimento de Software 
 
