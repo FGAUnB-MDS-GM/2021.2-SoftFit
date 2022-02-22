@@ -8,6 +8,7 @@
 | 08/02/2022 | 1.1 | Correção de ajustes apontados pelo professor nos quesitos: O problema; Objetivos do Produto; Como está organizado o time de desenvolvimento?; É importante ter uma especificação e um projeto (design) bem detalhados antes de passar para a implementação - talvez por motivos contratuais? | Victor Hugo Oliveira Leão; Felipe Alef Pereira Rodrigues |
 | 14/02/2022 | 2.0 | Adição de novos tópicos (Escopo do Produto e Visão Geral do Projeto), para as entregas da Unidade 2 em diante. Primeira versão dos requisitos funcionais e não-funcionais. | Victor Hugo Oliveira Leão; Marcos Well Neres Silva Pereira |
 | 20/02/2022 | 2.1 | Correção de ajustes acerca dos requisitos funcionais e não-funcionais. Adição dos tópicos: Organização do Projeto; Planejamento das Fases e/ou Iterações do Projeto; Matriz de Comunicação; Gerenciamento de Riscos | Victor Hugo Oliveira Leão |
+| 20/02/2022 | 2.2 | Ajuste nos requisitos não-funcionais; Adição das lições aprendidas na Unidade 2; Correção de como as iterações do projeto serão feitas (Releases ao invés de Sprints) | Victor Hugo Oliveira Leão |
 
 ## 1. Visão Geral do Produto
 
@@ -85,12 +86,17 @@ Os objetivos do produto são os seguintes:
 
 #### 1.4.2 Requisitos Não-Funcionais
 
-1. O sistema SoftFit deverá estar disponível durante os horários de funcionamento da academia.
-1. O sistema deve ser desenvolvido na linguagem Python com o framework Django.
-1. O sistema deve ser uma aplicação web responsiva.
-1. O versionamento do sistema deve ser feito pelo GitHub.
-1. Todas as documentações do sistema devem estar disponíveis na GitPages do repositório.
-1. Caso o produto tenha andamento após o fim da disciplina, o sistema deve seguir a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – “LGPD”).
+* **Requisitos de Utilidade:**
+	* Todas as documentações do sistema devem estar disponíveis na GitPages do repositório.
+* **Requisitos de Implementação:**
+	* O sistema deve ser desenvolvido na linguagem Python com o framework Django.
+	* O versionamento do sistema deve ser feito pelo GitHub.
+	* Caso o produto tenha andamento após o fim da disciplina, o sistema deve seguir a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – “LGPD”).
+* **Requisitos de Desempenho:**
+	* O sistema SoftFit deverá estar disponível durante os horários de funcionamento da academia.
+* **Requisitos de Suportabilidade:**
+	* O sistema deve ser uma aplicação web responsiva.
+	* O sistema deve ser acessível nos seguintes navegadores: Microsoft Edge, Google Chrome, Firefox, Safari e Opera.
 
 Todos os requisitos não-funcionais possuem alta prioridade, isto é, são necessários para o funcionamento do produto cumprindo todos seus objetivos.
 
@@ -193,11 +199,17 @@ Dessa forma, apesar dos horários rígidos que os integrantes do grupo, como alu
 
 ### 4.1 Unidade 1
 
-A unidade 1 trouxe diversas lições e aprendizagens no que convém ao começo de um projeto e conceitos iniciais de Engenharia de Software. Entretanto, podemos destacar dois pontos que tiveram maior impacto no grupo como um todo:
+A unidade 1 trouxe diversas lições e aprendizados no que convém ao começo de um projeto e conceitos iniciais de Engenharia de Software. Entretanto, podemos destacar dois pontos que tiveram maior impacto no grupo como um todo:
 1. Primeiramente, a lição referente à escolha da metodologia de desenvolvimento de software. As questões levantadas por Sommerville ajudaram de forma substancial na determinação da abordagem ágil para a realização do projeto, uma vez que a equipe, a priori, não sabia como justificar de forma correta a escolha de uma abordagem e não de outra. 
 1. O esclarecimento do que é o Product Owner, quais são suas funções e características também teve grande impacto no grupo, uma vez que pudemos escolher um integrante para trabalhar na função de P.O., o que acreditamos que será de grande ajuda durante todo o projeto. 
 
 ### 4.2 Unidade 2
+
+A unidade 2 trouxe diversas lições e aprendizados no que convém a Engenharias de Requisitos, desenvolvimento do Product Backlog e MVP. Entretanto, podemos destacar os seguintes pontos que tiveram maior impacto no grupo como um todo:
+1. Primeiramente, a utilização do Framework SAFe, que, a princípio, trouxe dúvidas de como deveria ser destrinchado e organizado. Todavia, após explicações específicas do professor e de um estudo mais focado, o grupo pode entender e aplicar a organização de épicos, features e histórias de usuário.
+1. Conjuntamente com o primeiro ponto, as histórias de usuário foram um grande aprendizado dessa unidade no que convém a entender um software e como ele será desenvolvido.
+1. Finalmente, podemos mencionar a estrutura de Canvas MVP para o desenvolvimento do Minímo Produto Viável. O quadro Canvas ajudou de forma substancial a equipe a desenvolver aquele que será o primeiro produto a ser desenvolvido.
+
 ### 4.3 Unidade 3
 ### 4.4 Unidade 4
 ### 4.5 Unidade 5

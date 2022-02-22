@@ -27,9 +27,10 @@
   - [Vídeo - Apresentação: Visão do Produto e Projeto](https://youtu.be/eJHCK_V6InQ)
   - [Visão do Produto e Projeto](produto-projeto/unidade1.md)
 
-  Unidade 2 - 17 de Fevereiro de 2022
+  Unidade 2 - 24 de Fevereiro de 2022
   - [Visão do Produto e Projeto Ampliada](produto-projeto/prod-proj.md)
   - [Product Backlog](requisitos-safe/safe.md)
+  - [Quadro Kanban - Zenhub (disponível no repositório)]https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit
 
 <br/>
 

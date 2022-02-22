@@ -37,9 +37,10 @@
   - [Vídeo - Apresentação: Visão do Produto e Projeto](https://youtu.be/eJHCK_V6InQ)
   - [Visão do Produto e Projeto](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/produto-projeto/unidade1)
 
-  Unidade 2 - 17 de Fevereiro de 2022
+  Unidade 2 - 24 de Fevereiro de 2022
   - [Visão do Produto e Projeto Ampliada](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/produto-projeto/prod-proj)
   - [Product Backlog](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/requisitos-safe/safe.md)
+  - [Quadro Kanban - Zenhub (disponível no repositório)]https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit
 
 <br/>
 <!--
