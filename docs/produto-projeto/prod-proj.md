@@ -172,13 +172,13 @@ Dessa forma, apesar dos horários rígidos que os integrantes do grupo, como alu
 | Release 2 | Product Backlog; Documento de Visão do Produto e Projeto Ampliada; Canvas MVP; e Kanban do Projeto. |
 | Release 3 | Modelo de Classes de Produto; Modelo de Arquitetura (Visão Lógica); e Protótipos de Interface. |
 | Release 4 | Itens de Cadastro e Login que compõem o MVP (Após Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança). |
-| Release 6 | Interfaces de Cadastro e Login para os itens desenvolvidos. |
-| Release 5 | Itens de Gerenciamento de Treinos que compõem o MVP (Após Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança). |
-| Release 6 | Interfaces de Gerenciamento de Treinos para os itens desenvolvidos. |
-| Release 6 | Itens de Administração que compõem o MVP (Após Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança). |
-| Release 6 | Interfaces de Administração para os itens desenvolvidos. |
-| Release 7 | MVP concluído. |
-| Release 8 | Produto de Software Final. |
+| Release 5 | Interfaces de Cadastro e Login para os itens desenvolvidos. |
+| Release 6 | Itens de Gerenciamento de Treinos que compõem o MVP (Após Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança). |
+| Release 7 | Interfaces de Gerenciamento de Treinos para os itens desenvolvidos. |
+| Release 8 | Itens de Administração que compõem o MVP (Após Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança). |
+| Release 9 | Interfaces de Administração para os itens desenvolvidos. |
+| Release 10 | MVP concluído. |
+| Release 11 | Produto de Software Final. |
 
 ### 3.3 Matriz de Comunicação
 
