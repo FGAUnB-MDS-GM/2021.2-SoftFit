@@ -42,6 +42,7 @@
   - [Product Backlog](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/requisitos-safe/safe.md)
   - [Quadro Kanban - Zenhub](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit)
   - [Canvas MVP](https://miro.com/app/board/uXjVOL8m7cA=/?invite_link_id=174921709773)
+  - [Vídeo - Apresentação: Entregas Unidade 2](https://youtu.be/VwRHSCya-wQ)
 
 <br/>
 <!--
