@@ -40,7 +40,8 @@
   Unidade 2 - 24 de Fevereiro de 2022
   - [Visão do Produto e Projeto Ampliada](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/produto-projeto/prod-proj)
   - [Product Backlog](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/requisitos-safe/safe.md)
-  - [Quadro Kanban - Zenhub (disponível no repositório)]https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit
+  - [Quadro Kanban - Zenhub](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit)
+  - [Canvas MVP](https://miro.com/app/board/uXjVOL8m7cA=/?invite_link_id=174921709773)
 
 <br/>
 <!--
