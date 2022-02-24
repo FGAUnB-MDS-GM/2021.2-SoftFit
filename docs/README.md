@@ -31,6 +31,7 @@
   - [Visão do Produto e Projeto Ampliada](produto-projeto/prod-proj.md)
   - [Product Backlog](requisitos-safe/safe.md)
   - [Quadro Kanban - Zenhub (disponível no repositório)]https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit
+  - [Canvas MVP](https://miro.com/app/board/uXjVOL8m7cA=/?invite_link_id=174921709773)
 
 <br/>
 
