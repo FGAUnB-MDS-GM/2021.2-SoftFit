@@ -210,9 +210,9 @@ A unidade 1 trouxe diversas lições e aprendizados no que convém ao começo de
 ### 4.2 Unidade 2
 
 A unidade 2 trouxe diversas lições e aprendizados no que convém a Engenharias de Requisitos, desenvolvimento do Product Backlog e MVP. Entretanto, podemos destacar os seguintes pontos que tiveram maior impacto no grupo como um todo:
-1. Primeiramente, a utilização do Framework SAFe, que, a princípio, trouxe dúvidas de como deveria ser destrinchado e organizado. Todavia, após explicações específicas do professor e de um estudo mais focado, o grupo pode entender e aplicar a organização de épicos, features e histórias de usuário.
-1. Conjuntamente com o primeiro ponto, as histórias de usuário foram um grande aprendizado dessa unidade no que convém a entender um software e como ele será desenvolvido.
-1. Finalmente, podemos mencionar a estrutura de Canvas MVP para o desenvolvimento do Minímo Produto Viável. O quadro Canvas ajudou de forma substancial a equipe a desenvolver aquele que será o primeiro produto a ser desenvolvido.
+1. Primeiramente, a utilização do Framework SAFe, que, a princípio, trouxe dúvidas de como deveria ser destrinchado e organizado. Todavia, após explicações específicas do professor e de um estudo mais focado, o grupo pôde entender e aplicar a organização de épicos, features e histórias de usuário.
+1. Conjuntamente com o primeiro ponto, as histórias de usuário foram um grande aprendizado dessa unidade no que convém a entender um software e como ele será desenvolvido, uma vez que trouxe uma visão mais simplificada e palpável das funcionalidades de um sistema.
+1. Finalmente, podemos mencionar a estrutura de Canvas MVP para o desenvolvimento do Minímo Produto Viável. O quadro Canvas, com suas divisões de persona, jornada, proposta, funcionalidades, custo e cronograma, resultado esperado e métricas, ajudou a equipe a desenvolver o escopo aquele que será o primeiro produto a ser desenvolvido.
 
 ### 4.3 Unidade 3
 ### 4.4 Unidade 4
