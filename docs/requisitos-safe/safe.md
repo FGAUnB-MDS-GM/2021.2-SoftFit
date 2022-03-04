@@ -13,6 +13,8 @@ O Product Backlog desenvolvido pela equipe segue a abordagem ágil sob a perspec
 
 ## Backlog
 
+<span style="color:red">Por favor, insiram os identificadores de cada épico, featura e história. Além disso, apresentem a relação entre com os RFs. Ou seja, Os RFs estão a nível de feature? de histórias?</span>
+
 | Épico | Feature | História de Usuário |
 | :---- | :-----: | :------------------ |
 | Administração | Prover a visualização do estado financeiro do aluno. | **Como aluno,** eu **quero ser capaz** de consultar meu estado financeiro atual **para que** eu possa me informar se estou com o pagamento em dia ou não. </br > **Como administrador,** eu **quero ser capaz** de consultar o estado financeiro de cada aluno **para que** eu possa me informar acerca dos inadimplentes. </br > **Como administrador,** eu **quero ser capaz** de filtrar os alunos inadimplentes **para que** eu possa saber aqueles que não estão em dia. |
