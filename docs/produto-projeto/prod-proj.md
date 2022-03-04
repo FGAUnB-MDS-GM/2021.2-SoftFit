@@ -1,5 +1,7 @@
 # Visão do Produto e Projeto
 
+<span style="color:red">Muito bom. Parabéns!</span>
+
 ## Histórico de Revisão
 
 | Data       | Versão | Descrição | Autor |
@@ -50,10 +52,13 @@ Os objetivos do produto são os seguintes:
 
 #### 1.4.1 Requisitos Funcionais
 
+<span style="color:red">Existem alguns RFs de "filtrar", por nome, por situação financeira, etc. Minha pergunta é: esses RFs de "filtrar" fazem sentido sozinhos? ou fazem parte de algum outro RF?</span>
+
+
 |  N° | Versão | Requisito | Prioridade |
 |:--: | :----: | :-------: | :--------: |
 | RF1 |   1.0  | O **aluno** deve ser capaz de consultar todas as fichas de treino atribuídas a ele. | Alta |
-| RF2 |   1.0  | O **aluno** deve poder informar e alterar seus objetivos na academia. | Alta |
+| RF2 |   1.0  | O **aluno** deve poder informar e alterar (<span style="color:red">são duas funcionalidades</span>) seus objetivos na academia. | Alta |
 | RF3 |   1.0  | O **aluno** deve ser capaz de mandar uma mensagem para a academia pelo sistema. | Média |
 | RF4 |   1.0  | O **aluno** deve ser capaz de visualizar o resultado de suas avaliações físicas. | Média |
 | RF5 |   1.0  | O **aluno** deve ser capaz de filtrar suas avaliações físicas por período. | Baixa |
@@ -63,7 +68,7 @@ Os objetivos do produto são os seguintes:
 | RF9 |   1.0  | O **administrador** deve ser capaz de realizar o cadastro de um novo aluno. | Alta |
 | RF10 |   1.0  | O **administrador** deve ser capaz de realizar o cadastro de um novo professor. | Alta |
 | RF11 |   1.0  | O **administrador** deve poder visualizar a situação financeira de cada aluno. | Alta |
-| RF12 |   1.0  | O **administrador** deve ser capaz de filtrar os alunos por situação financeira (em dia ou inadimplente). | Média |
+| RF12 |   1.0  | O **administrador** deve ser capaz de filtrar (<span style="color:red">consultar?</span>) os alunos por situação financeira (em dia ou inadimplente). | Média |
 | RF13 |   1.0  | O **administrador** deve poder consultar o controle de frequência de cada aluno. | Alta |
 | RF14 |   1.0  | O **administrador** deve ser capaz de buscar os alunos por nome. | Média |
 | RF15 |   1.0  | O **administrador** deve poder enviar e-mails personalizados (por nome do aluno) para cada aluno acerca de sua situação financeira ou frequência. | Alta |
@@ -166,7 +171,9 @@ Dessa forma, apesar dos horários rígidos que os integrantes do grupo, como alu
 
 ### 3.2 Planejamento das Fases e/ou Iterações do Projeto
 
-| Release | Entregas Feitas |
+<span style="color:red">Quais são as datas de entraga, previstas?</span>
+
+| Release | Entregas Feitas <span style="color:red">???</span>|
 | :----: | :---------------- |
 | Release 1 | Documento de Visão do Produto e Projeto. |
 | Release 2 | Product Backlog; Documento de Visão do Produto e Projeto Ampliada; Canvas MVP; e Kanban do Projeto. |
