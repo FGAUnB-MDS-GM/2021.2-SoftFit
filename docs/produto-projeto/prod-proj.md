@@ -2,6 +2,8 @@
 
 <span style="color:red">Muito bom. Parabéns!</span>
 
+<span style="color:red">Deve ser inserida a imagem do CANVAS MVP, mantendo o link do MIRO</span>
+
 ## Histórico de Revisão
 
 | Data       | Versão | Descrição | Autor |
