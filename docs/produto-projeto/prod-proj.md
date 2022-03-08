@@ -106,7 +106,7 @@ Todos os requisitos não-funcionais possuem alta prioridade, isto é, são neces
 
 ### 1.5 Minímo Produto Viável (MVP)
 
-![Canvas MVP](../CanvasMVP "Canvas MVP")
+![Canvas MVP](../mvp.jpg "Canvas MVP")
 Melhor visualização em: [Canvas MVP - Miro](https://miro.com/app/board/uXjVOL8m7cA=/?invite_link_id=174921709773)
 
 ## 2. Abordagem de Desenvolvimento de Software 
