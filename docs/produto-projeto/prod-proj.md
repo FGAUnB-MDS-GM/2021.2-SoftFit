@@ -1,9 +1,5 @@
 # Visão do Produto e Projeto
 
-<span style="color:red">Muito bom. Parabéns!</span>
-
-<span style="color:red">Deve ser inserida a imagem do CANVAS MVP, mantendo o link do MIRO</span>
-
 ## Histórico de Revisão
 
 | Data       | Versão | Descrição | Autor |
@@ -13,6 +9,7 @@
 | 14/02/2022 | 2.0 | Adição de novos tópicos (Escopo do Produto e Visão Geral do Projeto), para as entregas da Unidade 2 em diante. Primeira versão dos requisitos funcionais e não-funcionais. | Victor Hugo Oliveira Leão; Marcos Well Neres Silva Pereira |
 | 20/02/2022 | 2.1 | Correção de ajustes acerca dos requisitos funcionais e não-funcionais. Adição dos tópicos: Organização do Projeto; Planejamento das Fases e/ou Iterações do Projeto; Matriz de Comunicação; Gerenciamento de Riscos | Victor Hugo Oliveira Leão |
 | 20/02/2022 | 2.2 | Ajuste nos requisitos não-funcionais; Adição das lições aprendidas na Unidade 2; Correção de como as iterações do projeto serão feitas (Releases ao invés de Sprints) | Victor Hugo Oliveira Leão |
+| 07/03/2022 | 2.3 | Correção de ajustes apontados pelo professor: adição da imagem do Canvas MVP | Victor Hugo Oliveira Leão |
 
 ## 1. Visão Geral do Produto
 
@@ -109,7 +106,8 @@ Todos os requisitos não-funcionais possuem alta prioridade, isto é, são neces
 
 ### 1.5 Minímo Produto Viável (MVP)
 
-Disponível em: [Canvas MVP - Miro](https://miro.com/app/board/uXjVOL8m7cA=/?invite_link_id=174921709773)
+![Canvas MVP](../CanvasMVP "Canvas MVP")
+Melhor visualização em: [Canvas MVP - Miro](https://miro.com/app/board/uXjVOL8m7cA=/?invite_link_id=174921709773)
 
 ## 2. Abordagem de Desenvolvimento de Software 
 
