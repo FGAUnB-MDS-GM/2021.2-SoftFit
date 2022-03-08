@@ -9,7 +9,7 @@
 | 14/02/2022 | 2.0 | Adição de novos tópicos (Escopo do Produto e Visão Geral do Projeto), para as entregas da Unidade 2 em diante. Primeira versão dos requisitos funcionais e não-funcionais. | Victor Hugo Oliveira Leão; Marcos Well Neres Silva Pereira |
 | 20/02/2022 | 2.1 | Correção de ajustes acerca dos requisitos funcionais e não-funcionais. Adição dos tópicos: Organização do Projeto; Planejamento das Fases e/ou Iterações do Projeto; Matriz de Comunicação; Gerenciamento de Riscos | Victor Hugo Oliveira Leão |
 | 20/02/2022 | 2.2 | Ajuste nos requisitos não-funcionais; Adição das lições aprendidas na Unidade 2; Correção de como as iterações do projeto serão feitas (Releases ao invés de Sprints) | Victor Hugo Oliveira Leão |
-| 07/03/2022 | 2.3 | Correção de ajustes apontados pelo professor: adição da imagem do Canvas MVP | Victor Hugo Oliveira Leão |
+| 07/03/2022 | 2.3 | Correção de ajustes apontados pelo professor: adição da imagem do Canvas MVP; Datas das entregas previstas; Ajustes de alguns RFs | Victor Hugo Oliveira Leão |
 
 ## 1. Visão Geral do Produto
 
@@ -51,13 +51,10 @@ Os objetivos do produto são os seguintes:
 
 #### 1.4.1 Requisitos Funcionais
 
-<span style="color:red">Existem alguns RFs de "filtrar", por nome, por situação financeira, etc. Minha pergunta é: esses RFs de "filtrar" fazem sentido sozinhos? ou fazem parte de algum outro RF?</span>
-
-
 |  N° | Versão | Requisito | Prioridade |
 |:--: | :----: | :-------: | :--------: |
 | RF1 |   1.0  | O **aluno** deve ser capaz de consultar todas as fichas de treino atribuídas a ele. | Alta |
-| RF2 |   1.0  | O **aluno** deve poder informar e alterar (<span style="color:red">são duas funcionalidades</span>) seus objetivos na academia. | Alta |
+| RF2 |   1.0  | O **aluno** deve poder informar seus objetivos na academia. | Alta |
 | RF3 |   1.0  | O **aluno** deve ser capaz de mandar uma mensagem para a academia pelo sistema. | Média |
 | RF4 |   1.0  | O **aluno** deve ser capaz de visualizar o resultado de suas avaliações físicas. | Média |
 | RF5 |   1.0  | O **aluno** deve ser capaz de filtrar suas avaliações físicas por período. | Baixa |
@@ -67,7 +64,7 @@ Os objetivos do produto são os seguintes:
 | RF9 |   1.0  | O **administrador** deve ser capaz de realizar o cadastro de um novo aluno. | Alta |
 | RF10 |   1.0  | O **administrador** deve ser capaz de realizar o cadastro de um novo professor. | Alta |
 | RF11 |   1.0  | O **administrador** deve poder visualizar a situação financeira de cada aluno. | Alta |
-| RF12 |   1.0  | O **administrador** deve ser capaz de filtrar (<span style="color:red">consultar?</span>) os alunos por situação financeira (em dia ou inadimplente). | Média |
+| RF12 |   1.0  | O **administrador** deve ser capaz de filtrar os alunos por situação financeira, nas seguintes categorias: em dia ou inadimplente. | Média |
 | RF13 |   1.0  | O **administrador** deve poder consultar o controle de frequência de cada aluno. | Alta |
 | RF14 |   1.0  | O **administrador** deve ser capaz de buscar os alunos por nome. | Média |
 | RF15 |   1.0  | O **administrador** deve poder enviar e-mails personalizados (por nome do aluno) para cada aluno acerca de sua situação financeira ou frequência. | Alta |
@@ -171,21 +168,19 @@ Dessa forma, apesar dos horários rígidos que os integrantes do grupo, como alu
 
 ### 3.2 Planejamento das Fases e/ou Iterações do Projeto
 
-<span style="color:red">Quais são as datas de entraga, previstas?</span>
-
-| Release | Entregas Feitas <span style="color:red">???</span>|
-| :----: | :---------------- |
-| Release 1 | Documento de Visão do Produto e Projeto. |
-| Release 2 | Product Backlog; Documento de Visão do Produto e Projeto Ampliada; Canvas MVP; e Kanban do Projeto. |
-| Release 3 | Modelo de Classes de Produto; Modelo de Arquitetura (Visão Lógica); e Protótipos de Interface. |
-| Release 4 | Itens de Cadastro e Login que compõem o MVP (Após Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança). |
-| Release 5 | Interfaces de Cadastro e Login para os itens desenvolvidos. |
-| Release 6 | Itens de Gerenciamento de Treinos que compõem o MVP (Após Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança). |
-| Release 7 | Interfaces de Gerenciamento de Treinos para os itens desenvolvidos. |
-| Release 8 | Itens de Administração que compõem o MVP (Após Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança). |
-| Release 9 | Interfaces de Administração para os itens desenvolvidos. |
-| Release 10 | MVP concluído. |
-| Release 11 | Produto de Software Final. |
+| Release | Entregas Feitas | Data Prevista de Entrega | 
+| :----: | :---------------- | :--------------------:  |
+| Release 1 | Documento de Visão do Produto e Projeto. | 03/02/2022 |
+| Release 2 | Product Backlog; Documento de Visão do Produto e Projeto Ampliada; Canvas MVP; e Kanban do Projeto. | 24/02/2022 |
+| Release 3 | Modelo de Classes de Produto; Modelo de Arquitetura (Visão Lógica); e Protótipos de Interface. | 17/03/2022 |
+| Release 4 | Itens de Cadastro e Login que compõem o MVP (Após Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança). | 24/03/2022 |
+| Release 5 | Interfaces de Cadastro e Login para os itens desenvolvidos. | 28/03/2022 |
+| Release 6 | Itens de Gerenciamento de Treinos que compõem o MVP (Após Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança). | 04/04/2022 |
+| Release 7 | Interfaces de Gerenciamento de Treinos para os itens desenvolvidos. | 08/04/2022 |
+| Release 8 | Itens de Administração que compõem o MVP (Após Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança). | 15/04/2022 |
+| Release 9 | Interfaces de Administração para os itens desenvolvidos. | 18/04/2022 |
+| Release 10 | MVP concluído. | 20/04/2022 |
+| Release 11 | Produto de Software Final. | 25/04/2022 |
 
 ### 3.3 Matriz de Comunicação
 
