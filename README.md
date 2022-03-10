@@ -44,6 +44,8 @@
   - [Canvas MVP](https://miro.com/app/board/uXjVOL8m7cA=/?invite_link_id=174921709773)
   - [Vídeo - Apresentação: Entregas Unidade 2](https://youtu.be/VwRHSCya-wQ)
 
+  Unidade 3 - 17 de Março de 2022
+  - [Arquitetura do Projeto](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/design/arquitetura.md)
 <br/>
 <!--
 ## ⚙️ Tecnologias utilizadas
