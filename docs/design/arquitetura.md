@@ -9,7 +9,7 @@
 ## Arquitetura MTV
 
 Uma vez que o projeto será uma aplicação Web desenvolvida em **Python**, usando o Framework **Django**, a arquitetura escolhida e que será seguida é a proposta pelo Django: MTV (Model, Template e View). A arquitetura acontece como mostrado na figura 1:
-![Arquitetura MTV](../media/django.png "Arquitetura MTV")
+![Arquitetura MTV](../_media/django.png "Arquitetura MTV")
 
 ### Model
 
