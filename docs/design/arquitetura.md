@@ -13,23 +13,23 @@ Uma vez que o projeto será uma aplicação Web desenvolvida em **Python**, usan
 
 ### Model
 
-A **Model** se refere ao mapeamento do banco de dados para o projeto. É nela que se realiza a modelagem de dados e como eles serão armazenados no banco.
+A **Model** se refere ao mapeamento do banco de dados para o projeto. É nela que se realiza a modelagem de dados e como eles serão armazenados no banco.</br >
 O arquivo responsável pela implementação da Model é o **models.py**.
 
 ### Template
 
-A **Template** se responsabiliza pelas apresentação das páginas em si para o usuário, em que ele pode interagir, trocar informações de dados (tanto recebendo dados de input, quanto gerando dados de output) ou somente visualizar a aplicação.
+A **Template** se responsabiliza pelas apresentação das páginas em si para o usuário, em que ele pode interagir, trocar informações de dados (tanto recebendo dados de input, quanto gerando dados de output) ou somente visualizar a aplicação.</br >
 É nessa camada que se encontra os arquivos **.html** que serão mostrados pelo navegador. Basicamente, é o "Front-End" da aplicação.
 
 ### View
 
-A **View** possui a lógica de negócio. A partir de parâmetros/request recebidos pelo arquivo **urls.py**, a View aplica sua lógica e retorna as informações necessárias. Diferentemente da arquitetura MVC em que a View seria como os dados são mostrados, na MTV, a View apresenta quais dados serão apresentados.
+A **View** possui a lógica de negócio. A partir de parâmetros/request recebidos pelo arquivo **urls.py**, a View aplica sua lógica e retorna as informações necessárias. Diferentemente da arquitetura MVC em que a View seria como os dados são mostrados, na MTV, a View apresenta quais dados serão apresentados.</br >
 O arquivo que faz as implementações responsáveis pela View é o **views.py**.
 
 ## Funcionamento da Arquitetura
 
-Todas as 3 partes da arquitetura são interligadas e igualmente importante para o funcionamento completo do projeto. 
-O Django trabalha com requisições e respostas. Ao haver uma atualização ou mudança na Template, é enviada uma solicitação para o servidor por meio da View. Ao receber uma solicitação, a lógica da aplicação é acionada e a URL é verificada e, uma vez validada, um status http é retornado e a Template renderiza o solicitado no HTML.
+Todas as 3 partes da arquitetura são interligadas e igualmente importante para o funcionamento completo do projeto.</br >
+O Django trabalha com requisições e respostas. Ao haver uma atualização ou mudança na Template, é enviada uma solicitação para o servidor por meio da View. Ao receber uma solicitação, a lógica da aplicação é acionada e a URL é verificada e, uma vez validada, um status http é retornado e a Template renderiza o solicitado no HTML.</br >
 O funcionamento da arquitetura pode ser entendido pela figura 2:
 
 ![Visualização MTV](../_media/mtv.png "Funcionamento MTV")
