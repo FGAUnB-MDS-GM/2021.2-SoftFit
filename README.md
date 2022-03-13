@@ -47,6 +47,10 @@
   Unidade 3 - 17 de Março de 2022
   - [Arquitetura do Projeto](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/design/arquitetura.md)
 <br/>
+
+## ⚙️ Inicializar o Projeto Django
+  Com Python e Pip instalados, instale o pacote Django: `pip install django`.<br/>
+  Acesse a pasta `softfit` e execute o comando: `python manage.py runserver`. Assim, o servidor será inicializado e pode ser acessado pela porta 8000.
 <!--
 ## ⚙️ Tecnologias utilizadas
 
