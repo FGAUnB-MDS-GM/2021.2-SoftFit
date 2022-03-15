@@ -46,6 +46,7 @@
 
   Unidade 3 - 17 de Março de 2022
   - [Arquitetura do Projeto](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/design/arquitetura.md)
+  - [Diagrama de Classes](https://lucid.app/lucidchart/0d041320-568e-4845-973a-becb4d3191be/edit?invitationId=inv_79843df1-52d8-4feb-8a99-add76e4ae3b7)
 <br/>
 
 ## ⚙️ Inicializar o Projeto Django
