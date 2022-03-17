@@ -9,6 +9,7 @@
 - Design
 
   - [Arquitetura do Projeto](design/arquitetura.md)
+  - [Diagrama de Classes](design/diagrama.md)
 <!--
 - Projeto
 
