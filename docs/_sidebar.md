@@ -14,6 +14,7 @@
 
   - [Arquitetura do Projeto](design/arquitetura.md)
   - [Diagrama de Classes](design/diagrama.md)
+  - [Padrão de Design](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/blob/main/docs/_media/padraodesign.pdf)
 <!--
 ---
 

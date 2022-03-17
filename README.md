@@ -48,6 +48,7 @@
   - [Arquitetura do Projeto](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/design/arquitetura.md)
   - [Diagrama de Classes](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/design/diagrama.md)
   - [Padrão de Design](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/blob/main/docs/_media/padraodesign.pdf)
+  - [Vídeo Apresentação](https://youtu.be/FnCxrsFq75E)
 <br/>
 
 ## ⚙️ Inicializar o Projeto Django
