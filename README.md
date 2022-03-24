@@ -49,6 +49,9 @@
   - [Diagrama de Classes](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/design/diagrama.md)
   - [Padrão de Design](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/blob/main/docs/_media/padraodesign.pdf)
   - [Vídeo Apresentação](https://youtu.be/FnCxrsFq75E)
+
+  Unidade 4 - 07 de Abril de 2022
+  - [Backlog das Releases](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/produto-projeto/releases)
 <br/>
 
 ## ⚙️ Inicializar o Projeto Django

@@ -40,6 +40,9 @@
   - [Padrão de Design](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/blob/main/docs/_media/padraodesign.pdf)
   - [Vídeo Apresentação](https://youtu.be/FnCxrsFq75E)
 
+  Unidade 4 - 07 de Abril de 2022
+  - [Backlog das Releases](produto-projeto/releases.md)
+
 <br/>
 
 ## 👨‍💻 Equipe
