@@ -17,12 +17,12 @@ Como o grupo está usando a metodologia de desenvolvimento **Kanban**, o projeto
 
 ## Backlog
 
-| Release | Entregas Feitas | Data Prevista de Entrega | 
-| :----: | :---------------- | :--------------------:  |
-| Release 1 | Documento de Visão do Produto e Projeto. | 03/02/2022 |
-| Release 2 | Product Backlog; Documento de Visão do Produto e Projeto Ampliada; Canvas MVP; e Kanban do Projeto. | 24/02/2022 |
-| Release 3 | Modelo de Classes de Produto; Modelo de Arquitetura (Visão Lógica); e Padrões de Design do Produto. | 17/03/2022 |
-| Release 4 | Template Base do Projeto (necessário para codificação de todas as outras telas e funcionalidades do produto). | 29/03/2022 |
+| Release | Entregas Feitas | Data Prevista de Entrega | Link Release |
+| :----: | :---------------- | :--------------------:  | :----------- |
+| Release 1 | Documento de Visão do Produto e Projeto. | 03/02/2022 | [Release 1](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/tree/4ca4be30d0fc6a5122e7d4a30e06f40dbdc463dc) |
+| Release 2 | Product Backlog; Documento de Visão do Produto e Projeto Ampliada; Canvas MVP; e Kanban do Projeto. | 24/02/2022 | [Release 2](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/tree/322274b70c60e1230a33a97db9525362da2416e6) |
+| Release 3 | Modelo de Classes de Produto; Modelo de Arquitetura (Visão Lógica); e Padrões de Design do Produto. | 17/03/2022 | [Release 3](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/tree/9ebc557a76c9e40706d699687b1caa8573d83aba) |
+| Release 4 | Template Base do Projeto (necessário para codificação de todas as outras telas e funcionalidades do produto). | 29/03/2022 | [Release 4](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/tree/release4) |
 | Release 5 | Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança das Histórias: **H02** (Administrador Consultar Estado Financeiro), **H18** (Cadastrar Professores) e **H19** (Cadastrar Alunos). | 31/03/2022 |
 | Release 6 | Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança das Histórias: **H20** (Login Administrador), **H22** (Login Aluno) e H24 (Login Professor). | 05/04/2022 |
 | Release 7 | Prototipação, Codificação, Teste, Revisão e Pedidos de Mudança das Histórias: **H01** (Aluno Consultar Estado Financeiro), **H10** (Aluno Cadastrar Objetivo), **H11** (Aluno Alterar Objetivos) e **H12** (Aluno Visualizar Avaliações). | 07/04/2022 |
