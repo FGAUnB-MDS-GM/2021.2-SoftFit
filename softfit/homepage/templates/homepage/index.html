@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SoftFit</title>
+        <link rel="stylesheet" href="{% static 'homepage/styles.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+
+    <body style="background-color: white;">
+        <header>
+            <div class="topnav">
+                <h1>SOFTFIT</h1>
+                 <a class="active" href="#home">Home</a>
+                 <a href="#news">News</a>
+                 <a href="#contact">Contact</a>
+                 <a href="#about">About</a>
+               </div> 
+        </header>
+
+        <h1>Fica grande porr# !</h1>
+        <h2>Fábrica de monstros !</h2>
+        <a href="{% url 'aluno:index' %}">Aluno</a>
+        <a href="{% url 'professor:index' %}">Professor</a>
+        <a href="{% url 'administrador:index' %}">Administrador</a>
+
+    </body>
+</html>
