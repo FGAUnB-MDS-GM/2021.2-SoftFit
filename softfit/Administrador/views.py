@@ -7,7 +7,8 @@ from .models import Aluno
 from .entidades import aluno, avaliacao
 
 def index(request):
-    return render(request, 'Administrador/inicial.html')
+    alunos = Aluno.objects.all()
+    return render(request, 'Administrador/inicial.html', {'alunos': alunos})
 
 def cadastroAluno(request):
     if request.method == "POST":

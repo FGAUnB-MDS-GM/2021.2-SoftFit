@@ -7,7 +7,32 @@ Página Inicial - Administrador
 {% block content %}
     <div class="box box-primary">
         <div class="box-header with-border">
-            <h1>Administrador</h1>
+            <h3 class="box-title">Administrador</h3>
         </div>
+    </div>
+    <div class="box-body">
+        <h4>Alunos Cadastrados</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for aluno in alunos %}
+                <tr>
+                    <td>{{aluno.idu}}</td>
+                    <td>{{aluno.nome}}</td>
+                    <td>{{aluno.email}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <hr>
+        <a href="/administrador/cadastroaluno">
+            <button class="btn btn-primary">Cadastrar Aluno</button>
+        </a>
     </div>
 {% endblock content %}
