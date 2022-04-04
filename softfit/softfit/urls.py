@@ -22,5 +22,5 @@ urlpatterns = [
     path('aluno/',include('Aluno.urls',namespace = 'aluno')),
     path('administrador/',include('Administrador.urls', namespace = 'administrador')),
     path('professor/',include('Professor.urls', namespace = 'professor')),
-    path('',include("homepage.urls", namespace = "homepage")),
+    path('',include("homepage.urls")),
 ]
