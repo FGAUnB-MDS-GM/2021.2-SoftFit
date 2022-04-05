@@ -1,0 +1,8 @@
+softfit/Administrador/__pycache__/*
+softfit/Aluno/__pycache__/*
+softfit/Professor/__pycache__/*
+softfit/softfit/__pycache__/*
+softfit/Professor/migrations/__pycache__/*
+softfit/Aluno/migrations/__pycache__/*
+softfit/Administrador/migrations/__pycache__/*
+
