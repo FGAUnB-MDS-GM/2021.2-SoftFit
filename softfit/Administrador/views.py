@@ -1,14 +1,15 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .forms import CadastroAluno, CadastroAvaliacao
+from .forms import CadastroAluno, CadastroAvaliacao, CadastroProfessor
 
-from .services import avaliacao_service, aluno_service
-from .models import Aluno
-from .entidades import aluno, avaliacao
+from .services import avaliacao_service, aluno_service, prof_service, estadof_service
+from .models import Aluno, Professor, EstadoFinanceiro
+from .entidades import aluno, avaliacao, professor, estadof
 
 def index(request):
     alunos = Aluno.objects.all()
-    return render(request, 'Administrador/inicial.html', {'alunos': alunos})
+    profs = Professor.objects.all()
+    return render(request, 'Administrador/inicial.html', {'alunos': alunos, 'profs': profs})
 
 def cadastroAluno(request):
     if request.method == "POST":
@@ -26,18 +27,92 @@ def cadastroAluno(request):
                 perna_e = form_aval.cleaned_data["perna_e"]
                 cintura = form_aval.cleaned_data["cintura"]
                 comentario_af = form_aval.cleaned_data["comentario_af"]
+
                 avaliacao_novo = avaliacao.AvaliacaoFisica(peso=peso, altura=altura, imc=imc, braco_d=braco_d, perna_e=perna_e, cintura=cintura, comentario_af=comentario_af)
                 avaliacao_db = avaliacao_service.cadastrar_aval(avaliacao_novo)
-                if avaliacao_db.id > 0:
-                    aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_db)
-                    aluno_db = aluno_service.cadastrar_aluno(aluno_novo)
-                    if aluno_db.id > 0:
-                        return redirect('/administrador/')
-                    else:
-                        print("erro ao gravar aluno")
-                else:
-                    print("erro ao gravar avaliacao")
+
+                estadof_novo = estadof.EstadoFinanceiro(condicao="Em Dia")
+                estadof_db = estadof_service.cadastrar_estadof(estadof_novo)
+
+                aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_db, estadof=estadof_db, frequencia=0)
+                aluno_db = aluno_service.cadastrar_aluno(aluno_novo)
+
+                return redirect('/administrador/')
     else:
         form_aluno = CadastroAluno()
         form_aval = CadastroAvaliacao()
     return render(request, 'administrador/cadastroaluno.html', {'form_aluno': form_aluno, 'form_aval': form_aval})
+
+def editaAluno(request, id):
+    aluno_editar = aluno_service.mostrar_aluno(id)
+    form_aluno = CadastroAluno(request.POST or None, instance=aluno_editar)
+    avaliacao_editar = avaliacao_service.mostrar_avaliacao(aluno_editar.avaliacao.id)
+    form_aval = CadastroAvaliacao(request.POST or None, instance=avaliacao_editar)
+    if form_aluno.is_valid():
+        idu = form_aluno.cleaned_data["idu"]
+        nome = form_aluno.cleaned_data["nome"]
+        email = form_aluno.cleaned_data["email"]
+        if form_aval.is_valid():
+            peso = form_aval.cleaned_data["peso"]
+            altura = form_aval.cleaned_data["altura"]
+            imc = peso/(altura*altura)
+            braco_d = form_aval.cleaned_data["braco_d"]
+            perna_e = form_aval.cleaned_data["perna_e"]
+            cintura = form_aval.cleaned_data["cintura"]
+            comentario_af = form_aval.cleaned_data["comentario_af"]
+
+            avaliacao_novo = avaliacao.AvaliacaoFisica(peso=peso, altura=altura, imc=imc, braco_d=braco_d, perna_e=perna_e, cintura=cintura, comentario_af=comentario_af)
+            avaliacao_edit = avaliacao_service.editar_avaliacao(avaliacao_editar, avaliacao_novo)
+
+            aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_edit, frequencia=aluno_editar.frequencia, estadof=aluno_editar.estadof)
+            aluno_service.editar_aluno(aluno_editar, aluno_novo)
+            return redirect('/administrador/')
+    return render(request, 'administrador/cadastroaluno.html', {'form_aluno': form_aluno, 'form_aval': form_aval})
+
+def mostraAluno(request, id):
+    aluno = aluno_service.mostrar_aluno(id)
+    return render(request, 'administrador/mostraaluno.html', {'aluno': aluno})
+
+def removeAluno(request, id):
+    aluno = aluno_service.mostrar_aluno(id)
+    avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
+    estadof = estadof_service.mostrar_estadof(aluno.estadof.id)
+    if request.method == "POST":
+        aluno_service.remover_aluno(aluno)
+        avaliacao_service.remover_avaliacao(avaliacao)
+        estadof_service.remover_estadof(estadof)
+        return redirect('/administrador/')
+    return render(request, 'administrador/confirmarexclusao.html', {'usuario': aluno})
+
+def cadastroProfessor(request):
+    if request.method == "POST":
+        form_prof = CadastroProfessor(request.POST)
+        if form_prof.is_valid():
+            idu = form_prof.cleaned_data["idu"]
+            nome = form_prof.cleaned_data["nome"]
+            email = form_prof.cleaned_data["email"]
+            prof_novo = professor.Professor(idu=idu, nome=nome, email=email, rotina=0)
+            prof_db = prof_service.cadastrar_professor(prof_novo)
+            return redirect('/administrador/')
+    else:
+        form_prof = CadastroProfessor()
+    return render(request, 'administrador/cadastroprofessor.html', {'form_prof': form_prof})
+
+def removeProfessor(request, id):
+    prof = prof_service.mostrar_professor(id)
+    if request.method == "POST":
+        prof_service.remover_professor(prof)
+        return redirect('/administrador/')
+    return render(request, 'administrador/confirmarexclusao.html', {'usuario': prof})
+
+def editaProfessor(request, id):
+    prof_editar = prof_service.mostrar_professor(id)
+    form_prof = CadastroProfessor(request.POST or None, instance=prof_editar)
+    if form_prof.is_valid():
+        idu = form_prof.cleaned_data["idu"]
+        nome = form_prof.cleaned_data["nome"]
+        email = form_prof.cleaned_data["email"]
+        prof_novo = professor.Professor(idu=idu, nome=nome, email=email, rotina=0)
+        prof_service.editar_professor(prof_editar, prof_novo)
+        return redirect('/administrador/')
+    return render(request, 'administrador/cadastroprofessor.html', {'form_prof': form_prof})

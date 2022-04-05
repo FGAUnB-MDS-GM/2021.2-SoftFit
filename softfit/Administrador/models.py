@@ -22,13 +22,12 @@ class AvaliacaoFisica(models.Model):
 class EstadoFinanceiro(models.Model):
 
     STATUS = (
-        ('dia', 'Em Dia'),
-        ('ina', 'Inadimplente'),
+        ('Em Dia', 'Em Dia'),
+        ('Inadimplente', 'Inadimplente'),
     )
 
-    d_pagamento = models.DateField()
     condicao = models.CharField(
-        max_length=3,
+        max_length=12,
         choices=STATUS,
     )
 
@@ -49,10 +48,16 @@ class Objetivo(models.Model):
 
 class Aluno(Usuario): 
     avaliacao = models.ForeignKey(AvaliacaoFisica, on_delete=models.CASCADE)
-    estadoFin = models.ForeignKey(EstadoFinanceiro, on_delete=models.CASCADE, null=True)
+    estadof = models.ForeignKey(EstadoFinanceiro, on_delete=models.CASCADE, null=True)
     objetivo = models.ForeignKey(Objetivo, on_delete=models.CASCADE, null=True)
     frequencia = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.nome
+
+class Professor(Usuario):
+    rotina = models.IntegerField()
 
     def __str__(self):
         return self.nome

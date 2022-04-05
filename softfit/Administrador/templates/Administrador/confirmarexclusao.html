@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Remoção
+{% endblock title %}
+
+{% block content %}
+
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">Tem certeza que deseja remover o usuário abaixo?</h3>
+    </div>
+    <div class="box-body">
+        <h5>ID: {{usuario.idu}}</h5>
+        <h5>Nome: {{usuario.nome}}</h5>
+        <h5>Email: {{usuario.email}}</h5>
+
+        <form method="POST">
+            {% csrf_token %}
+            <button class="btn btn-danger" type="submit">Remover</button>
+        </form>
+    </div>
+</div>
+
+
+{% endblock content %}
