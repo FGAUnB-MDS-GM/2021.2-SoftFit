@@ -1,0 +1,45 @@
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>SOFTFIT</title>
+
+    <style>
+        html{
+            margin : 30px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card  auth-card">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Entrar</h4>
+            
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="next" value="{{ next }}">
+            
+                        {{ form|crispy }}
+    
+                        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
