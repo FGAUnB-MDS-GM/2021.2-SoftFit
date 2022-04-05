@@ -5,13 +5,15 @@
     <head>
         <title>SoftFit</title>
         <link rel="stylesheet" href="{% static 'mainpage/styles.css' %}">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="{% static 'mainpage/logo.jpeg' %}">   
     </head>
 
     <body>
         <header>
             <div class="menu-content">
-                <h1 class="logo">SoftFit</h1>
+                <a class = "logo" href="{% url 'homepage:index' %}"><h1 class="logo">SoftFit</h1>
+                </a>
                 <nav class="header-menu">
                     <ul class="list-itens">
                         <li><a href="#">home</a></li>
@@ -24,6 +26,8 @@
         <main class="main-content">
             <h1 class="primary-text">Fica grande porr# !</h1>
             <h2 class="secondary-text">Fábrica de monstros !</h2>
+            <h1></h1>
+
 
                 <div class = "btns">
                     <button class="btn-aluno"><a href="{% url 'aluno:index' %}">Aluno</a></button>
@@ -37,7 +41,6 @@
 
         <div style = "background-color: aqua;">
             <h2>Assista esse vídeo para se divertir desenvolvendo : <a href="https://www.youtube.com/watch?v=LHdQovqs-SQ"> MAROMBAAA </a></h2>
-
         </div>
 
     </body>

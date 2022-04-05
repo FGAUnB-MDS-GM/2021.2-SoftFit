@@ -6,6 +6,12 @@
 
 /* Fundo-tela */
 
+a{
+  background-color: transparent; 
+  color: white;
+  text-decoration: none;
+}
+
 html {
   width: 100vw;
   height: 100vh;
@@ -43,6 +49,12 @@ header {
   font-size: 1.8rem;
   letter-spacing: 0.4rem;
   cursor: pointer;
+}
+
+.logo-img{
+  float: left;
+  position: relative;
+  margin: 10px 15px 15px 10px;
 }
 
 .menu-content .list-itens {
