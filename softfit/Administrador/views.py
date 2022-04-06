@@ -4,7 +4,7 @@ from .forms import CadastroAluno, CadastroAvaliacao, CadastroProfessor
 
 from .services import avaliacao_service, aluno_service, prof_service, estadof_service, objetivo_service
 from .models import Aluno, Professor, EstadoFinanceiro, Objetivo
-from .entidades import aluno, avaliacao, professor, estadof, objetivo
+from .entidades import aluno, avaliacao, professor, estadof, objetivod
 
 def index(request):
     alunos = Aluno.objects.all()
@@ -34,7 +34,7 @@ def cadastroAluno(request):
                 estadof_novo = estadof.EstadoFinanceiro(condicao="Em Dia")
                 estadof_db = estadof_service.cadastrar_estadof(estadof_novo)
 
-                objetivo_novo = objetivo.Objetivo(opcao="Selecionar", comentario="Adicione um Comentário")
+                objetivo_novo = objetivod.Objetivo(opcao="A Selecionar", comentario="Nenhum, por enquanto")
                 objetivo_db = objetivo_service.cadastrar_objetivo(objetivo_novo)
 
                 aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_db, estadof=estadof_db, frequencia=0, objetivo=objetivo_db)

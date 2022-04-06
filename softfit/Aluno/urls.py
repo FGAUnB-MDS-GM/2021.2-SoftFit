@@ -5,6 +5,6 @@ from . import views
 app_name = 'aluno'
 
 urlpatterns = [
-    path('inicial/<int:id>', views.index, name='index'),
-    path('objetivo', views.cadastroObjetivo, name='objetivo')
+    path('inicial/<int:id>', views.inicial, name='inicial'),
+    path('objetivo/<int:id>', views.objetivo, name='objetivo')
 ]

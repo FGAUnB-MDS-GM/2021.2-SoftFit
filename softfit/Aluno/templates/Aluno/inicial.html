@@ -21,5 +21,10 @@ Página Inicial - Aluno
         <hr>
         <h3>Estado Financeiro</h3>
         <p>Condição: {{aluno.estadof.condicao}}</p>
+        <hr>
+        <h3>Objetivo</h3>
+        <p>Objetivo atual: {{objetivo.opcao}}</p>
+        <p>Comentário: {{objetivo.comentario}}</p>
+        <a href="/aluno/objetivo/{{aluno.id}}"><button class="btn btn-primary">Alterar Objetivo</button></a>
     </div>
 {% endblock content %}

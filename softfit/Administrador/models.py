@@ -34,14 +34,14 @@ class EstadoFinanceiro(models.Model):
 class Objetivo(models.Model):
 
     OBJS = (
-        ('Selecionar', 'Selecionar'),
-        ('musculo', 'Ganhar massa muscular'),
-        ('emagrecer', 'Emagrecer'),
-        ('resistencia', 'Ganhar resistência'),
+        ('A Selecionar', 'A Selecionar'),
+        ('Ganhar massa muscular', 'Ganhar massa muscular'),
+        ('Emagrecer', 'Emagrecer'),
+        ('Ganhar resistência', 'Ganhar resistência'),
     )
 
     opcao = models.CharField(
-        max_length=11,
+        max_length=21,
         choices=OBJS,
     )
 
