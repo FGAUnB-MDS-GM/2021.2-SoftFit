@@ -34,6 +34,7 @@ class EstadoFinanceiro(models.Model):
 class Objetivo(models.Model):
 
     OBJS = (
+        ('Selecionar', 'Selecionar'),
         ('musculo', 'Ganhar massa muscular'),
         ('emagrecer', 'Emagrecer'),
         ('resistencia', 'Ganhar resistência'),
@@ -49,7 +50,7 @@ class Objetivo(models.Model):
 class Aluno(Usuario): 
     avaliacao = models.ForeignKey(AvaliacaoFisica, on_delete=models.CASCADE)
     estadof = models.ForeignKey(EstadoFinanceiro, on_delete=models.CASCADE, null=True)
-    objetivo = models.ForeignKey(Objetivo, on_delete=models.CASCADE, null=True)
+    objetivo = models.ForeignKey(Objetivo, on_delete=models.CASCADE)
     frequencia = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
 

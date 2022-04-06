@@ -2,7 +2,7 @@ from ..models import Aluno
 
 def cadastrar_aluno(aluno):
     return Aluno.objects.create(idu=aluno.idu, nome=aluno.nome, email=aluno.email, 
-                        avaliacao=aluno.avaliacao, frequencia=0, estadof= aluno.estadof)
+                        avaliacao=aluno.avaliacao, frequencia=0, estadof= aluno.estadof, objetivo=aluno.objetivo)
 
 def mostrar_aluno(id):
     return Aluno.objects.get(id=id)
@@ -14,6 +14,7 @@ def editar_aluno(aluno, aluno_novo):
     aluno.avaliacao = aluno_novo.avaliacao
     aluno.estadof = aluno_novo.estadof
     aluno.frequencia = aluno_novo.frequencia
+    aluno.objetivo = aluno_novo.objetivo
     aluno.save(force_update=True)
 
 def remover_aluno(aluno):

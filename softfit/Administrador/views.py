@@ -2,9 +2,9 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import CadastroAluno, CadastroAvaliacao, CadastroProfessor
 
-from .services import avaliacao_service, aluno_service, prof_service, estadof_service
-from .models import Aluno, Professor, EstadoFinanceiro
-from .entidades import aluno, avaliacao, professor, estadof
+from .services import avaliacao_service, aluno_service, prof_service, estadof_service, objetivo_service
+from .models import Aluno, Professor, EstadoFinanceiro, Objetivo
+from .entidades import aluno, avaliacao, professor, estadof, objetivo
 
 def index(request):
     alunos = Aluno.objects.all()
@@ -34,7 +34,10 @@ def cadastroAluno(request):
                 estadof_novo = estadof.EstadoFinanceiro(condicao="Em Dia")
                 estadof_db = estadof_service.cadastrar_estadof(estadof_novo)
 
-                aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_db, estadof=estadof_db, frequencia=0)
+                objetivo_novo = objetivo.Objetivo(opcao="Selecionar", comentario="Adicione um Comentário")
+                objetivo_db = objetivo_service.cadastrar_objetivo(objetivo_novo)
+
+                aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_db, estadof=estadof_db, frequencia=0, objetivo=objetivo_db)
                 aluno_db = aluno_service.cadastrar_aluno(aluno_novo)
 
                 return redirect('/administrador/')
@@ -64,7 +67,7 @@ def editaAluno(request, id):
             avaliacao_novo = avaliacao.AvaliacaoFisica(peso=peso, altura=altura, imc=imc, braco_d=braco_d, perna_e=perna_e, cintura=cintura, comentario_af=comentario_af)
             avaliacao_edit = avaliacao_service.editar_avaliacao(avaliacao_editar, avaliacao_novo)
 
-            aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_edit, frequencia=aluno_editar.frequencia, estadof=aluno_editar.estadof)
+            aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_edit, frequencia=aluno_editar.frequencia, estadof=aluno_editar.estadof, objetivo=aluno_editar.objetivo)
             aluno_service.editar_aluno(aluno_editar, aluno_novo)
             return redirect('/administrador/')
     return render(request, 'administrador/cadastroaluno.html', {'form_aluno': form_aluno, 'form_aval': form_aval})
@@ -77,10 +80,12 @@ def removeAluno(request, id):
     aluno = aluno_service.mostrar_aluno(id)
     avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
     estadof = estadof_service.mostrar_estadof(aluno.estadof.id)
+    objetivo = objetivo_service.mostrar_objetivo(aluno.objetivo.id)
     if request.method == "POST":
         aluno_service.remover_aluno(aluno)
         avaliacao_service.remover_avaliacao(avaliacao)
         estadof_service.remover_estadof(estadof)
+        objetivo_service.remover_objetivo(objetivo)
         return redirect('/administrador/')
     return render(request, 'administrador/confirmarexclusao.html', {'usuario': aluno})
 
