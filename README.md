@@ -52,6 +52,8 @@
 
   Unidade 4 - 07 de Abril de 2022
   - [Backlog das Releases](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/produto-projeto/releases)
+  - [Backlog do Produto (Atualizado com Critérios de Histórias)](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/requisitos-safe/safe.md)
+  - [Quadro Kanban (Zenhub) - Atualizado](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit)
 <br/>
 
 ## ⚙️ Inicializar o Projeto Django
