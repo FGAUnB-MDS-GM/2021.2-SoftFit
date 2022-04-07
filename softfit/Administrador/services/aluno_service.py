@@ -1,4 +1,6 @@
 from ..models import Aluno
+import string
+from random import choice
 
 def cadastrar_aluno(aluno):
     return Aluno.objects.create(idu=aluno.idu, nome=aluno.nome, email=aluno.email, 
@@ -19,3 +21,12 @@ def editar_aluno(aluno, aluno_novo):
 
 def remover_aluno(aluno):
     aluno.delete()
+
+def gera_senha():
+    tamanho = 8
+    valores = string.ascii_lowercase + string.digits
+    senha = ''
+    for i in range(tamanho):
+        senha += choice(valores)
+    
+    return senha

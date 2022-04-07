@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import CadastroAluno, CadastroAvaliacao, CadastroProfessor
+from django.core.mail import send_mail
 
 from .services import avaliacao_service, aluno_service, prof_service, estadof_service, objetivo_service
 from .models import Aluno, Professor, EstadoFinanceiro, Objetivo
@@ -39,6 +40,10 @@ def cadastroAluno(request):
 
                 aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_db, estadof=estadof_db, frequencia=0, objetivo=objetivo_db)
                 aluno_db = aluno_service.cadastrar_aluno(aluno_novo)
+
+                corpo_email = "Aluno, sua senha provisória de acesso é: " + aluno_service.gera_senha()
+
+                send_mail('Senha de Acesso - SoftFit', corpo_email, 'softfit123@gmail.com', [email], fail_silently=False)
 
                 return redirect('/administrador/')
     else:
@@ -96,8 +101,14 @@ def cadastroProfessor(request):
             idu = form_prof.cleaned_data["idu"]
             nome = form_prof.cleaned_data["nome"]
             email = form_prof.cleaned_data["email"]
+
             prof_novo = professor.Professor(idu=idu, nome=nome, email=email, rotina=0)
             prof_db = prof_service.cadastrar_professor(prof_novo)
+
+            corpo_email = "Professor, sua senha provisória de acesso é: " + aluno_service.gera_senha()
+
+            send_mail('Senha de Acesso - SoftFit', corpo_email, 'softfit123@gmail.com', [email], fail_silently=False)
+
             return redirect('/administrador/')
     else:
         form_prof = CadastroProfessor()
