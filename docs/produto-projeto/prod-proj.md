@@ -246,9 +246,13 @@ Em uma segunda reunião mais longa, foi desenvolvida as telas e funções de cad
 O motivo da escolha da dupla para essa release foi: o Marcos havia estudado acerca da criação de modelos e funções de cadastro, já o Victor quis ajudar principalmente na implementação da base html e entender a implementação do projeto em Django na prática.
 
 ### Release 6: Luan e Arthur
+Para o desenvolvimento da Release 6, o Luan e o Arthur se uniram para que pudessem ser codificadas as histórias: **H20** (Login Administrador), **H22** (Login Aluno) e **H24** (Login Professor).</br>
+O motivo da escolha da dupla para essa release foi: o Luan se prontificou em trabalhar com a parte de Login e o Arthur, por estar ligado ao front-end, pode auxiliar na questão do design da tela inicial do projeto.
 
 ### Release 7: Victor e Luan
-
+Para o desenvolvimento da Release 7, o Victor e o Luan se juntaram para que pudessem ser codificadas as histórias: **H01** (Aluno Consultar Estado Financeiro), **H10** (Aluno Cadastrar Objetivo), **H11** (Aluno Alterar Objetivos) e **H12** (Aluno Visualizar Avaliações).</br>
+Houve uma reunião para que se pudessem criar a tela inicial de aluno com as funções também de visualização e cadastro/alteração de objetivo. Nessa reunião, o Victor codificou enquanto o Luan o auxiliou na arquitetura do projeto, já que algumas pastas e arquivos estavam dando conflitos.</br>
+O motivo da escolha da dupla para essa release foi: o Victor estava engajado no trabalho com os dados de alunos, uma vez que já trabalhou com o cadastro de aluno e professor na release 5 e o Luan por estar em contato com a parte de Login do projeto, possui um certo conhecimento acerca da arquitetura e disposição de arquivos.
 
 ## 6. Referências Bibliográficas
 
