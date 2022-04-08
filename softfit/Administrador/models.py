@@ -1,4 +1,5 @@
 from django.db import models
+from multiselectfield import MultiSelectField
 
 # Create your models here.
 
@@ -11,7 +12,7 @@ class Usuario(models.Model):
         abstract = True
 
 class AvaliacaoFisica(models.Model):
-    peso = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5)
+    peso = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5, )
     altura = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5)
     imc = models.DecimalField(decimal_places=2, max_digits=5)
     braco_d = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5)
@@ -58,7 +59,30 @@ class Aluno(Usuario):
         return self.nome
 
 class Professor(Usuario):
-    rotina = models.IntegerField()
+    segunda_manha = models.BooleanField(default=False)
+    segunda_tarde = models.BooleanField(default=False)
+    segunda_noite = models.BooleanField(default=False)
+
+    terca_manha = models.BooleanField(default=False)
+    terca_tarde = models.BooleanField(default=False)
+    terca_noite = models.BooleanField(default=False)
+
+    quarta_manha = models.BooleanField(default=False)
+    quarta_tarde = models.BooleanField(default=False)
+    quarta_noite = models.BooleanField(default=False)
+
+    quinta_manha = models.BooleanField(default=False)
+    quinta_tarde = models.BooleanField(default=False)
+    quinta_noite = models.BooleanField(default=False)
+
+    sexta_manha = models.BooleanField(default=False)
+    sexta_tarde = models.BooleanField(default=False)
+    sexta_noite = models.BooleanField(default=False)
+
+    sabado_manha = models.BooleanField(default=False)
+    sabado_tarde = models.BooleanField(default=False)
+
+    domingo_manha = models.BooleanField(default=False)
 
     def __str__(self):
         return self.nome
