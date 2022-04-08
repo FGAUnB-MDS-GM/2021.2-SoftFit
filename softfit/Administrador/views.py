@@ -160,7 +160,41 @@ def editaProfessor(request, id):
         idu = form_prof.cleaned_data["idu"]
         nome = form_prof.cleaned_data["nome"]
         email = form_prof.cleaned_data["email"]
-        prof_novo = professor.Professor(idu=idu, nome=nome, email=email, rotina=0)
+
+        segunda_manha = form_prof.cleaned_data["segunda_manha"]
+        segunda_tarde = form_prof.cleaned_data["segunda_tarde"]
+        segunda_noite = form_prof.cleaned_data["segunda_noite"]
+
+        terca_manha = form_prof.cleaned_data["terca_manha"]
+        terca_tarde = form_prof.cleaned_data["terca_tarde"]
+        terca_noite = form_prof.cleaned_data["terca_noite"]
+
+        quarta_manha = form_prof.cleaned_data["quarta_manha"]
+        quarta_tarde = form_prof.cleaned_data["quarta_tarde"]
+        quarta_noite = form_prof.cleaned_data["quarta_noite"]
+
+        quinta_manha = form_prof.cleaned_data["quinta_manha"]
+        quinta_tarde = form_prof.cleaned_data["quinta_tarde"]
+        quinta_noite = form_prof.cleaned_data["quinta_noite"]
+
+        sexta_manha = form_prof.cleaned_data["sexta_manha"]
+        sexta_tarde = form_prof.cleaned_data["sexta_tarde"]
+        sexta_noite = form_prof.cleaned_data["sexta_noite"]
+
+        sabado_manha = form_prof.cleaned_data["sabado_manha"]
+        sabado_tarde = form_prof.cleaned_data["sabado_tarde"]
+
+        domingo_manha = form_prof.cleaned_data["domingo_manha"]
+
+        prof_novo = professor.Professor(idu=idu, nome=nome, email=email, 
+                                    segunda_manha=segunda_manha, segunda_tarde=segunda_tarde, segunda_noite=segunda_noite, 
+                                    terca_manha=terca_manha, terca_tarde=terca_tarde, terca_noite=terca_noite, 
+                                    quarta_manha=quarta_manha, quarta_tarde=quarta_tarde, quarta_noite=quarta_noite, 
+                                    quinta_manha=quinta_manha, quinta_tarde=quinta_tarde, quinta_noite=quinta_noite, 
+                                    sexta_manha=sexta_manha, sexta_tarde=sexta_tarde, sexta_noite=sexta_noite, 
+                                    sabado_manha=sabado_manha, sabado_tarde=sabado_tarde, 
+                                    domingo_manha=domingo_manha)
+
         prof_service.editar_professor(prof_editar, prof_novo)
         return redirect('/administrador/')
     return render(request, 'administrador/cadastroprofessor.html', {'form_prof': form_prof})
