@@ -19,4 +19,3 @@ softfit/homepage/__pycache__/*
 
 # ignorando cache do softfit
 softfit/softfit/__pycache__/*
-
