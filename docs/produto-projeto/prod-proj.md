@@ -10,6 +10,7 @@
 | 20/02/2022 | 2.1 | Correção de ajustes acerca dos requisitos funcionais e não-funcionais. Adição dos tópicos: Organização do Projeto; Planejamento das Fases e/ou Iterações do Projeto; Matriz de Comunicação; Gerenciamento de Riscos | Victor Hugo Oliveira Leão |
 | 20/02/2022 | 2.2 | Ajuste nos requisitos não-funcionais; Adição das lições aprendidas na Unidade 2; Correção de como as iterações do projeto serão feitas (Releases ao invés de Sprints) | Victor Hugo Oliveira Leão |
 | 07/03/2022 | 2.3 | Correção de ajustes apontados pelo professor: adição da imagem do Canvas MVP; Datas das entregas previstas; Ajustes de alguns RFs | Victor Hugo Oliveira Leão |
+| 06/04/2022 | 3.0 | Adição das lições aprendidas nas unidades 3 e 4; Documentação da dinâmica de programação em duplas | Victor Hugo Oliveira Leão |
 
 ## 1. Visão Geral do Produto
 
@@ -186,7 +187,7 @@ Dessa forma, apesar dos horários rígidos que os integrantes do grupo, como alu
 
 | Descrição | Área/Envolvidos | Periodicidade | Produtos Gerados |
 | :-------- | :-------------: | :-----------: | :--------------- |
-| Acompanhamento das atividades que estão em desenvolvimento, das que ainda estão pendentes e revisar as feitas desde a última reunião. Esse acompanhamento será feito, principalmente, levando em conta o quadro Kanban da equipe. | Equipe do Projeto | Semanal | Ata de Reunião e </br > Relatório de situação da sprint e do projeto. | 
+| Acompanhamento das atividades que estão em desenvolvimento, das que ainda estão pendentes e revisar as feitas desde a última reunião. Esse acompanhamento será feito, principalmente, levando em conta o quadro Kanban da equipe. | Equipe do Projeto | Semanal | Ata de Reunião e </br > Relatório de situação da release e do projeto. | 
 | Comunicar situação do projeto e </br > Feedback do encaminhamento do projeto. | Equipe do projeto e Professor | Semanal | Ata de Reunião e </br > Relatório de situação do projeto | 
 
 ### 3.4 Gerenciamento de Riscos
@@ -217,9 +218,42 @@ A unidade 2 trouxe diversas lições e aprendizados no que convém a Engenharias
 1. Finalmente, podemos mencionar a estrutura de Canvas MVP para o desenvolvimento do Minímo Produto Viável. O quadro Canvas, com suas divisões de persona, jornada, proposta, funcionalidades, custo e cronograma, resultado esperado e métricas, ajudou a equipe a desenvolver o escopo aquele que será o primeiro produto a ser desenvolvido.
 
 ### 4.3 Unidade 3
+
+A unidade 3 foi muito edificante no que convém ao começo propriamente dito da construção do software. Sendo assim, podemos destacar os seguintes pontos como lições aprendidas:
+1. Primeiramente, o entendimento da arquitetura que será seguida durante toda a programação do projeto é de extrema importância para que o produto seja consistente durante seu desenvolvimento e para que toda a equipe entenda onde e como serão feitas as partes do software.
+1. A construção do famoso diagrama de classes também é importante para saber como serão feitas as classes do projeto e entender os principais objetos e seus métodos que compõem o software como um todo.
+1. Finalmente, a definição de um padrão de design do projeto traz, assim como a definição da arquitetura, um entendimento geral de como o software deve ser desenvolvido para todos os integrantes do grupo.
+
 ### 4.4 Unidade 4
+
+A unidade 4 foi basicamente mão na massa, mas ainda assim trouxe algumas lições:
+1. Primeiramente, a definição de um backlog das releases que serão entregues ajuda substancialmente a organização de como o produto será desenvolvido, a divisão de duplas para trabalho e os prazos de entrega.
+1. Além disso, a programação em duplas também foi efetiva para que não houvessem sobrecarregamento dos desenvolvedores, além de que o ditado "duas cabeças pensando é melhor que uma" foi bem aplicado durante as dinâmicas.
+
 ### 4.5 Unidade 5
 
-## 5. Referências Bibliográficas
+## 5. Documentação Dinâmica em Duplas
+
+### Release 4: Felipe e Victor
+Para o desenvolvimento da Release 4, o Felipe e o Victor se reuniram para que, a partir de uma prévia pesquisa de templates de front-end aplicáveis para a arquitetura e framework selecionados (Django), pudesse ser implementada a base html para todas as telas do projeto.</br>
+Dessa forma, em uma reunião de aproximadamente 3 horas, o Victor programou o código enquanto o Felipe deu direcionamentos e pesquisou formas de resolver erros que apareceram.</br>
+O motivo da escolha da dupla para essa release foi: o Felipe já tinha uma ideia de qual template usar e como implementá-lo em Django e o Victor se dispôs em entender como aplicar a base em todas as telas para que outras duplas a serem formadas pudessem também desenvolver a partir dela sem muitos problemas.
+
+### Release 5: Victor e Marcos
+Para o desenvolvimento da Release 5, o Victor e o Marcos se juntaram para que pudesse ser codificadas as histórias: **H02** (Administrador Consultar Estado Financeiro), **H18** (Cadastrar Professores) e **H19** (Cadastrar Alunos).</br>
+Primeiramente, houve uma reunião de aproximadamente 2 horas para a criação dos modelos de classes a partir do diagrama de classes desenvolvido na Unidade 3. Nessa reunião, o Marcos programou o código enquanto o Victor ajudou no entendimento da disposição de certas classes e seus tipos.</br>
+Em uma segunda reunião mais longa, foi desenvolvida as telas e funções de cadastro de aluno e de professor. Além disso, também foi criada a tela inicial do administrador com a listagem dos principais dados dos alunos (Estado Financeiro incluso) e dos professores. Nessa reunião, o Victor ficou no desenvolvimento de código enquanto o Marcos auxiliou na manipulação dos dados e modelos feitos nas funções que estavam sendo criadas.</br>
+O motivo da escolha da dupla para essa release foi: o Marcos havia estudado acerca da criação de modelos e funções de cadastro, já o Victor quis ajudar principalmente na implementação da base html e entender a implementação do projeto em Django na prática.
+
+### Release 6: Luan e Arthur
+Para o desenvolvimento da Release 6, o Luan e o Arthur se uniram para que pudessem ser codificadas as histórias: **H20** (Login Administrador), **H22** (Login Aluno) e **H24** (Login Professor).</br>
+O motivo da escolha da dupla para essa release foi: o Luan se prontificou em trabalhar com a parte de Login e o Arthur, por estar ligado ao front-end, pode auxiliar na questão do design da tela inicial do projeto.
+
+### Release 7: Victor e Luan
+Para o desenvolvimento da Release 7, o Victor e o Luan se juntaram para que pudessem ser codificadas as histórias: **H01** (Aluno Consultar Estado Financeiro), **H10** (Aluno Cadastrar Objetivo), **H11** (Aluno Alterar Objetivos) e **H12** (Aluno Visualizar Avaliações).</br>
+Houve uma reunião para que se pudessem criar a tela inicial de aluno com as funções também de visualização e cadastro/alteração de objetivo. Nessa reunião, o Victor codificou enquanto o Luan o auxiliou na arquitetura do projeto, já que algumas pastas e arquivos estavam dando conflitos.</br>
+O motivo da escolha da dupla para essa release foi: o Victor estava engajado no trabalho com os dados de alunos, uma vez que já trabalhou com o cadastro de aluno e professor na release 5 e o Luan por estar em contato com a parte de Login do projeto, possui um certo conhecimento acerca da arquitetura e disposição de arquivos.
+
+## 6. Referências Bibliográficas
 
 * Sommerville, Ian Engenharia de software/ Ian Sommerville; tradução Luiz Cláudio Queiroz; revisão técnica Fábio Levy Siqueira. -- 10. ed. -- São Paulo: Pearson Education do Brasil, 2018. Título original: Software engineering ISBN 978-65-5011-048-2 1. Engenharia de software I. Siqueira.
