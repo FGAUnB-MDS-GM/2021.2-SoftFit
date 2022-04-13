@@ -5,5 +5,6 @@ from . import views
 app_name = 'aluno'
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('inicial/<int:id>', views.inicial, name='inicial'),
+    path('objetivo/<int:id>', views.objetivo, name='objetivo')
 ]

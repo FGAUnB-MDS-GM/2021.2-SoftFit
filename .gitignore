@@ -1,8 +1,21 @@
+# ignorando cache do adm
 softfit/Administrador/__pycache__/*
-softfit/Aluno/__pycache__/*
-softfit/Professor/__pycache__/*
-softfit/softfit/__pycache__/*
-softfit/Professor/migrations/__pycache__/*
-softfit/Aluno/migrations/__pycache__/*
+softfit/Administrador/entidades/__pycache__/*
+softfit/Administrador/services/__pycache__/*
+softfit/Administrador/templatetags/__pycache__/*
 softfit/Administrador/migrations/__pycache__/*
 
+# ignorando cache do aluno
+softfit/Aluno/__pycache__/*
+softfit/Aluno/migrations/__pycache__/*
+
+# ignorando cache do professor
+softfit/Professor/__pycache__/*
+softfit/Professor/migrations/__pycache__/*
+
+# ignorando cache do homepage
+softfit/homepage/migrations/__pycache__/*
+softfit/homepage/__pycache__/*
+
+# ignorando cache do softfit
+softfit/softfit/__pycache__/*

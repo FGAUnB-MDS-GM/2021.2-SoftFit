@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% load meus_filtros %}
+
+{% block title %}
+Cadastro de Professor
+{% endblock title %}
+
+{% block content %}
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Cadastro de Professor</h3>
+        </div>
+        <div class="box-body">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{form_prof.idu.errors}}
+                    <label>ID (4 dígitos): </label>
+                    {{form_prof.idu|addclass:'form-control'}}
+                </div>
+                <div class="form-group">
+                    {{form_prof.nome.errors}}
+                    <label>Nome: </label>
+                    {{form_prof.nome|addclass:'form-control'}}
+                </div>
+                <div class="form-group">
+                    {{form_prof.email.errors}}
+                    <label>E-mail: </label>
+                    {{form_prof.email|addclass:'form-control'}}
+                </div>
+                <hr>
+                <h3>Rotina</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Segunda</h4>
+                        <div class="form-group">
+                            {{ form_prof.segunda_manha.errors }}
+                            <label>Segunda - Manhã (8h-12h): </label>
+                            {{ form_prof.segunda_manha|addclass:'form-check-input' }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_prof.segunda_tarde.errors }}
+                            <label>Segunda - Tarde (13-17h): </label>
+                            {{ form_prof.segunda_tarde|addclass:'form-check-input' }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_prof.segunda_noite.errors }}
+                            <label>Segunda - Noite (18h-22h): </label>
+                            {{ form_prof.segunda_noite|addclass:'form-check-input' }}
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Terça</h4>
+                        <div class="form-group">
+                            {{ form_prof.terca_manha.errors }}
+                            <label>Terça - Manhã (8h-12h): </label>
+                            {{ form_prof.terca_manha|addclass:'form-check-input' }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_prof.terca_tarde.errors }}
+                            <label>Terça - Tarde (13-17h): </label>
+                            {{ form_prof.terca_tarde|addclass:'form-check-input' }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_prof.terca_noite.errors }}
+                            <label>Terça - Noite (18h-22h): </label>
+                            {{ form_prof.terca_noite|addclass:'form-check-input' }}
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Quarta</h4>
+                        <div class="form-group">
+                            {{ form_prof.quarta_manha.errors }}
+                            <label>Quarta - Manhã (8h-12h): </label>
+                            {{ form_prof.quarta_manha|addclass:'form-check-input' }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_prof.quarta_tarde.errors }}
+                            <label>Quarta - Tarde (13-17h): </label>
+                            {{ form_prof.quarta_tarde|addclass:'form-check-input' }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_prof.quarta_noite.errors }}
+                            <label>Quarta - Noite (18h-22h): </label>
+                            {{ form_prof.quarta_noite|addclass:'form-check-input' }}
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Quinta</h4>
+                        <div class="form-group">
+                            {{ form_prof.quinta_manha.errors }}
+                            <label>Quinta - Manhã (8h-12h): </label>
+                            {{ form_prof.quinta_manha|addclass:'form-check-input' }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_prof.quinta_tarde.errors }}
+                            <label>Quinta - Tarde (13-17h): </label>
+                            {{ form_prof.quinta_tarde|addclass:'form-check-input' }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_prof.quinta_noite.errors }}
+                            <label>Quinta - Noite (18h-22h): </label>
+                            {{ form_prof.quinta_noite|addclass:'form-check-input' }}
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Sexta</h4>
+                        <div class="form-group">
+                            {{ form_prof.sexta_manha.errors }}
+                            <label>Sexta - Manhã (8h-12h): </label>
+                            {{ form_prof.sexta_manha|addclass:'form-check-input' }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_prof.sexta_tarde.errors }}
+                            <label>Sexta - Tarde (13-17h): </label>
+                            {{ form_prof.sexta_tarde|addclass:'form-check-input' }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_prof.sexta_noite.errors }}
+                            <label>Sexta - Noite (18h-22h): </label>
+                            {{ form_prof.sexta_noite|addclass:'form-check-input' }}
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Sábado</h4>
+                        <div class="form-group">
+                            {{ form_prof.sabado_manha.errors }}
+                            <label>Sábado - Manhã (8h-12h): </label>
+                            {{ form_prof.sabado_manha|addclass:'form-check-input' }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_prof.sabado_tarde.errors }}
+                            <label>Sábado - Tarde (13-17h): </label>
+                            {{ form_prof.sabado_tarde|addclass:'form-check-input' }}
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4>Domingo</h4>
+                        <div class="form-group">
+                            {{ form_prof.domingo_manha.errors }}
+                            <label>Domingo - Manhã (8h-12h): </label>
+                            {{ form_prof.domingo_manha|addclass:'form-check-input' }}
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" name="Cadastrar" value="Cadastrar/Editar">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock content %}

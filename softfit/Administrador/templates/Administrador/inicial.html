@@ -7,7 +7,66 @@ Página Inicial - Administrador
 {% block content %}
     <div class="box box-primary">
         <div class="box-header with-border">
-            <h1>Administrador</h1>
+            <h3 class="box-title">Administrador</h3>
         </div>
+    </div>
+    <div class="box-body">
+        <h4>Alunos Cadastrados</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Estado Financeiro</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for aluno in alunos %}
+                <tr>
+                    <td>{{aluno.idu}}</td>
+                    <td>{{aluno.nome}}</td>
+                    <td>{{aluno.email}}</td>
+                    <td>{{aluno.estadof.condicao}}</td>
+                    <td>
+                        <a href="/administrador/editaraluno/{{aluno.id}}">Editar</a>
+                        <a href="/administrador/removeraluno/{{aluno.id}}">Remover</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/administrador/cadastroaluno">
+            <button class="btn btn-primary">Cadastrar Aluno</button>
+        </a>
+        <hr>
+        <h4>Professores Cadastrados</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for prof in profs %}
+                <tr>
+                    <td>{{prof.idu}}</td>
+                    <td>{{prof.nome}}</td>
+                    <td>{{prof.email}}</td>
+                    <td>
+                        <a href="/administrador/editarprof/{{prof.id}}">Editar</a>
+                        <a href="/administrador/removerprof/{{prof.id}}">Remover</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/administrador/cadastroprofessor">
+            <button class="btn btn-primary">Cadastrar Professor</button>
+        </a>
     </div>
 {% endblock content %}

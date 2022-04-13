@@ -7,7 +7,24 @@ Página Inicial - Aluno
 {% block content %}
     <div class="box box-primary">
         <div class="box-header with-border">
-            <h1>Aluno</h1>
+            <h1>{{aluno.nome}}</h1>
         </div>
+    </div>
+    <div class="box-body">
+        <h3>Avaliação Física</h3>
+        <p>Peso: {{avaliacao.peso}}kg</p>
+        <p>Altura: {{avaliacao.altura}}cm</p>
+        <p>Braço Direito: {{avaliacao.braco_d}}cm</p>
+        <p>Perna (Coxa) Esquerda: {{avaliacao.perna_e}}cm</p>
+        <p>Cintura: {{avaliacao.cintura}}cm</p>
+        <p>Comentário: {{avaliacao.comentario_af}}</p>
+        <hr>
+        <h3>Estado Financeiro</h3>
+        <p>Condição: {{aluno.estadof.condicao}}</p>
+        <hr>
+        <h3>Objetivo</h3>
+        <p>Objetivo atual: {{objetivo.opcao}}</p>
+        <p>Comentário: {{objetivo.comentario}}</p>
+        <a href="/aluno/objetivo/{{aluno.id}}"><button class="btn btn-primary">Alterar Objetivo</button></a>
     </div>
 {% endblock content %}

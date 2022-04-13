@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% load meus_filtros %}
+
+{% block title %}
+Cadastro de Aluno
+{% endblock title %}
+
+{% block content %}
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Cadastro de Aluno</h3>
+        </div>
+        <div class="box-body">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{form_aluno.idu.errors}}
+                    <label>ID (4 dígitos): </label>
+                    {{form_aluno.idu|addclass:'form-control'}}
+                </div>
+                <div class="form-group">
+                    {{form_aluno.nome.errors}}
+                    <label>Nome: </label>
+                    {{form_aluno.nome|addclass:'form-control'}}
+                </div>
+                <div class="form-group">
+                    {{form_aluno.email.errors}}
+                    <label>E-mail: </label>
+                    {{form_aluno.email|addclass:'form-control'}}
+                </div>
+                <hr>
+                <h4>Avaliação Física</h4>
+                <div class="form-group">
+                    {{form_aval.peso.errors}}
+                    <label>Peso (em kg): </label>
+                    {{form_aval.peso|addclass:'form-control'}}
+                </div>
+                <div class="form-group">
+                    {{form_aval.altura.errors}}
+                    <label>Altura (em cm): </label>
+                    {{form_aval.altura|addclass:'form-control'}}
+                </div>
+                <div class="form-group">
+                    {{form_aval.braco_d.errors}}
+                    <label>Braço Direito (em cm): </label>
+                    {{form_aval.braco_d|addclass:'form-control'}}
+                </div>
+                <div class="form-group">
+                    {{form_aval.perna_e.errors}}
+                    <label>Perna/Coxa Esquerda (em cm): </label>
+                    {{form_aval.perna_e|addclass:'form-control'}}
+                </div>
+                <div class="form-group">
+                    {{form_aval.cintura.errors}}
+                    <label>Cintura (em cm): </label>
+                    {{form_aval.cintura|addclass:'form-control'}}
+                </div>
+                <div class="form-group">
+                    {{form_aval.comentario_af.errors}}
+                    <label>Comentário Adicional: </label>
+                    {{form_aval.comentario_af|addclass:'form-control'}}
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" name="Cadastrar" value="Cadastrar/Editar">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock content %}
