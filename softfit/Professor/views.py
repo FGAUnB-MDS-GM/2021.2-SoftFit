@@ -29,6 +29,6 @@ def loginProf(request):
 
 def logout_view(request):
     logout(request)
-    return render(request, "professor/login.html", {
+    return render(request, "homepage/index.html", {
         "message": "Log out realizado!"
     })
