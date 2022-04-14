@@ -58,7 +58,8 @@
 
 ## ⚙️ Inicializar o Projeto Django
   Com Python e Pip instalados, instale o pacote Django: `pip install django`.<br/>
-  Acesse a pasta `softfit` e execute o comando: `python manage.py runserver`. Assim, o servidor será inicializado e pode ser acessado pela porta 8000.
+  Acesse a pasta `softfit` e execute o comando: `python manage.py runserver`. Assim, o servidor será inicializado e pode ser acessado pela porta 8000.<br/>
+  Caso seja a primeira vez rodando o programa, é necessário que se faça os comandos: `python manage.py makemigrations` e `python manage.py migrate`.
 <!--
 ## ⚙️ Tecnologias utilizadas
 
