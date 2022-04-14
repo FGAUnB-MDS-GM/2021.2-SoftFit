@@ -34,8 +34,10 @@ def loginAluno(request):
         password = request.POST["password"]
         user = authenticate(request, username=email, password=password)
         if user is not None:
+            id_aluno = aluno_service.encontra_id(email)
+            print(id_aluno)
             login(request, user)
-            return HttpResponseRedirect(reverse("inicial", kwargs={'id':3}))
+            return render(request, "aluno/inicial.html")
         else:
             return render(request, "aluno/login.html", {
                 "message": "Aluno não encontrado!"

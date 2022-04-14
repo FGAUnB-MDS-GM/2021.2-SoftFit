@@ -7,7 +7,7 @@
         <div>{{ message }}</div>
     {% endif %}
 
-    <form action="{% url '/loginAluno' %}" method="post">
+    <form action="/aluno/loginAluno/" method="post">
         {% csrf_token %}
         <input type="text" name="email" placeholder="Email">
         <input type="password" name="password" placeholder="Password">
