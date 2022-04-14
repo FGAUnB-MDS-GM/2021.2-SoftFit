@@ -47,3 +47,8 @@ def editar_professor(prof, prof_novo):
 
 def remover_professor(prof):
     prof.delete()
+
+def encontra_id(email):
+    for prof in Professor.objects.all():
+        if email == prof.email:
+            return prof.id

@@ -5,14 +5,18 @@ from django.contrib.auth import authenticate, login, logout
 from Administrador.services import aluno_service, avaliacao_service, objetivo_service
 from Administrador.forms import CadastroObjetivo
 from Administrador.entidades import objetivod
+from django.contrib.auth.decorators import login_required
+import homepage
 
 # Create your views here.
+@login_required(login_url='/aluno/loginAluno/')
 def inicial(request, id):
     aluno = aluno_service.mostrar_aluno(id)
     avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
     objetivo = objetivo_service.mostrar_objetivo(aluno.objetivo.id)
     return render(request, 'Aluno/inicial.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo})
 
+@login_required(login_url='/aluno/loginAluno/')
 def objetivo(request, id):
     aluno = aluno_service.mostrar_aluno(id)
     avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
@@ -43,3 +47,9 @@ def loginAluno(request):
             })
     else:
         return render(request, "aluno/login.html")
+
+def logout_view(request):
+    logout(request)
+    return render(request, "homepage/index.html", {
+        "message": "Log out realizado!"
+    })
