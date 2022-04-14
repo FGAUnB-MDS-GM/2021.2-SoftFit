@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
+from django.contrib.auth import authenticate, login, logout
 from Administrador.services import aluno_service, avaliacao_service, objetivo_service
 from Administrador.forms import CadastroObjetivo
 from Administrador.entidades import objetivod
@@ -24,5 +25,20 @@ def objetivo(request, id):
         obj_novo = objetivod.Objetivo(opcao=opcao, comentario=comentario)
         objetivo = objetivo_service.editar_objetivo(obj_editar, obj_novo)
         
-        return render(request, 'Aluno/inicial.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo})
+        return render(request, 'aluno/inicial.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo})
     return render(request, 'aluno/objetivo.html', {'form_objetivo': form_objetivo})
+
+def loginAluno(request):
+    if request.method == "POST":
+        email = request.POST["email"]
+        password = request.POST["password"]
+        user = authenticate(request, username=email, password=password)
+        if user is not None:
+            login(request, user)
+            return HttpResponseRedirect(reverse("inicial", kwargs={'id':3}))
+        else:
+            return render(request, "aluno/login.html", {
+                "message": "Aluno não encontrado!"
+            })
+    else:
+        return render(request, "aluno/login.html")
