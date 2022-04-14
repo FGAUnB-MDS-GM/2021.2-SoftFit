@@ -42,11 +42,11 @@ def loginAluno(request):
             login(request, user)
             return HttpResponseRedirect(reverse('aluno:inicial', kwargs={'id':id_aluno}))
         else:
-            return render(request, "aluno/login.html", {
+            return render(request, "Aluno/login.html", {
                 "message": "Aluno não encontrado!"
             })
     else:
-        return render(request, "aluno/login.html")
+        return render(request, "Aluno/login.html")
 
 def logout_view(request):
     logout(request)
