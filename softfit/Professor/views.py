@@ -21,14 +21,15 @@ def loginProf(request):
             login(request, user)
             return HttpResponseRedirect(reverse('professor:index'))
         else:
-            return render(request, "Professor/login.html", {
+            return render(request, "professor/login.html", {
                 "message": "Professor não encontrado!"
             })
     else:
-        return render(request, "Professor/login.html")
+        return render(request, "professor/login.html")
 
 def logout_view(request):
     logout(request)
+    
     return render(request, "homepage/index.html", {
         "message": "Log out realizado!"
     })
