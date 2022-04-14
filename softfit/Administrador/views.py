@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import CadastroAluno, CadastroAvaliacao, CadastroProfessor
 from django.core.mail import send_mail
+from django.contrib.auth.models import User
 
 from .services import avaliacao_service, aluno_service, prof_service, estadof_service, objetivo_service
 from .models import Aluno, Professor, EstadoFinanceiro, Objetivo
@@ -41,7 +42,13 @@ def cadastroAluno(request):
                 aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_db, estadof=estadof_db, frequencia=0, objetivo=objetivo_db)
                 aluno_db = aluno_service.cadastrar_aluno(aluno_novo)
 
-                corpo_email = "Aluno, sua senha provisória de acesso é: " + aluno_service.gera_senha()
+                senha = aluno_service.gera_senha()
+
+                user = User.objects.create_user(username=email, email=email, password=senha)
+
+                user.save()
+
+                corpo_email = "Aluno, sua senha provisória de acesso é: " + senha
 
                 send_mail('Senha de Acesso - SoftFit', corpo_email, 'softfit123@gmail.com', [email], fail_silently=False)
 
@@ -137,7 +144,13 @@ def cadastroProfessor(request):
                                     domingo_manha=domingo_manha)
             prof_db = prof_service.cadastrar_professor(prof_novo)
 
-            corpo_email = "Professor, sua senha provisória de acesso é: " + aluno_service.gera_senha()
+            senha = aluno_service.gera_senha()
+
+            user = User.objects.create_user(username=email, email=email, password=senha)
+
+            user.save()
+
+            corpo_email = "Professor, sua senha provisória de acesso é: " + senha
 
             send_mail('Senha de Acesso - SoftFit', corpo_email, 'softfit123@gmail.com', [email], fail_silently=False)
 

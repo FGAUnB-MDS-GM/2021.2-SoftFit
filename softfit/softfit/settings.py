@@ -141,6 +141,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = '/aluno/'
 
-LOGOUT_REDIRECT_URL = '/users/login'
+LOGOUT_REDIRECT_URL = '/aluno/logout'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
