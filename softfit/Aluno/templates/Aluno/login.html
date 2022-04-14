@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+    
+    {% if message %}
+        <div class = "message">{{ message }}</div>
+    {% endif %}
+    <div class="center">
+        <h1>Log In</h1>
+
+        <form action="/aluno/loginAluno/" method="post">
+            {% csrf_token %}
+            <div class="txt_field">
+                <input type="text" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <div class="btns">
+                    <button><input type="submit" value="Login"></button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    
+{% endblock %}

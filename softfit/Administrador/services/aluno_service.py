@@ -30,3 +30,8 @@ def gera_senha():
         senha += choice(valores)
     
     return senha
+
+def encontra_id(email):
+    for aluno in Aluno.objects.all():
+        if email == aluno.email:
+            return aluno.id
