@@ -98,6 +98,8 @@ def removeAluno(request, id):
         avaliacao_service.remover_avaliacao(avaliacao)
         estadof_service.remover_estadof(estadof)
         objetivo_service.remover_objetivo(objetivo)
+        u = User.objects.get(username = aluno.email)
+        u.delete()
         return redirect('/administrador/')
     return render(request, 'administrador/confirmarexclusao.html', {'usuario': aluno})
 
@@ -163,6 +165,8 @@ def removeProfessor(request, id):
     prof = prof_service.mostrar_professor(id)
     if request.method == "POST":
         prof_service.remover_professor(prof)
+        u = User.objects.get(username = prof.email)
+        u.delete()
         return redirect('/administrador/')
     return render(request, 'administrador/confirmarexclusao.html', {'usuario': prof})
 
