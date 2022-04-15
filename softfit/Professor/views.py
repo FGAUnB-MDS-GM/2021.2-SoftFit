@@ -5,11 +5,13 @@ from django.contrib.auth.decorators import login_required
 from Administrador.services import prof_service
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from Administrador.services import prof_service
 
 # Create your views here.
 @login_required(login_url='/professor/loginProf/')
-def index(request):
-    return render(request, 'Professor/inicial.html')
+def inicial(request, id):
+    prof = prof_service.mostrar_professor(id)
+    return render(request, 'Professor/inicial.html', {'prof': prof})
 
 def loginProf(request):
     if request.method == "POST":
@@ -19,7 +21,7 @@ def loginProf(request):
         if user is not None:
             id_prof = prof_service.encontra_id(email)
             login(request, user)
-            return HttpResponseRedirect(reverse('professor:index'))
+            return HttpResponseRedirect(reverse('professor:inicial', kwargs={'id':id_prof}))
         else:
             return render(request, "Professor/login.html", {
                 "message": "Professor não encontrado!"
