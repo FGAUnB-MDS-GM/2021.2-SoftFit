@@ -55,7 +55,6 @@
   - [Backlog do Produto (Atualizado com Critérios de Histórias)](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/requisitos-safe/safe.md)
   - [Quadro Kanban (Zenhub) - Atualizado](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit)
 <br/>
-
 ## ⚙️ Inicializar o Projeto Django
   Com Python e Pip instalados, instale o pacote Django: `pip install django`.<br/>
   Acesse a pasta `softfit` e execute o comando: `python manage.py runserver`. Assim, o servidor será inicializado e pode ser acessado pela porta 8000.<br/>
