@@ -1,5 +1,6 @@
 from django.db import models
 from multiselectfield import MultiSelectField
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
 
@@ -12,12 +13,12 @@ class Usuario(models.Model):
         abstract = True
 
 class AvaliacaoFisica(models.Model):
-    peso = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5, )
-    altura = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5)
+    peso = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
+    altura = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
     imc = models.DecimalField(decimal_places=2, max_digits=5)
-    braco_d = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5)
-    perna_e = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5) 
-    cintura = models.DecimalField(blank=False , null = False,decimal_places=2, max_digits=5)
+    braco_d = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(400)])
+    perna_e = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(400)]) 
+    cintura = models.DecimalField(blank=False , null = False,decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(400)])
     comentario_af = models.CharField(max_length=500)
 
 class EstadoFinanceiro(models.Model):
