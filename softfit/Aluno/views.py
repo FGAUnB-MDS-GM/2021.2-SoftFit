@@ -29,7 +29,7 @@ def objetivo(request, id):
         obj_novo = objetivod.Objetivo(opcao=opcao, comentario=comentario)
         objetivo = objetivo_service.editar_objetivo(obj_editar, obj_novo)
         
-        return render(request, 'aluno/inicial.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo})
+        return HttpResponseRedirect(reverse('aluno:inicial', kwargs={'id':id}))
     return render(request, 'aluno/objetivo.html', {'form_objetivo': form_objetivo})
 
 def loginAluno(request):
