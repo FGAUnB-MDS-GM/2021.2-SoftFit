@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Aluno - Professor
+{% endblock title %}
+
+{% block content %}
+<div class="box box-primary">
+    <div class="box-header with-border">
+        <h2 class="box-title">{{aluno.nome}}</h2>
+    </div>
+    <div class="box-body">
+        <h3>Avaliação Física</h3>
+        <ul class="list-group list-group-unbordered">
+            <li class="list-group-item">   
+                <b>Peso</b>
+                <a class="pull-right">{{avaliacao.peso}}kg</a>
+            </li>
+            <li class="list-group-item">   
+                <b>Altura</b>
+                <a class="pull-right">{{avaliacao.altura}}cm</a>
+            </li>
+            <li class="list-group-item">   
+                <b>Braço</b>
+                <a class="pull-right">{{avaliacao.braco_d}}cm</a>
+            </li>
+            <li class="list-group-item">   
+                <b>Perna (Coxa) Esquerda</b>
+                <a class="pull-right">{{avaliacao.perna_e}}cm</a>
+            </li>
+            <li class="list-group-item">   
+                <b>Cintura</b>
+                <a class="pull-right">{{avaliacao.cintura}}cm</a>
+            </li>
+            <li class="list-group-item">   
+                <b>Comentário</b>
+                <a class="pull-right">{{avaliacao.comentario_af}}</a>
+            </li>
+        </ul>
+        <hr>
+        <h3>Objetivo</h3>
+        <ul class="list-group list-group-unbordered">
+            <li class="list-group-item">   
+                <b>Objetivo</b>
+                <a class="pull-right">{{objetivo.opcao}}</a>
+            </li>
+            <li class="list-group-item">
+                <b>Comentário</b>
+                <a class="pull-right">{{objetivo.comentario}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock content %}

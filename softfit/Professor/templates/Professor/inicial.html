@@ -12,6 +12,11 @@ Página Inicial - Professor
         <div class="box-body">
             <div class="box header">
             </div>
+            <h3>Alunos</h3>
+            {% for aluno in alunos %}
+            <a href="/professor/veraluno/{{aluno.id}}"><p>{{aluno.nome}}</p></a>
+            {% endfor %}
+            <hr>
             <h3>Rotina</h3>
             <table class="table table-bordered">
                 <tr>

@@ -7,4 +7,5 @@ urlpatterns = [
     path('inicial/<int:id>',views.inicial, name = "inicial"),
     path('loginProf/', views.loginProf, name='login-prof'),
     path("logout", views.logout_view, name="logout"),
+    path("veraluno/<int:id>", views.verAluno, name='ver-aluno')
 ]
