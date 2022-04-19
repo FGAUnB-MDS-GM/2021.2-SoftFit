@@ -1,20 +1,11 @@
 class Aluno():
-    def __init__(self, idu, nome, email, avaliacao, frequencia, estadof, objetivo):
-        self.__idu=idu
+    def __init__(self, nome, email, avaliacao, frequencia, estadof, objetivo):
         self.__nome=nome
         self.__email=email
         self.__avaliacao=avaliacao
         self.__frequencia=frequencia
         self.__estadof=estadof
         self.__objetivo=objetivo
-
-    @property
-    def idu(self):
-        return self.__idu
-
-    @idu.setter
-    def idu(self, idu):
-        self.__idu = idu
 
     @property
     def nome(self):

@@ -18,7 +18,6 @@ def cadastroAluno(request):
         form_aluno = CadastroAluno(request.POST)
         form_aval = CadastroAvaliacao(request.POST)
         if form_aluno.is_valid():
-            idu = form_aluno.cleaned_data["idu"]
             nome = form_aluno.cleaned_data["nome"]
             email = form_aluno.cleaned_data["email"]
             if form_aval.is_valid():
@@ -39,7 +38,7 @@ def cadastroAluno(request):
                 objetivo_novo = objetivod.Objetivo(opcao="A Selecionar", comentario="Nenhum, por enquanto")
                 objetivo_db = objetivo_service.cadastrar_objetivo(objetivo_novo)
 
-                aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_db, estadof=estadof_db, frequencia=0, objetivo=objetivo_db)
+                aluno_novo = aluno.Aluno(nome=nome, email=email, avaliacao=avaliacao_db, estadof=estadof_db, frequencia=0, objetivo=objetivo_db)
                 aluno_db = aluno_service.cadastrar_aluno(aluno_novo)
 
                 senha = aluno_service.gera_senha()
@@ -64,7 +63,6 @@ def editaAluno(request, id):
     avaliacao_editar = avaliacao_service.mostrar_avaliacao(aluno_editar.avaliacao.id)
     form_aval = CadastroAvaliacao(request.POST or None, instance=avaliacao_editar)
     if form_aluno.is_valid():
-        idu = form_aluno.cleaned_data["idu"]
         nome = form_aluno.cleaned_data["nome"]
         email = form_aluno.cleaned_data["email"]
         if form_aval.is_valid():
@@ -79,7 +77,7 @@ def editaAluno(request, id):
             avaliacao_novo = avaliacao.AvaliacaoFisica(peso=peso, altura=altura, imc=imc, braco_d=braco_d, perna_e=perna_e, cintura=cintura, comentario_af=comentario_af)
             avaliacao_edit = avaliacao_service.editar_avaliacao(avaliacao_editar, avaliacao_novo)
 
-            aluno_novo = aluno.Aluno(idu=idu, nome=nome, email=email, avaliacao=avaliacao_edit, frequencia=aluno_editar.frequencia, estadof=aluno_editar.estadof, objetivo=aluno_editar.objetivo)
+            aluno_novo = aluno.Aluno(nome=nome, email=email, avaliacao=avaliacao_edit, frequencia=aluno_editar.frequencia, estadof=aluno_editar.estadof, objetivo=aluno_editar.objetivo)
             aluno_service.editar_aluno(aluno_editar, aluno_novo)
             return redirect('/administrador/')
     return render(request, 'administrador/cadastroaluno.html', {'form_aluno': form_aluno, 'form_aval': form_aval})
@@ -107,7 +105,6 @@ def cadastroProfessor(request):
     if request.method == "POST":
         form_prof = CadastroProfessor(request.POST)
         if form_prof.is_valid():
-            idu = form_prof.cleaned_data["idu"]
             nome = form_prof.cleaned_data["nome"]
             email = form_prof.cleaned_data["email"]
 
@@ -136,7 +133,7 @@ def cadastroProfessor(request):
 
             domingo_manha = form_prof.cleaned_data["domingo_manha"]
 
-            prof_novo = professor.Professor(idu=idu, nome=nome, email=email, 
+            prof_novo = professor.Professor(nome=nome, email=email, 
                                     segunda_manha=segunda_manha, segunda_tarde=segunda_tarde, segunda_noite=segunda_noite, 
                                     terca_manha=terca_manha, terca_tarde=terca_tarde, terca_noite=terca_noite, 
                                     quarta_manha=quarta_manha, quarta_tarde=quarta_tarde, quarta_noite=quarta_noite, 
@@ -174,7 +171,6 @@ def editaProfessor(request, id):
     prof_editar = prof_service.mostrar_professor(id)
     form_prof = CadastroProfessor(request.POST or None, instance=prof_editar)
     if form_prof.is_valid():
-        idu = form_prof.cleaned_data["idu"]
         nome = form_prof.cleaned_data["nome"]
         email = form_prof.cleaned_data["email"]
 
@@ -203,7 +199,7 @@ def editaProfessor(request, id):
 
         domingo_manha = form_prof.cleaned_data["domingo_manha"]
 
-        prof_novo = professor.Professor(idu=idu, nome=nome, email=email, 
+        prof_novo = professor.Professor(nome=nome, email=email, 
                                     segunda_manha=segunda_manha, segunda_tarde=segunda_tarde, segunda_noite=segunda_noite, 
                                     terca_manha=terca_manha, terca_tarde=terca_tarde, terca_noite=terca_noite, 
                                     quarta_manha=quarta_manha, quarta_tarde=quarta_tarde, quarta_noite=quarta_noite, 

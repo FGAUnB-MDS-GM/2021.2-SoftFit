@@ -5,7 +5,6 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 # Create your models here.
 
 class Usuario(models.Model):
-    idu = models.IntegerField(null=False, blank=False)
     nome = models.CharField(max_length=100, null=False, blank=False)
     email = models.EmailField(null=False, blank=False)
 

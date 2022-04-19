@@ -6,7 +6,7 @@ from .models import Aluno, AvaliacaoFisica, Professor, Objetivo
 class CadastroAluno(forms.ModelForm):
     class Meta:
         model = Aluno
-        fields = ['idu', 'nome', 'email']
+        fields = ['nome', 'email']
 
     def clean_email(self):
         email = self.cleaned_data.get('email')
@@ -28,7 +28,7 @@ class CadastroAvaliacao(forms.ModelForm):
 class CadastroProfessor(forms.ModelForm):
     class Meta:
         model = Professor
-        fields = ['idu', 'nome', 'email',
+        fields = ['nome', 'email',
                 'segunda_manha', 'segunda_tarde', 'segunda_noite',
                 'terca_manha', 'terca_tarde', 'terca_noite',
                 'quarta_manha', 'quarta_tarde', 'quarta_noite',
