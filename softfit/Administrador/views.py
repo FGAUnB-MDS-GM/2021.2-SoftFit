@@ -84,7 +84,9 @@ def editaAluno(request, id):
 
 def mostraAluno(request, id):
     aluno = aluno_service.mostrar_aluno(id)
-    return render(request, 'administrador/mostraaluno.html', {'aluno': aluno})
+    avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
+    objetivo = objetivo_service.mostrar_objetivo(aluno.objetivo.id)
+    return render(request, 'administrador/mostraaluno.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo})
 
 def removeAluno(request, id):
     aluno = aluno_service.mostrar_aluno(id)

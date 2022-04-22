@@ -29,7 +29,7 @@ Página Inicial - Administrador
                         {% for aluno in alunos %}
                         <tr>
                             <td>{{aluno.id}}</td>
-                            <td>{{aluno.nome}}</td>
+                            <td><a href="/administrador/mostraaluno/{{aluno.id}}">{{aluno.nome}}</a></td>
                             <td>{{aluno.email}}</td>
                             <td>{{aluno.estadof.condicao}}</td>
                             <td>
