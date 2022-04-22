@@ -1,6 +1,6 @@
-from django.shortcuts import render, redirect
-from django.http import HttpResponse
-from .forms import CadastroAluno, CadastroAvaliacao, CadastroProfessor
+from django.shortcuts import render, redirect, reverse
+from django.http import HttpResponse, HttpResponseRedirect
+from .forms import CadastroAluno, CadastroAvaliacao, CadastroProfessor, Mensagem
 from django.core.mail import send_mail
 from django.contrib.auth.models import User
 
@@ -87,6 +87,25 @@ def mostraAluno(request, id):
     avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
     objetivo = objetivo_service.mostrar_objetivo(aluno.objetivo.id)
     return render(request, 'administrador/mostraaluno.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo})
+
+def enviaMensagem(request, id, assunto):
+    aluno = aluno_service.mostrar_aluno(id)
+    nome = aluno.nome
+    if assunto == 1:
+        assunto_email = 'Estado Financeiro'
+    else:
+        assunto_email = 'Frequência'
+    if request.method == "POST":
+        form_email = Mensagem(data=request.POST, nome=nome, assunto_email=assunto_email)
+        if form_email.is_valid():
+            corpo_email = form_email.cleaned_data["corpo_email"]
+            send_mail(assunto_email, corpo_email, 'softfit123@gmail.com', [aluno.email], fail_silently=False)
+            return HttpResponseRedirect(reverse('administrador:mostrarAluno', kwargs={'id': aluno.id}))
+        else:
+            print(form_email.errors)
+    else:
+        form_email = Mensagem(nome=nome, assunto_email=assunto_email)
+    return render(request, 'administrador/mensagem.html', {'aluno': aluno, 'assunto': assunto, 'form_email': form_email})
 
 def removeAluno(request, id):
     aluno = aluno_service.mostrar_aluno(id)

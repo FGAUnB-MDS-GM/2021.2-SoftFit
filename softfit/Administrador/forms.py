@@ -53,3 +53,15 @@ class CadastroObjetivo(forms.ModelForm):
     class Meta:
         model = Objetivo
         fields = ['opcao', 'comentario']
+
+class Mensagem(forms.Form):
+
+    def __init__(self, nome, assunto_email, *args,**kwargs):
+        super(Mensagem,self).__init__(*args,**kwargs)
+        self.fields['corpo_email'].widget = forms.Textarea(attrs={'placeholder': 'Mensagem E-mail', 'rows': 7})
+        if assunto_email == 'Estado Financeiro':
+            self.fields['corpo_email'].initial='Olá '+ nome + ',\n\nA academia SoftFit está te enviando esse e-mail para te informar acerca de seu Estado Financeiro.\nPercebemos que sua condição está como inadimplente, contamos com o seu pagamento. Caso esteja com algum problema, estamos à disposição para ajudar.\n\nAtenciosamente,\n           Administração SoftFit.'
+        else:
+            self.fields['corpo_email'].initial='Olá '+ nome + ',\n\nPrezamos por entregar sempre a melhor experiência para os nossos alunos.\nNotamos que você vem sendo ausente nos treinos ultimamente, aconteceu algo? Estamos à disposição para ouvir feedbacks e melhorar no que possível. \n\nAtenciosamente,\n           Administração SoftFit.'
+    
+    corpo_email = forms.CharField(label='Mensagem', max_length=1500)
