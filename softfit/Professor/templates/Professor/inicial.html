@@ -6,8 +6,170 @@ Página Inicial - Professor
 
 {% block content %}
     <div class="box box-primary">
-        <div class="box-header with-border">
-            <h1>Professor</h1>
+        <div class="box-header text-center">
+            <h1>Professor: {{prof.nome}}</h1>
+        </div>
+        <div class="box-body">
+            <div class="box header">
+            </div>
+            <h3>Alunos</h3>
+            {% for aluno in alunos %}
+            <a href="/professor/veraluno/{{aluno.id}}"><p>{{aluno.nome}}</p></a>
+            {% endfor %}
+            <hr>
+            <h3>Rotina</h3>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+                <tr>
+                    <td>
+                        {% if prof.segunda_manha %}
+                        Segunda - Manhã (8h-12h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.terca_manha %}
+                        Terça - Manhã (8h-12h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.quarta_manha %}
+                        Quarta - Manhã (8h-12h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.quinta_manha %}
+                        Quinta - Manhã (8h-12h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.sexta_manha %}
+                        Sexta - Manhã (8h-12h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.sabado_manha %}
+                        Sábado - Manhã (8h-12h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.domingo_manha %}
+                        Domingo - Manhã (8h-12h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {% if prof.segunda_tarde %}
+                        Segunda - Tarde (13-17h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.terca_tarde %}
+                        Terça - Tarde (13-17h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.quarta_tarde %}
+                        Quarta - Tarde (13-17h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.quinta_tarde %}
+                        Quinta - Tarde (13-17h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.sexta_tarde %}
+                        Sexta - Tarde (13-17h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.sabado_tarde %}
+                        Sábado - Tarde (13-17h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        -
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {% if prof.segunda_noite %}
+                        Segunda - Noite (18h-22h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.terca_noite %}
+                        Terça - Noite (18h-22h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.quarta_noite %}
+                        Quarta - Noite (18h-22h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.quinta_noite %}
+                        Quinta - Noite (18h-22h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prof.sexta_noite %}
+                        Sexta - Noite (18h-22h)
+                        {% else %}
+                        -
+                        {% endif %}
+                    </td>
+                    <td>
+                        -
+                    </td>
+                    <td>
+                        -
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 {% endblock content %}

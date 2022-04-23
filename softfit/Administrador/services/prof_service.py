@@ -1,7 +1,7 @@
 from ..models import Professor
 
 def cadastrar_professor(prof):
-    return Professor.objects.create(idu=prof.idu, nome=prof.nome, email=prof.email, 
+    return Professor.objects.create(nome=prof.nome, email=prof.email, 
                                     segunda_manha=prof.segunda_manha, segunda_tarde=prof.segunda_tarde, segunda_noite=prof.segunda_noite, 
                                     terca_manha=prof.terca_manha, terca_tarde=prof.terca_tarde, terca_noite=prof.terca_noite, 
                                     quarta_manha=prof.quarta_manha, quarta_tarde=prof.quarta_tarde, quarta_noite=prof.quarta_noite, 
@@ -14,7 +14,6 @@ def mostrar_professor(id):
     return Professor.objects.get(id=id)
 
 def editar_professor(prof, prof_novo):
-    prof.idu = prof_novo.idu
     prof.nome = prof_novo.nome
     prof.email = prof_novo.email
 
