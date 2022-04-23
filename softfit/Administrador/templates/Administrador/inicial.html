@@ -22,6 +22,7 @@ Página Inicial - Administrador
                             <th>Nome</th>
                             <th>E-mail</th>
                             <th>Estado Financeiro</th>
+                            <th>Frequência</th>
                             <th>Ações</th>
                         </tr>
                     </thead>
@@ -32,6 +33,7 @@ Página Inicial - Administrador
                             <td><a href="/administrador/mostraaluno/{{aluno.id}}">{{aluno.nome}}</a></td>
                             <td>{{aluno.email}}</td>
                             <td>{{aluno.estadof.condicao}}</td>
+                            <td>{{aluno.frequencia}}/{{dia}}</td>
                             <td>
                                 <a href="/administrador/editaraluno/{{aluno.id}}">Editar</a>
                                 <a href="/administrador/removeraluno/{{aluno.id}}">Remover</a>

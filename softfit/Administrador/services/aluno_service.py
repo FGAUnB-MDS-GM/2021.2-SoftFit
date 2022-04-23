@@ -1,6 +1,7 @@
 from ..models import Aluno
 import string
 from random import choice
+from datetime import datetime, date
 
 def cadastrar_aluno(aluno):
     return Aluno.objects.create(nome=aluno.nome, email=aluno.email, 
@@ -34,3 +35,12 @@ def encontra_id(email):
     for aluno in Aluno.objects.all():
         if email == aluno.email:
             return aluno.id
+
+def att_frequencia(id):
+    aluno = Aluno.objects.get(id=id)
+    aluno.data_frequencia = date.today()
+    if date.today().day == 1:
+        aluno.frequencia = 1
+    else:
+        aluno.frequencia += 1
+    aluno.save(force_update=True)

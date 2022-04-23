@@ -1,5 +1,6 @@
 from django.db import models
 from multiselectfield import MultiSelectField
+from datetime import datetime   
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
@@ -53,6 +54,7 @@ class Aluno(Usuario):
     estadof = models.ForeignKey(EstadoFinanceiro, on_delete=models.CASCADE, null=True)
     objetivo = models.ForeignKey(Objetivo, on_delete=models.CASCADE)
     frequencia = models.IntegerField()
+    data_frequencia = models.DateField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

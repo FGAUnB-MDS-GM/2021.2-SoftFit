@@ -3,6 +3,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .forms import CadastroAluno, CadastroAvaliacao, CadastroProfessor, Mensagem
 from django.core.mail import send_mail
 from django.contrib.auth.models import User
+from calendar import monthrange
+from datetime import date
 
 from .services import avaliacao_service, aluno_service, prof_service, estadof_service, objetivo_service
 from .models import Aluno, Professor, EstadoFinanceiro, Objetivo
@@ -11,7 +13,8 @@ from .entidades import aluno, avaliacao, professor, estadof, objetivod
 def index(request):
     alunos = Aluno.objects.all()
     profs = Professor.objects.all()
-    return render(request, 'Administrador/inicial.html', {'alunos': alunos, 'profs': profs})
+    dia = monthrange(date.today().year, date.today().month)[1]
+    return render(request, 'Administrador/inicial.html', {'alunos': alunos, 'profs': profs, 'dia':dia})
 
 def cadastroAluno(request):
     if request.method == "POST":
@@ -86,7 +89,8 @@ def mostraAluno(request, id):
     aluno = aluno_service.mostrar_aluno(id)
     avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
     objetivo = objetivo_service.mostrar_objetivo(aluno.objetivo.id)
-    return render(request, 'administrador/mostraaluno.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo})
+    dia = monthrange(date.today().year, date.today().month)[1]
+    return render(request, 'administrador/mostraaluno.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo, 'dia': dia})
 
 def enviaMensagem(request, id, assunto):
     aluno = aluno_service.mostrar_aluno(id)
