@@ -3,19 +3,47 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .forms import CadastroAluno, CadastroAvaliacao, CadastroProfessor, Mensagem
 from django.core.mail import send_mail
 from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login, logout
 from calendar import monthrange
 from datetime import date
+from django.contrib.auth.decorators import login_required, user_passes_test
 
 from .services import avaliacao_service, aluno_service, prof_service, estadof_service, objetivo_service
 from .models import Aluno, Professor, EstadoFinanceiro, Objetivo
 from .entidades import aluno, avaliacao, professor, estadof, objetivod
 
+def admin_check(user):
+    return user.username == 'administrador'
+
+def loginAdmin(request):
+    if request.method == "POST":
+        username = request.POST["username"]
+        password = request.POST["password"]
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return HttpResponseRedirect(reverse('administrador:index'))
+        else:
+            return render(request, "administrador/login.html", {
+                "message": "Administrador não encontrado!"
+            })
+    else:
+        return render(request,"administrador/login.html")
+
+def logout_view(request):
+    logout(request)
+    return render(request, "homepage/index.html", {
+        "message": "Log out realizado!"
+    })
+
+@user_passes_test(admin_check, login_url='/')
 def index(request):
     alunos = Aluno.objects.all()
     profs = Professor.objects.all()
     dia = monthrange(date.today().year, date.today().month)[1]
     return render(request, 'Administrador/inicial.html', {'alunos': alunos, 'profs': profs, 'dia':dia})
 
+@user_passes_test(admin_check, login_url='/')
 def cadastroAluno(request):
     if request.method == "POST":
         form_aluno = CadastroAluno(request.POST)
@@ -60,6 +88,7 @@ def cadastroAluno(request):
         form_aval = CadastroAvaliacao()
     return render(request, 'administrador/cadastroaluno.html', {'form_aluno': form_aluno, 'form_aval': form_aval})
 
+@user_passes_test(admin_check, login_url='/')
 def editaAluno(request, id):
     aluno_editar = aluno_service.mostrar_aluno(id)
     form_aluno = CadastroAluno(request.POST or None, instance=aluno_editar)
@@ -85,6 +114,7 @@ def editaAluno(request, id):
             return redirect('/administrador/')
     return render(request, 'administrador/cadastroaluno.html', {'form_aluno': form_aluno, 'form_aval': form_aval})
 
+@user_passes_test(admin_check, login_url='/')
 def mostraAluno(request, id):
     aluno = aluno_service.mostrar_aluno(id)
     avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
@@ -92,6 +122,7 @@ def mostraAluno(request, id):
     dia = monthrange(date.today().year, date.today().month)[1]
     return render(request, 'administrador/mostraaluno.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo, 'dia': dia})
 
+@user_passes_test(admin_check, login_url='/')
 def enviaMensagem(request, id, assunto):
     aluno = aluno_service.mostrar_aluno(id)
     nome = aluno.nome
@@ -111,6 +142,7 @@ def enviaMensagem(request, id, assunto):
         form_email = Mensagem(nome=nome, assunto_email=assunto_email)
     return render(request, 'administrador/mensagem.html', {'aluno': aluno, 'assunto': assunto, 'form_email': form_email})
 
+@user_passes_test(admin_check, login_url='/')
 def removeAluno(request, id):
     aluno = aluno_service.mostrar_aluno(id)
     avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
@@ -126,6 +158,7 @@ def removeAluno(request, id):
         return redirect('/administrador/')
     return render(request, 'administrador/confirmarexclusao.html', {'usuario': aluno})
 
+@user_passes_test(admin_check, login_url='/')
 def cadastroProfessor(request):
     if request.method == "POST":
         form_prof = CadastroProfessor(request.POST)
@@ -183,6 +216,7 @@ def cadastroProfessor(request):
         form_prof = CadastroProfessor()
     return render(request, 'administrador/cadastroprofessor.html', {'form_prof': form_prof})
 
+@user_passes_test(admin_check, login_url='/')
 def removeProfessor(request, id):
     prof = prof_service.mostrar_professor(id)
     if request.method == "POST":
@@ -192,6 +226,7 @@ def removeProfessor(request, id):
         return redirect('/administrador/')
     return render(request, 'administrador/confirmarexclusao.html', {'usuario': prof})
 
+@user_passes_test(admin_check, login_url='/')
 def editaProfessor(request, id):
     prof_editar = prof_service.mostrar_professor(id)
     form_prof = CadastroProfessor(request.POST or None, instance=prof_editar)

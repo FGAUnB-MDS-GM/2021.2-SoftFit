@@ -5,12 +5,19 @@ from django.contrib.auth import authenticate, login, logout
 from Administrador.services import aluno_service, avaliacao_service, objetivo_service
 from Administrador.forms import CadastroObjetivo
 from Administrador.entidades import objetivod
-from django.contrib.auth.decorators import login_required
+from Administrador.models import Aluno
+from django.contrib.auth.decorators import login_required, user_passes_test
 from datetime import date
 import homepage
 
+def aluno_check(user):
+    for aluno in Aluno.objects.all():
+        if user.username == aluno.email:
+            return True
+    return False
+
 # Create your views here.
-@login_required(login_url='/aluno/loginAluno/')
+@user_passes_test(aluno_check, login_url='/aluno/loginAluno/')
 def inicial(request, id):
     aluno = aluno_service.mostrar_aluno(id)
     nao_frequencia = aluno.data_frequencia == date.today()
@@ -19,7 +26,7 @@ def inicial(request, id):
     objetivo = objetivo_service.mostrar_objetivo(aluno.objetivo.id)
     return render(request, 'Aluno/inicial.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo, 'nao_frequencia': nao_frequencia})
 
-@login_required(login_url='/aluno/loginAluno/')
+@user_passes_test(aluno_check, login_url='/aluno/loginAluno/')
 def objetivo(request, id):
     aluno = aluno_service.mostrar_aluno(id)
     avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
