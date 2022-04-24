@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% load meus_filtros %}
+
+{% block title %}
+Enviar Mensagem
+{% endblock title %}
+
+{% block content %}
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Enviar Mensagem para {{aluno.nome}}</h3>
+        </div>
+        <div class="box-body">
+            <p><b>Email do Aluno:</b> {{aluno.email}}</p>
+            {% if assunto == 1%}
+            <p><b>Assunto:</b> Estado Financeiro</p>
+            {% else %}
+            <p><b>Assunto:</b> Frequência</p>
+            {% endif %}
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{form_email.corpo_email.errors}}
+                    <label>Mensagem: </label>
+                    {{form_email.corpo_email|addclass:'form-control'}}
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" name="Enviar Mensagem" value="Enviar Mensagem">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock content %}

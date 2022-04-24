@@ -1,28 +1,13 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Visualização - Aluno
+Aluno - Professor
 {% endblock title %}
 
 {% block content %}
-{% if message%}
-<div class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Mensagem Enviada com Sucesso!</h4>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-{% endif %}
 <div class="box box-primary">
     <div class="box-header with-border">
-        <h2 class="box-title">Aluno: {{aluno.nome}}</h2>
+        <h2 class="box-title">{{aluno.nome}}</h2>
     </div>
     <div class="box-body">
         <h3>Avaliação Física</h3>
@@ -64,15 +49,6 @@ Visualização - Aluno
                 <a class="pull-right">{{objetivo.comentario}}</a>
             </li>
         </ul>
-        <hr>
-        <h3>Frequência</h3>
-        <p>Compareceu <b>{{aluno.frequencia}}</b> de <b>{{dia}}</b> possíveis.</p>
-        <hr>
-        <h3>Enviar Mensagem</h3>
-        <p>Selecione o assunto da mensagem a ser enviada:</p>
-        <a href="/administrador/mensagem/{{aluno.id}}/1"><button type="button" class="btn btn-block btn-info">Estado Financeiro</button></a>
-        <br>
-        <a href="/administrador/mensagem/{{aluno.id}}/2"><button type="button" class="btn btn-block btn-info">Frequência</button></a>
     </div>
 </div>
 {% endblock content %}

@@ -1,6 +1,5 @@
 class Professor():
-    def __init__(self, idu, nome, email, segunda_manha, segunda_tarde, segunda_noite, terca_manha, terca_tarde, terca_noite, quarta_manha, quarta_tarde, quarta_noite, quinta_manha, quinta_tarde, quinta_noite, sexta_manha, sexta_tarde, sexta_noite, sabado_manha, sabado_tarde, domingo_manha):
-        self.__idu=idu
+    def __init__(self, nome, email, segunda_manha, segunda_tarde, segunda_noite, terca_manha, terca_tarde, terca_noite, quarta_manha, quarta_tarde, quarta_noite, quinta_manha, quinta_tarde, quinta_noite, sexta_manha, sexta_tarde, sexta_noite, sabado_manha, sabado_tarde, domingo_manha):
         self.__nome=nome
         self.__email=email
 
@@ -28,14 +27,6 @@ class Professor():
         self.__sabado_tarde = sabado_tarde
 
         self.__domingo_manha = domingo_manha
-
-    @property
-    def idu(self):
-        return self.__idu
-
-    @idu.setter
-    def idu(self, idu):
-        self.__idu = idu
 
     @property
     def nome(self):

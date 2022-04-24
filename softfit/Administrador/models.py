@@ -1,10 +1,11 @@
 from django.db import models
 from multiselectfield import MultiSelectField
+from datetime import datetime   
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
 
 class Usuario(models.Model):
-    idu = models.IntegerField(null=False, blank=False)
     nome = models.CharField(max_length=100, null=False, blank=False)
     email = models.EmailField(null=False, blank=False)
 
@@ -12,12 +13,12 @@ class Usuario(models.Model):
         abstract = True
 
 class AvaliacaoFisica(models.Model):
-    peso = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5, )
-    altura = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5)
+    peso = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
+    altura = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
     imc = models.DecimalField(decimal_places=2, max_digits=5)
-    braco_d = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5)
-    perna_e = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5) 
-    cintura = models.DecimalField(blank=False , null = False,decimal_places=2, max_digits=5)
+    braco_d = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(400)])
+    perna_e = models.DecimalField(blank=False , null = False, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(400)]) 
+    cintura = models.DecimalField(blank=False , null = False,decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(400)])
     comentario_af = models.CharField(max_length=500)
 
 class EstadoFinanceiro(models.Model):
@@ -53,6 +54,7 @@ class Aluno(Usuario):
     estadof = models.ForeignKey(EstadoFinanceiro, on_delete=models.CASCADE, null=True)
     objetivo = models.ForeignKey(Objetivo, on_delete=models.CASCADE)
     frequencia = models.IntegerField()
+    data_frequencia = models.DateField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

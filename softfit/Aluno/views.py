@@ -6,15 +6,18 @@ from Administrador.services import aluno_service, avaliacao_service, objetivo_se
 from Administrador.forms import CadastroObjetivo
 from Administrador.entidades import objetivod
 from django.contrib.auth.decorators import login_required
+from datetime import date
 import homepage
 
 # Create your views here.
 @login_required(login_url='/aluno/loginAluno/')
 def inicial(request, id):
     aluno = aluno_service.mostrar_aluno(id)
+    nao_frequencia = aluno.data_frequencia == date.today()
+    print(nao_frequencia)
     avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
     objetivo = objetivo_service.mostrar_objetivo(aluno.objetivo.id)
-    return render(request, 'Aluno/inicial.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo})
+    return render(request, 'Aluno/inicial.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo, 'nao_frequencia': nao_frequencia})
 
 @login_required(login_url='/aluno/loginAluno/')
 def objetivo(request, id):
@@ -29,8 +32,12 @@ def objetivo(request, id):
         obj_novo = objetivod.Objetivo(opcao=opcao, comentario=comentario)
         objetivo = objetivo_service.editar_objetivo(obj_editar, obj_novo)
         
-        return render(request, 'aluno/inicial.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo})
+        return HttpResponseRedirect(reverse('aluno:inicial', kwargs={'id':id}))
     return render(request, 'aluno/objetivo.html', {'form_objetivo': form_objetivo})
+
+def frequencia(request, id):
+    aluno_service.att_frequencia(id)
+    return HttpResponseRedirect(reverse('aluno:inicial', kwargs={'id':id}))
 
 def loginAluno(request):
     if request.method == "POST":
