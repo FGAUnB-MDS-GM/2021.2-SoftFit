@@ -30,7 +30,9 @@
 
 > O SoftFit tem como principal objetivo proporcionar uma experiência digital intuitiva e consolidada para os alunos, professores e administrador da academia.
 
-> [Nossa GitPage](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/) 
+> [Nossa GitPage](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/)
+
+> [Projeto](https://softfit-unb.herokuapp.com/)
 
 ## 📦 Entregas
   Unidade 1 - 03 de Fevereiro de 2022

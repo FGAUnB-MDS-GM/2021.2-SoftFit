@@ -3,22 +3,132 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <style>
+            html {
+              scroll-behavior : smooth;
+            }
+
+            .section{
+                width: 100%;
+                min-height: 100vh;
+                background-color: black;
+            }
+            .container{
+                width: 80%;
+                display: block;
+                margin:auto;
+                padding-top: 100px;
+            }
+            .content-section{
+                float: left;
+                width: 55%;
+            }
+            .image-section{
+                float: right;
+                width: 40%;
+            }
+            .image-section img{
+                width: 100%;
+                height: auto;
+            }
+            .content-section .title{
+                text-transform: uppercase;
+                font-size: 28px;
+            }
+            .content-section .content h3{
+                margin-top: 20px;
+                color:white;
+                font-size: 21px;
+            }
+            .content-section .content p{
+                margin-top: 10px;
+                font-family: sans-serif;
+                font-size: 22px;
+                line-height: 1.5;
+            }
+            .content-section .content .button{
+                margin-top: 30px;
+            }
+            .content-section .content .button a{
+                background-color: #3d3d3d;
+                padding:12px 40px;
+                text-decoration: none;
+                color:#fff;
+                font-size: 25px;
+                letter-spacing: 1.5px;
+            }
+            .content-section .content .button a:hover{
+                background-color: #a52a2a;
+                color:#fff;
+            }
+            .content-section .social{
+                margin: 40px 40px;
+            }
+            .content-section .social i{
+                color:#a52a2a;
+                font-size: 30px;
+                padding:0px 10px;
+            }
+            .content-section .social i:hover{
+                color:#3d3d3d;
+            }
+            @media screen and (max-width: 768px){
+                .container{
+                width: 80%;
+                display: block;
+                margin:auto;
+                padding-top:50px;
+            }
+            .content-section{
+                float:none;
+                width:100%;
+                display: block;
+                margin:auto;
+            }
+            .image-section{
+                float:none;
+                width:100%;
+                
+            }
+            .image-section img{
+                width: 100%;
+                height: auto;
+                display: block;
+                margin:auto;
+            }
+            .content-section .title{
+                text-align: center;
+                font-size: 19px;
+            }
+            .content-section .content .button{
+                text-align: center;
+            }
+            .content-section .content .button a{
+                padding:9px 30px;
+            }
+            .content-section .social{
+                text-align: center;
+            }
+        }
+        </style>
+
+
         <title>SoftFit</title>
+        <meta charset=”UTF-8″>
         <link rel="stylesheet" href="{% static 'mainpage/styles.css' %}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="{% static 'mainpage/logo.jpeg' %}">   
     </head>
 
     <body>
-        <header>
+        <header id = "section0">
             <div class="menu-content">
                 <a class = "logo" href="{% url 'homepage:index' %}"><h1 class="logo">SoftFit</h1>
                 </a>
                 <nav class="header-menu">
                     <ul class="list-itens">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">serviços</a></li>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="{% url 'homepage:index' %}">home</a></li>
+                        <li><a href="#section1">About us</a></li>
                     </ul>
                 </nav>
         </header>
@@ -32,19 +142,37 @@
                 <div class = "btns">
                     <button class="btn-aluno"><a href="/aluno/loginAluno">Aluno</a></button>
                     <button class="btn-professor"><a href="/professor/loginProf">Professor</a>
-                    <button class="btn-professor"><a href="">Administrador</a>
+                    <button class="btn-professor"><a href="/administrador/loginAdmin">Administrador</a>
                     
                     </button>
                 </div>
             </div>
         </main>
 
-        <div style = "background-color: aqua;">
-            <h2>Assista esse vídeo para se divertir desenvolvendo : <a href="https://www.youtube.com/watch?v=LHdQovqs-SQ"> MAROMBAAA </a></h2>
+        <div class="section" id = "section1">
+            <div class="container">
+                <div class="content-section">
+                    <div class="title">
+                        <h1>About Us</h1>
+                    </div>
+                    <div class="content">
+                        <h3>Softfit, a solução completa para sua academia.</h3>
+                        <p>O Software tem o objetivo de auxiliar na administração da sua academia. <br>
+                        Dividido em 3 serviços: <br>
+                        Aluno : Consegue visualizar sua frequência e seus treinos. <br>
+                        Professor : Consegue acompanhar sua rotina de trabalho assim como registro de seus alunos. <br>
+                        Administrador : Faz o cadastro de alunos e professores e conseguem acompanhar tudo, desde frequência até estado financeiro. <br>
+                        </p>
+                        <div class="button">
+                            <a href="#section0">Home</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img src="{% static 'mainpage/gym.jpg' %}">
+                </div>
+            </div>
         </div>
-        <a href="">Aluno</a>
-        <a href="">Professor</a>
-        <a href="{% url 'administrador:index' %}">Administrador</a>
 
     </body>
 </html>

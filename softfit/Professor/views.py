@@ -4,18 +4,24 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from Administrador.services import prof_service
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, user_passes_test
 from Administrador.services import prof_service, aluno_service, avaliacao_service, objetivo_service
-from Administrador.models import Aluno
+from Administrador.models import Aluno, Professor
+
+def prof_check(user):
+    for prof in Professor.objects.all():
+        if user.username == prof.email:
+            return True
+    return False
 
 # Create your views here.
-@login_required(login_url='/professor/loginProf/')
+@user_passes_test(prof_check, login_url='/professor/loginProf/')
 def inicial(request, id):
     prof = prof_service.mostrar_professor(id)
     alunos = Aluno.objects.all()
     return render(request, 'Professor/inicial.html', {'prof': prof, 'alunos': alunos})
 
-@login_required(login_url='/professor/loginProf/')
+@user_passes_test(prof_check, login_url='/professor/loginProf/')
 def verAluno(request, id):
     aluno = aluno_service.mostrar_aluno(id)
     avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)

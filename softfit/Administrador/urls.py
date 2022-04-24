@@ -12,5 +12,6 @@ urlpatterns = [
     path('editarprof/<int:id>', views.editaProfessor, name='edita-prof'),
     path('removeraluno/<int:id>', views.removeAluno, name='remove-aluno'),
     path('removerprof/<int:id>', views.removeProfessor, name='remove-prof'),
-    path('mensagem/<int:id>/<int:assunto>', views.enviaMensagem, name='mensagem')
+    path('mensagem/<int:id>/<int:assunto>', views.enviaMensagem, name='mensagem'),
+    path('loginAdmin/', views.loginAdmin, name='login-adm'),
 ]
