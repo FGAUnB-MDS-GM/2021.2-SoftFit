@@ -5,8 +5,10 @@ from django.contrib.auth.decorators import login_required
 from Administrador.services import prof_service
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
-from Administrador.services import prof_service, aluno_service, avaliacao_service, objetivo_service
-from Administrador.models import Aluno, Professor
+from Administrador.services import prof_service, aluno_service, avaliacao_service, objetivo_service, exercicio_service
+from Administrador.models import Aluno, Professor, Exercicio, Treino
+
+from .forms import CadastroExercicio
 
 def prof_check(user):
     for prof in Professor.objects.all():
@@ -54,4 +56,9 @@ def verAluno(request, id):
 @user_passes_test(prof_check, login_url='/professor/loginProf/')
 def criarTreino(request, id):
     aluno = aluno_service.mostrar_aluno(id)
-    return render(request, 'Professor/criartreino.html')
+    treinos = Treino.objects.all()
+    if request.method == "POST":
+        form_exer = CadastroExercicio(request.POST)
+    else:
+        form_exer = CadastroExercicio()
+    return render(request, 'Professor/criartreino.html', {'aluno': aluno, 'treinos': treinos})
