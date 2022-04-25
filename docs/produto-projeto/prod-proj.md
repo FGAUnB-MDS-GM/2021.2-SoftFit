@@ -254,6 +254,18 @@ Para o desenvolvimento da Release 7, o Victor e o Luan se juntaram para que pude
 Houve uma reunião para que se pudessem criar a tela inicial de aluno com as funções também de visualização e cadastro/alteração de objetivo. Nessa reunião, o Victor codificou enquanto o Luan o auxiliou na arquitetura do projeto, já que algumas pastas e arquivos estavam dando conflitos.</br>
 O motivo da escolha da dupla para essa release foi: o Victor estava engajado no trabalho com os dados de alunos, uma vez que já trabalhou com o cadastro de aluno e professor na release 5 e o Luan por estar em contato com a parte de Login do projeto, possui um certo conhecimento acerca da arquitetura e disposição de arquivos.
 
-## 6. Referências Bibliográficas
+## 6. Estratégias de Teste
+
+### Plano de Teste 1
+Essa estratégia de teste é direcionada a testar as funcionalidades do produto entregue relacionado ao MVP. Dessa forma, essas são as características desse plano de teste:
+* **Tipo**: Funcional (avalia se a aplicação faz, de fato, o que ela é pensada para executar).
+* **Nível**: Unitário (verifica o funcionamento isolado dos elementos de software que são testáveis separadamente). Assim, verifica menor unidade e suas entradas e saídas.
+* **Técnica**: Caixa Branca (teste de condição).
+
+O escopo desse plano de teste é composto pelos critérios de aceitação das histórias de usuário que fazem parte do MVP: H01, H02, H05, H06, H08, H10, H11, H12, H13, H14, H15, H18, H19, H20, H22, H24.
+
+Essas histórias e seus critérios podem ser visualizados no [Backlog do Produto](requisitos-safe/safe.md) 
+
+## 7. Referências Bibliográficas
 
 * Sommerville, Ian Engenharia de software/ Ian Sommerville; tradução Luiz Cláudio Queiroz; revisão técnica Fábio Levy Siqueira. -- 10. ed. -- São Paulo: Pearson Education do Brasil, 2018. Título original: Software engineering ISBN 978-65-5011-048-2 1. Engenharia de software I. Siqueira.
