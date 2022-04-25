@@ -14,20 +14,6 @@ def prof_check(user):
             return True
     return False
 
-# Create your views here.
-@user_passes_test(prof_check, login_url='/professor/loginProf/')
-def inicial(request, id):
-    prof = prof_service.mostrar_professor(id)
-    alunos = Aluno.objects.all()
-    return render(request, 'Professor/inicial.html', {'prof': prof, 'alunos': alunos})
-
-@user_passes_test(prof_check, login_url='/professor/loginProf/')
-def verAluno(request, id):
-    aluno = aluno_service.mostrar_aluno(id)
-    avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
-    objetivo = objetivo_service.mostrar_objetivo(aluno.objetivo.id)
-    return render(request, 'Professor/veraluno.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo})
-
 def loginProf(request):
     if request.method == "POST":
         email = request.POST["email"]
@@ -50,3 +36,22 @@ def logout_view(request):
     return render(request, "homepage/index.html", {
         "message": "Log out realizado!"
     })
+
+# Create your views here.
+@user_passes_test(prof_check, login_url='/professor/loginProf/')
+def inicial(request, id):
+    prof = prof_service.mostrar_professor(id)
+    alunos = Aluno.objects.all()
+    return render(request, 'Professor/inicial.html', {'prof': prof, 'alunos': alunos})
+
+@user_passes_test(prof_check, login_url='/professor/loginProf/')
+def verAluno(request, id):
+    aluno = aluno_service.mostrar_aluno(id)
+    avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
+    objetivo = objetivo_service.mostrar_objetivo(aluno.objetivo.id)
+    return render(request, 'Professor/veraluno.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo})
+
+@user_passes_test(prof_check, login_url='/professor/loginProf/')
+def criarTreino(request, id):
+    aluno = aluno_service.mostrar_aluno(id)
+    return render(request, 'Professor/criartreino.html')
