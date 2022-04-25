@@ -11,6 +11,7 @@
 | 20/02/2022 | 2.2 | Ajuste nos requisitos não-funcionais; Adição das lições aprendidas na Unidade 2; Correção de como as iterações do projeto serão feitas (Releases ao invés de Sprints) | Victor Hugo Oliveira Leão |
 | 07/03/2022 | 2.3 | Correção de ajustes apontados pelo professor: adição da imagem do Canvas MVP; Datas das entregas previstas; Ajustes de alguns RFs | Victor Hugo Oliveira Leão |
 | 06/04/2022 | 3.0 | Adição das lições aprendidas nas unidades 3 e 4; Documentação da dinâmica de programação em duplas | Victor Hugo Oliveira Leão |
+| 24/04/2022 | 4.0 | Adição das estratégias de teste | Victor Hugo Oliveira Leão |
 
 ## 1. Visão Geral do Produto
 
