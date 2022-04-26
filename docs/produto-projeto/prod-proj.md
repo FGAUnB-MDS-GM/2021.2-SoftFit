@@ -267,6 +267,16 @@ O escopo desse plano de teste é composto pelos critérios de aceitação das hi
 
 Essas histórias e seus critérios podem ser visualizados no [Backlog do Produto](requisitos-safe/safe.md) 
 
+### Plano de Teste 2
+Essa estratégia de teste é direcionada a testar a usabilidade na prática do produto entregue relacionado ao MVP. Dessa forma, essas são as características desse plano de teste:
+* **Tipo**: Usabilidade (verifica se o usuário consegue entender e fazer o que foi acertado).
+* **Nível**: Unitário (verifica o funcionamento isolado dos elementos de software que são testáveis separadamente). Assim, verifica menor unidade e suas entradas e saídas.
+* **Técnica**: Manual (feito à mão por um usuário).
+
+O escopo desse plano de teste é composto pelos critérios de aceitação das histórias de usuário que fazem parte do MVP: H01, H02, H05, H06, H08, H10, H11, H12, H13, H14, H15, H18, H19, H20, H22, H24.
+
+Essas histórias e seus critérios podem ser visualizados no [Backlog do Produto](requisitos-safe/safe.md)
+
 ## 7. Referências Bibliográficas
 
 * Sommerville, Ian Engenharia de software/ Ian Sommerville; tradução Luiz Cláudio Queiroz; revisão técnica Fábio Levy Siqueira. -- 10. ed. -- São Paulo: Pearson Education do Brasil, 2018. Título original: Software engineering ISBN 978-65-5011-048-2 1. Engenharia de software I. Siqueira.
