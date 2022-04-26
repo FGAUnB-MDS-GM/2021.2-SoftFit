@@ -8,7 +8,7 @@ from calendar import monthrange
 from datetime import date
 from django.contrib.auth.decorators import login_required, user_passes_test
 
-from .services import avaliacao_service, aluno_service, prof_service, estadof_service, objetivo_service
+from .services import avaliacao_service, aluno_service, prof_service, estadof_service, objetivo_service, exercicio_service
 from .models import Aluno, Professor, EstadoFinanceiro, Objetivo
 from .entidades import aluno, avaliacao, professor, estadof, objetivod
 
@@ -149,6 +149,7 @@ def removeAluno(request, id):
     estadof = estadof_service.mostrar_estadof(aluno.estadof.id)
     objetivo = objetivo_service.mostrar_objetivo(aluno.objetivo.id)
     if request.method == "POST":
+        exercicio_service.remover_exercicio_aluno(id)
         aluno_service.remover_aluno(aluno)
         avaliacao_service.remover_avaliacao(avaliacao)
         estadof_service.remover_estadof(estadof)

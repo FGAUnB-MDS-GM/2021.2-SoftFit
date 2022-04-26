@@ -23,3 +23,8 @@ def mostrar_treino(id):
 
 def mostrar_exercicio_aluno(id):
     return Exercicio.objects.filter(aluno_ex_id=id)
+
+def remover_exercicio_aluno(id):
+    exercicios = Exercicio.objects.filter(aluno_ex_id=id)
+    for exercicio in exercicios:
+        exercicio.delete()
