@@ -7,12 +7,7 @@ Página Inicial - Aluno
 {% block content %}
     <div class="col-md-4">
         <div class="box box-primary">
-            <div class="box-header text-center">
-                <h1>{{aluno.nome}}</h1>
-            </div>
             <div class="box-body">
-                <div class="box header">
-                </div>
                 <h3>Avaliação Física</h3>
                 <ul class="list-group list-group-unbordered">
                     <li class="list-group-item">   
@@ -67,7 +62,26 @@ Página Inicial - Aluno
             <div class="box-header text-center">
                 <h1>Treino</h1>
             </div>
-
+            <hr>
+            {% for exercicio in exercicios %}
+            <h4 style="margin-left:20px"><b>{{exercicio.treino_ex.descricao}}</b></h4>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <p style="margin-left:20px">Séries: {{exercicio.serie}}</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p>Quantidade por série: {{exercicio.qntd_serie}}</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p>Carga: {{exercicio.carga}}kg</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p>Descanso entre séries: {{exercicio.descanso}}seg</p>
+                </div>
+            </div>
+            <p style="margin-left:20px">Comentário: {{exercicio.comentario_ex}}</p>
+            <hr>
+            {% endfor %}
         </div>
     </div>
 {% endblock content %}
