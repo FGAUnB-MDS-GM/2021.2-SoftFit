@@ -2,10 +2,10 @@ from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
-from Administrador.services import aluno_service, avaliacao_service, objetivo_service
+from Administrador.services import aluno_service, avaliacao_service, objetivo_service, exercicio_service
 from Administrador.forms import CadastroObjetivo
 from Administrador.entidades import objetivod
-from Administrador.models import Aluno
+from Administrador.models import Aluno, Exercicio
 from django.contrib.auth.decorators import login_required, user_passes_test
 from datetime import date
 import homepage
@@ -20,11 +20,12 @@ def aluno_check(user):
 @user_passes_test(aluno_check, login_url='/aluno/loginAluno/')
 def inicial(request, id):
     aluno = aluno_service.mostrar_aluno(id)
+    exercicios = exercicio_service.mostrar_exercicio_aluno(id)
     nao_frequencia = aluno.data_frequencia == date.today()
     print(nao_frequencia)
     avaliacao = avaliacao_service.mostrar_avaliacao(aluno.avaliacao.id)
     objetivo = objetivo_service.mostrar_objetivo(aluno.objetivo.id)
-    return render(request, 'Aluno/inicial.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo, 'nao_frequencia': nao_frequencia})
+    return render(request, 'Aluno/inicial.html', {'aluno': aluno, 'avaliacao': avaliacao, 'objetivo': objetivo, 'nao_frequencia': nao_frequencia, 'exercicios': exercicios})
 
 @user_passes_test(aluno_check, login_url='/aluno/loginAluno/')
 def objetivo(request, id):
