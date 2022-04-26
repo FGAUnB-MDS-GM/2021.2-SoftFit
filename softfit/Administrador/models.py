@@ -67,11 +67,10 @@ class Aluno(Usuario):
         return self.nome
 
 class Exercicio(models.Model):
-    serie = models.DecimalField(blank=True , null = True, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
-    qntd_serie = models.DecimalField(blank=True , null = True, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
-    repeticao = models.DecimalField(blank=True , null = True, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
-    carga = models.DecimalField(blank=True , null = True, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
-    descanso = models.DecimalField(blank=True , null = True, decimal_places=2, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
+    serie = models.DecimalField(default=0, decimal_places=1, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
+    qntd_serie = models.DecimalField(default=0, decimal_places=1, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
+    carga = models.DecimalField(default=0, decimal_places=1, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
+    descanso = models.DecimalField(default=0, decimal_places=1, max_digits=5, validators=[MinValueValidator(0, "O valor deve ser maior que 0"), MaxValueValidator(250)])
     comentario_ex = models.CharField(max_length=500, blank=True , null = True)
     treino_ex = models.ForeignKey(Treino, on_delete=models.DO_NOTHING)
     aluno_ex = models.ForeignKey(Aluno, on_delete=models.DO_NOTHING)

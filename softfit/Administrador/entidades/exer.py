@@ -1,13 +1,12 @@
 class Exercicio():
-    def __init__(self, serie, qntd_serie, repeticao, carga, descanso, comentario_ex, treino_ex, aluno_ex):
-    self.__serie = serie
-    self.__qntd_serie = qntd_serie
-    self.__repeticao = repeticao
-    self.__carga = carga
-    self.__descanso = descanso
-    self.__comentario_ex = comentario_ex
-    self.__treino_ex = treino_ex
-    self.__aluno_ex = aluno_ex
+    def __init__(self, serie, qntd_serie, carga, descanso, comentario_ex, treino_ex, aluno_ex):
+        self.__serie = serie
+        self.__qntd_serie = qntd_serie
+        self.__carga = carga
+        self.__descanso = descanso
+        self.__comentario_ex = comentario_ex
+        self.__treino_ex = treino_ex
+        self.__aluno_ex = aluno_ex
 
     @property
     def serie(self):
@@ -24,14 +23,6 @@ class Exercicio():
     @qntd_serie.setter
     def qntd_serie(self, qntd_serie):
         self.__qntd_serie = qntd_serie
-
-    @property
-    def repeticao(self):
-        return self.__repeticao
-    
-    @repeticao.setter
-    def repeticao(self, repeticao):
-        self.__repeticao = repeticao
 
     @property
     def carga(self):

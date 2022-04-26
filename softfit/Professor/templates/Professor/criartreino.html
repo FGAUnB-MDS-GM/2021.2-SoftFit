@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load meus_filtros %}
+
 {% block title %}
 Criar treino - Professor
 {% endblock title %}
@@ -11,43 +13,63 @@ Criar treino - Professor
     </div>
     <div class="box-body">
         <form method="POST">
-            {% for treino in treinos %}
-            <h4>{{treino.descricao}}</h4>
-            <div class="form-group">
-                {{form_exer.serie.errors}}
-                <label>Séries: </label>
-                {{form_aval.serie|addclass:'form-control'}}
-            </div> 
-            <div class="form-group">
-                {{form_exer.qntd_serie.errors}}
-                <label>Quantidade por Séries: </label>
-                {{form_aval.qntd_serie|addclass:'form-control'}}
-            </div> 
-            <div class="form-group">
-                {{form_exer.repeticao.errors}}
-                <label>Repetição: </label>
-                {{form_aval.repeticao|addclass:'form-control'}}
-            </div> 
-            <div class="form-group">
-                {{form_exer.carga.errors}}
-                <label>Carga: </label>
-                {{form_aval.carga|addclass:'form-control'}}
-            </div> 
-            <div class="form-group">
-                {{form_exer.descanso.errors}}
-                <label>Descanso por Repetição: </label>
-                {{form_aval.descanso|addclass:'form-control'}}
-            </div> 
+            {% csrf_token %}
+            {{ form_treino }}
+            <hr>
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    {{form_exer.serie.errors}}
+                    <label>Séries: </label>
+                    {{form_exer.serie|addclass:'form-control'}}
+                </div>
+                <div class="col-6 col-md-3">
+                    {{form_exer.qntd_serie.errors}}
+                    <label>Quantidade por Séries: </label>
+                    {{form_exer.qntd_serie|addclass:'form-control'}}
+                </div>
+                <div class="col-6 col-md-3">
+                    {{form_exer.carga.errors}}
+                    <label>Carga (em kg): </label>
+                    {{form_exer.carga|addclass:'form-control'}}
+                </div>
+                <div class="col-6 col-md-3">
+                    {{form_exer.descanso.errors}}
+                    <label>Descanso por Repetição (em seg): </label>
+                    {{form_exer.descanso|addclass:'form-control'}}
+                </div>
+            </div>
             <div class="form-group">
                 {{form_exer.comentario_ex.errors}}
                 <label>Comentário Adicional: </label>
-                {{form_aval.comentario_ex|addclass:'form-control'}}
-            </div> 
-            {% endfor %}
+                {{form_exer.comentario_ex|addclass:'form-control'}}
+            </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" name="Cadastrar" value="Cadastrar/Editar Treino">
+                <input type="submit" class="btn btn-primary" name="Cadastrar" value="Cadastrar Exercício">
             </div>
         </form>
-    </div>>
+        <hr>
+        <h3>Exercícios cadastrados no Treino do Aluno</h3>
+        <hr>
+        {% for exercicio in exercicios %}
+        <h4><b>{{exercicio.treino_ex.descricao}}</b></h4>
+        <a href="/professor/removertreino/{{exercicio.id}}/{{aluno.id}}">Remover</a>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <p>Séries: {{exercicio.serie}}</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <p>Quantidade por série: {{exercicio.qntd_serie}}</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <p>Carga: {{exercicio.carga}}kg</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <p>Descanso entre séries: {{exercicio.descanso}}seg</p>
+            </div>
+        </div>
+        <p>Comentário: {{exercicio.comentario_ex}}</p>
+        <hr>
+        {% endfor %}
+    </div>
 </div>
 {% endblock content %}
