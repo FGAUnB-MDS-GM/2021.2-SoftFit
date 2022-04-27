@@ -48,7 +48,7 @@ class ProfessorTestCase(TestCase):
 class AlunoTestCase(TestCase):
     def setUp(self):
         # A avaliação física inicial do aluno deverá ser preenchida: As medidas de peso, altura, braço, coxa, cintura deverão aceitar apenas números maiores que 0. (O formulário valida por si próprio)
-        avaliacao = AvaliacaoFisica.objects.create(peso=-10, altura=10, imc=0, braco_d=40, perna_e=80, cintura=120, 
+        avaliacao = AvaliacaoFisica.objects.create(peso=10, altura=10, imc=0, braco_d=40, perna_e=80, cintura=120, 
                                                     comentario_af="nenhum")
         objetivo = Objetivo.objects.create(opcao="A Selecionar", comentario="Nenhum, por enquanto")
         estadof = EstadoFinanceiro.objects.create(condicao="Em Dia")
