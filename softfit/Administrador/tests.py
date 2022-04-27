@@ -4,8 +4,21 @@ from .services import prof_service
 from django.core.mail import send_mail
 from calendar import monthrange
 from datetime import date
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate
 
 # Create your tests here.
+
+# H20 - Login Administrador
+class AdministradorTestCase(TestCase):
+    def setUp(self):
+        # A princípio, o administrador já terá um Login pré-definido para ele ao adquirir o programa.
+        User.objects.create_user(username="administrador", password="a1d2m3i4n5")
+    
+    def test_administrador(self):
+        user = authenticate(username="administrador", password="wrongpassword")
+        # Caso um usuário com e-mail e senha preenchidos não forem encontrados, a página de login deverá ser atualizada com a mensagem "Administrador não encontrado!".
+        self.assertEqual(user, None, msg="Administrador não encontrado!")
 
 # H19 - Cadastrar Professores
 class ProfessorTestCase(TestCase):
@@ -88,6 +101,6 @@ class AlunoTestCase(TestCase):
         else:
             assunto_email = 'Frequência'
             corpo_email = 'Olá '+ victor.nome + ',\n\nPrezamos por entregar sempre a melhor experiência para os nossos alunos.\nNotamos que você vem sendo ausente nos treinos ultimamente, aconteceu algo? Estamos à disposição para ouvir feedbacks e melhorar no que possível. \n\nAtenciosamente,\n           Administração SoftFit.'
-            
+
         email_enviado = send_mail(assunto_email, corpo_email, 'softfit123@gmail.com', [email], fail_silently=False)
         self.assertEqual(email_enviado, 1)
