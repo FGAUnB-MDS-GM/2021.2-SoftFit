@@ -37,22 +37,22 @@ A disposição das histórias abaixo está baseada nas entregas que foram/serão
 
 | História de Usuário | Critérios de Aceitação |
 | :-----------------: | :--------------------- |
-| **H02** | Essa consulta deverá ocorrer na listagem dos alunos. |
-| **H18** | O aluno deve receber a sua senha no e-mail cadastrado.</br> O aluno receberá um ID de identificação de no máximo 4 dígitos feito pelo administrador.</br> A princípio, todos os alunos terão estado financeiro igual a "Em dia" e frequência de 0 dias. |
-| **H19** | O professor deve receber a sua senha no e-mail cadastrado.</br> O professor receberá um ID de identificação de no máximo 4 dígitos feito pelo administrador. |
-| **H20** | A princípio, o administrador já terá um Login pré-definido por ele ao adquirir o programa. |
-| **H22** | O username de login será o email cadastrado ou o ID atribuído pelo administrador no cadastro.</br> A senha inicial é aquela enviada por e-mail após o cadastro feito pelo administrador. |
-| **H24** | O username de login será o email cadastrado ou o ID atribuído pelo administrador no cadastro.</br> A senha inicial é aquela enviada por e-mail após o cadastro feito pelo administrador. |
+| **H02** | Essa consulta deverá ocorrer na listagem dos alunos.</br> Deverá ser exibida "Em dia" ou "Inadimplente", dependendo da condição do aluno. |
+| **H18** | O administrador deverá cadastrar o nome do aluno para fins de identificação.</br> O administrador deverá cadastrar o e-mail do aluno (válido), para que este receba sua senha e faça login.</br> O aluno receberá um ID de identificação automático.</br> A princípio, todos os alunos terão estado financeiro igual a "Em dia".</br> A princípio, todos os alunos terão a frequência de 0 dias.</br> A avaliação física inicial do aluno deverá ser preenchida: As medidas de peso, altura, braço, coxa, cintura deverão aceitar apenas números maiores que 0.</br> O aluno deve receber a sua senha inicial no e-mail cadastrado. |
+| **H19** | O administrador deverá cadastrar o nome do professor para fins de identificação.</br> O administrador deverá cadastrar o e-mail do professor (válido), para que este receba sua senha e faça login.</br> A rotina do professor deve ser preenchida de acordo com os horários de trabalho realizados por ele na academia.</br> O professor receberá um ID de identificação automático.</br> O professor deve receber a sua senha inicial no e-mail cadastrado. |
+| **H20** | A princípio, o administrador já terá um Login pré-definido para ele ao adquirir o programa.</br> Caso um usuário com e-mail e senha preenchidos não forem encontrados, a página de login deverá ser atualizada com a mensagem "Administrador não encontrado!".|
+| **H22** | O login deve ser realizado com e-mail cadastrado e senha.</br> A senha inicial é aquela enviada por e-mail após o cadastro feito pelo administrador.</br> Caso um usuário com e-mail e senha preenchidos não forem encontrados, a página de login deverá ser atualizada com a mensagem "Aluno não encontrado!". |
+| **H24** | O login deve ser realizado com e-mail cadastrado e senha.</br> A senha inicial é aquela enviada por e-mail após o cadastro feito pelo administrador.</br> Caso um usuário com e-mail e senha preenchidos não forem encontrados, a página de login deverá ser atualizada com a mensagem "Professor não encontrado!". |
 | **H01** | A princípio, o estado financeiro do aluno é "Em dia".</br> O estado financeiro é alterado para "Inadimplente" após um mês de pagamento atrasado. |
-| **H10** | O aluno terá algumas opções para selecionar, como, por exemplo, ganho de massa muscular, ou emagrecer.</br> O aluno poderá adicionar comentários acerca de seu objetivo. |
-| **H11** | A alteração pode ser feita a qualquer momento, mas o seus treinos só serão direcionados a esse objetivo quando novos treinos forem criados. |
-| **H12** | As medidas devem estar no sistema de metros/centímetros e de quilogramas. |
-| **H13** | Além de ver o objetivo, o professor também deve ser capaz de ver o comentário que um aluno pode colocar acerca dele (objetivo). |
-| **H14** | Na criação do treino, o professor pode selecionar os exercícios da ficha e comentar cada um deles.</br> Para cada exercício, o professor deverá selecionar a quantidade de repetições e tempo de descanso entre elas. |
-| **H15** | Cada treino tem sua página própria de visualização.</br> Os treinos serão listados na tela inicial do aluno para que ele possa escolher qual abrir e visualizar. |
+| **H10** | A princípio, o aluno terá seu objetivo a selecionar e com um comentário padrão.</br> O aluno terá algumas opções para selecionar, como: ganho de massa muscular, emagrecer ou ganhar resistência.</br> O aluno poderá adicionar comentários acerca de seu objetivo. |
+| **H11** | A alteração pode ser feita a qualquer momento.</br> O aluno poderá alterar sua opção de objetivo ou comentário. |
+| **H12** | As medidas devem estar no sistema de metros/centímetros e de quilogramas.</br> As medidas deverão ser aquelas cadastradas pelo administrador. |
+| **H13** | Os alunos serão listados e cada professor terá a opção de abrir uma "página única" de cada aluno para visualizar seu objetivo e avaliação física.</br> As medidas a serem dispostas devem estar nos sistemas de cm ou kg.</br> Além de ver o objetivo, o professor também deve ser capaz de ver o comentário que um aluno pode colocar acerca dele (objetivo). |
+| **H14** | Na criação do treino, o professor deve selecionar um dos treinos/tipos de exercício pré-cadastrados.</br> Para cada exercício selecionado, o professor deverá adicionar a quantidade de séries, quantidade por séries, carga e tempo de descanso (esses números devem ser maiores que 0).</br> Um comentário adicional pode ser feito. |
+| **H15** | Os exercícios atribuídos ao aluno devem estar dispostos na tela inicial dele.</br> Para cada exercício, são listadas seus campos: séries, quantidades por série, carga (em kg), descanso (em seg) e o comentário.</br> Caso o comentário seja vazio, deverá aparecer: "Comentário: None". |
 | **H05** | A frequência é mostrada como: dias_idos/dias_mês. Por exemplo, se o aluno foi 10 dias da academia no mês de março (31 dias), a frequência seria mostrada como 10/31. |
-| **H06** | A mensagem deverá ser enviada por e-mail e deve ser personalizada em: Assunto e Nome do Aluno. |
-| **H08** | A rotina deve ser exposta como uma agenda com os dias das semanas e quais os horários de trabalho do professor por dia. |
+| **H06** | A mensagem deverá ser enviada por e-mail.</br> A mensagem deve ser personalizada em Assunto e Nome do Aluno.</br> A mensagem pode ser relacionada ao Estado Financeiro ou a Frequência do aluno.</br> A mensagem terá um formato pré-definido, mas que poderá ser alterada pelo administrador. |
+| **H08** | A rotina deve ser exposta como uma agenda com os dias das semanas e quais os horários de trabalho da academia.</br> Os horários que não forem da rotina devem ser preenchidos com um "-".</br> Os horários que forem da rotina do professor são preenchidos com o horário. |
 | **H25** | O professor deve receber o link para alterar senha no seu e-mail. |
 | **H23** | O aluno deve receber o link para alterar senha no seu e-mail. |
 | **H21** | O administrador deve receber o link para alterar senha no seu e-mail. |
