@@ -275,6 +275,8 @@ Essa estratégia de teste é direcionada a testar a usabilidade na prática do p
 
 O escopo desse plano de teste é composto pelos critérios de aceitação das histórias de usuário que fazem parte do MVP: H01, H02, H05, H06, H08, H10, H11, H12, H13, H14, H15, H18, H19, H20, H22, H24.
 
+[Documentação dos Testes](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit/blob/main/docs/_media/doc_test.pdf)
+
 Essas histórias e seus critérios podem ser visualizados no [Backlog do Produto](requisitos-safe/safe.md)
 
 ## 7. Referências Bibliográficas
