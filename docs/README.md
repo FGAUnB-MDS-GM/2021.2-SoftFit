@@ -45,6 +45,11 @@
   - [Backlog do Produto (Atualizado com Critérios de Histórias)](requisitos-safe/safe.md)
   - [Quadro Kanban (Zenhub) - Atualizado](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit)
 
+  Unidade 5 - 28 de Abril de 2022
+  - [Visão do Produto e Projeto (Atualizada)- Com Planos de Teste](https://fgaunb-mds-gm.github.io/2021.2-SoftFit/#/produto-projeto/prod-proj)
+  - [Quadro Kanban - Zenhub (Atualizado)](https://github.com/FGAUnB-MDS-GM/2021.2-SoftFit)
+  - [Produto final disponível](https://softfit-unb.herokuapp.com/)
+
 <br/>
 
 ## 👨‍💻 Equipe
